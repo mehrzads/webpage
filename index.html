@@ -8,6 +8,10 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -15,25 +19,31 @@
         extend: {
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
           },
           colors: {
-            nvidia: '#76B900', // Optional: A nod to NVIDIA green if you ever want to use it
+            nvidia: '#76B900',
+            dark: {
+              900: '#0f172a',
+              800: '#1e293b',
+              card: '#1e293b80', // Glass effect color
+            }
           },
           animation: {
-            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-            'blob': 'blob 7s infinite',
+            'blob': 'blob 10s infinite',
+            'float': 'float 6s ease-in-out infinite',
           },
           keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
             blob: {
               '0%': { transform: 'translate(0px, 0px) scale(1)' },
               '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
               '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
               '100%': { transform: 'translate(0px, 0px) scale(1)' },
             },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
           },
         },
       },
@@ -41,26 +51,35 @@
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    
     /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+    html { scroll-padding-top: 100px; }
+
+    /* Scroll Reveal Utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
     }
-    ::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #cbd5e1;
-      border-radius: 5px;
-    }
-    .dark ::-webkit-scrollbar-thumb {
-      background: #475569;
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    /* Account for fixed header when scrolling to anchors */
-    html {
-      scroll-padding-top: 80px;
+    /* Glass Effect Class */
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .dark .glass {
+      background: rgba(30, 41, 59, 0.4); /* Darker glass */
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
   </style>
 
@@ -72,12 +91,13 @@
     }
   </script>
 </head>
-<body class="bg-white text-slate-800 antialiased selection:bg-indigo-500 selection:text-white dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
 
-  <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200 dark:bg-slate-900/80 dark:border-slate-800 transition-all">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white dark:bg-[#0B1120] dark:text-slate-100 transition-colors duration-300">
+
+  <header class="fixed w-full top-0 z-50 glass transition-all">
     <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-lg font-bold tracking-tight hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-        Mehrzad<span class="text-indigo-600 dark:text-indigo-400">.</span>
+      <a href="#" class="text-xl font-display font-bold tracking-tight group">
+        Mehrzad<span class="text-indigo-600 dark:text-indigo-400 group-hover:text-nvidia transition-colors">.</span>
       </a>
 
       <div class="flex items-center gap-6">
@@ -89,7 +109,7 @@
           </ul>
         </nav>
 
-        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-500 dark:text-slate-400 focus:outline-none">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400 focus:outline-none">
           <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
           </svg>
@@ -101,184 +121,27 @@
     </div>
   </header>
 
-  <main>
-    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-      <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob dark:bg-indigo-900 dark:mix-blend-normal dark:opacity-30"></div>
-      <div class="absolute top-0 -right-4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:bg-purple-900 dark:mix-blend-normal dark:opacity-30"></div>
-
-      <div class="mx-auto max-w-7xl px-6 relative">
-        <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-          
-          <div class="flex-1 text-center lg:text-left animate-fade-in-up">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold border border-indigo-100 mb-6 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-800">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-              </span>
-              AI & Deep Learning
-            </div>
-            
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white">
-              Hi, I'm <br class="hidden lg:block" />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
-                Mehrzad Samadi
-              </span>
-            </h1>
-            
-            <p class="text-lg sm:text-xl font-medium text-indigo-600 dark:text-indigo-400 mb-4">
-              GenAI @ NVIDIA | Former CEO & Co-Founder of Parabricks
-            </p>
-            
-            <p class="text-slate-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 dark:text-slate-400">
-              Building the future of Generative AI. I specialize in high-performance computing and deep learning applications. Explore my work, videos, and thoughts on the AI landscape.
-            </p>
-
-            <div class="flex justify-center lg:justify-start gap-5 mb-10">
-              <a href="https://t.me/dlmehr" target="_blank" class="text-slate-400 hover:text-[#229ED9] hover:-translate-y-1 transition-all transform duration-200">
-                 <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.43l-1.99 9.36c-.15.69-.56.86-1.14.54l-3.16-2.33-1.52 1.47c-.17.17-.32.31-.65.31l.23-3.23 5.88-5.32c.26-.23-.06-.35-.4-.13l-7.27 4.58-3.13-.98c-.68-.21-.69-.68.14-1.01l12.22-4.71c.56-.21 1.05.13.79 1.45z"/></svg>
-              </a>
-              <a href="https://twitter.com/mehrzadsamadi" target="_blank" class="text-slate-400 hover:text-slate-900 dark:hover:text-white hover:-translate-y-1 transition-all transform duration-200">
-                <svg class="h-6 w-6 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/mehrzads" target="_blank" class="text-slate-400 hover:text-[#0077b5] hover:-translate-y-1 transition-all transform duration-200">
-                 <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-              <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="text-slate-400 hover:text-[#FF0000] hover:-translate-y-1 transition-all transform duration-200">
-                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              </a>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#about" class="px-8 py-3.5 rounded-lg bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all dark:bg-indigo-600 dark:hover:bg-indigo-500 shadow-lg hover:shadow-xl">
-                More About Me
-              </a>
-              <a href="#youtube" class="px-8 py-3.5 rounded-lg bg-white text-slate-900 font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all dark:bg-slate-800 dark:text-white dark:border-slate-700 dark:hover:bg-slate-700">
-                Watch Content
-              </a>
-            </div>
-          </div>
-
-          <div class="flex-1 flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.2s;">
-            <div class="relative">
-              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full blur-2xl opacity-40 dark:opacity-60"></div>
-              <img
-                src="mehrzad.jpeg"
-                alt="Mehrzad Samadi"
-                style="transform: scaleX(-1);"
-                class="relative w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-3xl rotate-3 shadow-2xl border border-white/20 dark:border-slate-700/50"
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="py-20 bg-slate-50 dark:bg-slate-800/50 border-y border-slate-200 dark:border-slate-800">
-      <div class="mx-auto max-w-4xl px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-slate-900 dark:text-white">The Journey</h2>
-        <div class="prose prose-lg prose-slate dark:prose-invert mx-auto">
-          <p class="leading-relaxed text-slate-600 dark:text-slate-300">
-            I co-founded <span class="font-semibold text-indigo-600 dark:text-indigo-400">Parabricks</span> to revolutionize genomic analysis using high-performance GPU software. Our mission was simple but ambitious: deliver higher throughput at significantly lower costs than existing solutions. 
-          </p>
-          <p class="mt-6 leading-relaxed text-slate-600 dark:text-slate-300">
-            In 2020, Parabricks was acquired by <span class="font-semibold text-nvidia dark:text-[#76B900]">NVIDIA</span>. I oversaw the integration and growth of the team within NVIDIA's healthcare ecosystem. Today, I focus on the bleeding edge of <strong>Generative AI</strong>, exploring how Large Language Models and accelerated computing can shape the future of technology.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="youtube" class="py-20">
-      <div class="mx-auto max-w-7xl px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-          <div>
-            <h2 class="text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
-              <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-              Latest on YouTube
-            </h2>
-            <p class="mt-2 text-slate-600 dark:text-slate-400">Deep dives into AI and technology (Persian).</p>
-          </div>
-          <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300 flex items-center gap-1">
-            View Channel <span>&rarr;</span>
-          </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="group relative bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-slate-700">
-            <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
-              <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/WuqWQ4jRaP8?si=weZtbHq0ePn7zW7M" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="group relative bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-slate-700">
-            <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
-              <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/T8Y7jZ4q1X0" title="YouTube video" loading="lazy" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="group relative bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-slate-700">
-            <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
-              <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/zHu78PKkics" title="YouTube video" loading="lazy" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="podcasts" class="py-20 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800">
-      <div class="mx-auto max-w-7xl px-6">
-        <h2 class="text-3xl font-bold mb-12 text-slate-900 dark:text-white text-center">Podcast Appearances</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-slate-900">
-            <div class="aspect-video relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/UliNhl5JlVk" loading="lazy" title="Podcast 1" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-slate-900">
-            <div class="aspect-video relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/8pCL_pq7zQM" loading="lazy" title="Podcast 2" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-slate-900">
-            <div class="aspect-video relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/pWCIFz2t8a8" loading="lazy" title="Podcast 3" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-slate-900">
-            <div class="aspect-video relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/l6YXMmAFVEo" loading="lazy" title="Podcast 4" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="py-10 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="text-slate-500 text-sm dark:text-slate-400">
-        &copy; <script>document.write(new Date().getFullYear())</script> Mehrzad Samadi. All rights reserved.
-      </div>
-      <div class="flex space-x-6">
-         <a href="https://twitter.com/mehrzadsamadi" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Twitter</a>
-         <a href="https://www.linkedin.com/in/mehrzads" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">LinkedIn</a>
-         <a href="https://www.youtube.com/@mehrzad.samadi" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">YouTube</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
+  <main class="relative overflow-hidden">
     
-    themeToggle.addEventListener('click', () => {
-      // Toggle class
-      document.documentElement.classList.toggle('dark');
-      
-      // Save preference
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.theme = 'dark';
-      } else {
-        localStorage.theme = 'light';
-      }
-    });
-  </script>
-</body>
-</html>
+    <div class="fixed inset-0 pointer-events-none z-[-1]">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[100px] animate-blob dark:bg-purple-900/20"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 rounded-full blur-[100px] animate-blob animation-delay-2000 dark:bg-indigo-900/20"></div>
+        <div class="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[100px] animate-blob animation-delay-4000 dark:bg-blue-900/20"></div>
+    </div>
+
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-6">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
+          
+          <div class="flex-1 text-center lg:text-left reveal active">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/50 dark:bg-white/5 border border-slate-200 dark:border-white/10 backdrop-blur-md mb-8">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wide">AI & Deep Learning</span>
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.1]">
+              Building the future of <br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-6
