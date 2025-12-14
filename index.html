@@ -1,222 +1,343 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Mehrzad Samadi</title>
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Verdana', sans-serif; /* Karpathy uses a clean sans-serif/serif mix. We'll use Verdana for readability or Georgia for the academic feel. */
-            font-size: 16px;
-            color: #333;
-            background-color: #fff;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehrzad Samadi - GenAI Expert</title>
+  <meta name="description" content="Personal website of Mehrzad Samadi, GenAI expert at NVIDIA">
 
-        /* The main container - Karpathy style is narrow and centered */
-        #container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-        a {
-            color: #1a0dab; /* Classic academic blue */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            font-family: 'Georgia', serif;
-            font-size: 32px;
-            font-weight: normal;
-            margin-bottom: 5px;
-            color: #111;
-        }
-
-        h2 {
-            font-family: 'Georgia', serif;
-            font-size: 22px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #111;
-        }
-
-        /* The Mugshot */
-        #profile-pic {
-            float: right;
-            width: 250px;
-            border-radius: 4px;
-            margin-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        /* Clearfix for mobile */
-        @media (max-width: 600px) {
-            #profile-pic {
-                float: none;
-                display: block;
-                width: 100%;
-                max-width: 300px;
-                margin: 0 auto 20px auto;
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            nvidia: '#76B900',
+            dark: {
+              900: '#0f172a',
+              800: '#1e293b',
+              card: '#1e293b80', // Glass effect color
             }
-        }
+          },
+          animation: {
+            'blob': 'blob 10s infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          },
+        },
+      },
+    }
+  </script>
 
-        .social-links {
-            font-size: 15px;
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
-        
-        .social-links a {
-            margin-right: 15px;
-        }
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
 
-        /* Project/Video Listing Style */
-        .entry {
-            margin-bottom: 25px;
-            display: flex;
-            gap: 20px;
-        }
-        
-        .entry-thumb {
-            flex: 0 0 160px;
-        }
-        
-        .entry-thumb img {
-            width: 100%;
-            border: 1px solid #eee;
-            border-radius: 3px;
-        }
+    html { scroll-padding-top: 100px; }
 
-        .entry-content {
-            flex: 1;
-        }
+    /* Scroll Reveal Utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-        .entry-title {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-            font-size: 17px;
-        }
+    /* Glass Effect Class */
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .dark .glass {
+      background: rgba(30, 41, 59, 0.4); /* Darker glass */
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
 
-        .entry-meta {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-
-        /* Simple List for podcasts */
-        ul.simple-list {
-            padding-left: 20px;
-        }
-        ul.simple-list li {
-            margin-bottom: 10px;
-        }
-    </style>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
 </head>
 
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white dark:bg-[#0B1120] dark:text-slate-100 transition-colors duration-300">
 
-<div id="container">
+  <header class="fixed w-full top-0 z-50 glass transition-all">
+    <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-display font-bold tracking-tight group">
+        Mehrzad<span class="text-indigo-600 dark:text-indigo-400 group-hover:text-nvidia transition-colors">.</span>
+      </a>
 
-    <img src="mehrzad.jpeg" id="profile-pic" alt="Mehrzad Samadi">
+      <div class="flex items-center gap-6">
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+            <li><a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a></li>
+            <li><a href="#youtube" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">YouTube</a></li>
+            <li><a href="#podcasts" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Podcasts</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400 focus:outline-none">
+          <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative overflow-hidden">
     
-    <h1>Mehrzad Samadi</h1>
-    
-    <div class="social-links">
-        <a href="https://twitter.com/mehrzadsamadi">Twitter</a>
-        <a href="https://www.linkedin.com/in/mehrzads">LinkedIn</a>
-        <a href="https://www.youtube.com/@mehrzad.samadi">YouTube</a>
-        <a href="https://t.me/dlmehr">Telegram</a>
-        <a href="mailto:your-email@example.com">Email</a>
+    <div class="fixed inset-0 pointer-events-none z-[-1]">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[100px] animate-blob dark:bg-purple-900/20"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 rounded-full blur-[100px] animate-blob animation-delay-2000 dark:bg-indigo-900/20"></div>
+        <div class="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[100px] animate-blob animation-delay-4000 dark:bg-blue-900/20"></div>
     </div>
 
-    <p>
-        I am a GenAI Expert at <strong>NVIDIA</strong>. My work focuses on the bleeding edge of Generative AI, bridging the gap between high-performance computing (HPC) and biological intelligence.
-    </p>
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-6">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
+          
+          <div class="flex-1 text-center lg:text-left reveal active">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/50 dark:bg-white/5 border border-slate-200 dark:border-white/10 backdrop-blur-md mb-8">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span class="text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wide">AI & Deep Learning</span>
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.1]">
+              Building the future of <br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 dark:from-indigo-400 dark:via-purple-400 dark:to-indigo-400 bg-300% animate-gradient">
+                Generative AI
+              </span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              GenAI @ <strong>NVIDIA</strong>. Formerly CEO & Co-Founder of Parabricks. <br class="hidden md:block">Bridging the gap between high-performance computing and biological intelligence.
+            </p>
 
-    <p>
-        Previously, I was the CEO and Co-Founder of <strong>Parabricks</strong>, a company that revolutionized genomic analysis using high-performance GPU software. Our mission was to deliver higher throughput at significantly lower costs than existing CPU solutions. Parabricks was <a href="https://nvidianews.nvidia.com/" target="_blank">acquired by NVIDIA</a> in 2020.
-    </p>
-    
-    <p>
-        I am interested in Large Language Models, accelerated computing, and the future of AI infrastructure.
-    </p>
+            <div class="flex justify-center lg:justify-start gap-6 mb-10">
+                <a href="https://t.me/dlmehr" target="_blank" class="text-slate-400 hover:text-[#229ED9] hover:-translate-y-1 transition-all transform duration-200">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.43l-1.99 9.36c-.15.69-.56.86-1.14.54l-3.16-2.33-1.52 1.47c-.17.17-.32.31-.65.31l.23-3.23 5.88-5.32c.26-.23-.06-.35-.4-.13l-7.27 4.58-3.13-.98c-.68-.21-.69-.68.14-1.01l12.22-4.71c.56-.21 1.05.13.79 1.45z"/></svg>
+             </a>
+             <a href="https://twitter.com/mehrzadsamadi" target="_blank" class="text-slate-400 hover:text-slate-900 dark:hover:text-white hover:-translate-y-1 transition-all transform duration-200">
+               <svg class="h-5 w-5 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+             </a>
+             <a href="https://www.linkedin.com/in/mehrzads" target="_blank" class="text-slate-400 hover:text-[#0077b5] hover:-translate-y-1 transition-all transform duration-200">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+             </a>
+             <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="text-slate-400 hover:text-[#FF0000] hover:-translate-y-1 transition-all transform duration-200">
+               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+             </a>
+            </div>
 
-    <h2>Recent Videos (Persian)</h2>
-    <p>I create deep-dive technical content on AI and technology in Persian. You can find my full channel <a href="https://www.youtube.com/@mehrzad.samadi">here</a>.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#youtube" class="px-8 py-3.5 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 hover:-translate-y-0.5 transition-all dark:bg-indigo-600 dark:hover:bg-indigo-500 shadow-lg hover:shadow-indigo-500/25">
+                Watch Content
+              </a>
+              <a href="#about" class="px-8 py-3.5 rounded-xl bg-white text-slate-900 font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all dark:bg-white/10 dark:text-white dark:border-white/10 dark:hover:bg-white/20 backdrop-blur-sm">
+                More About Me
+              </a>
+            </div>
+          </div>
 
-    <div class="entry">
-        <div class="entry-thumb">
-            <a href="https://www.youtube.com/watch?v=WuqWQ4jRaP8"><img src="https://img.youtube.com/vi/WuqWQ4jRaP8/0.jpg" alt="Video Thumb"></a>
+          <div class="flex-1 flex justify-center lg:justify-end reveal delay-200">
+            <div class="relative group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-[2rem] blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
+              <img
+                src="mehrzad.jpeg"
+                alt="Mehrzad Samadi"
+                style="transform: scaleX(-1);"
+                class="relative w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-[2rem] rotate-3 group-hover:rotate-1 transition-transform duration-500 shadow-2xl border border-white/20 dark:border-white/10"
+              >
+            </div>
+          </div>
         </div>
-        <div class="entry-content">
-            <a href="https://www.youtube.com/watch?v=WuqWQ4jRaP8" class="entry-title">Featured Analysis: The Battle for AGI</a>
-            <div class="entry-meta">YouTube Video</div>
-            An in-depth look at the competition between major AI labs, comparing OpenAI vs Google. I break down the technical implications of recent model releases.
+      </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white/50 dark:bg-black/20 backdrop-blur-sm border-y border-slate-200 dark:border-white/5">
+      <div class="mx-auto max-w-4xl px-6 text-center reveal">
+        <h2 class="text-3xl font-display font-bold mb-8 text-slate-900 dark:text-white">The Journey</h2>
+        <div class="prose prose-lg prose-slate dark:prose-invert mx-auto">
+          <p class="leading-relaxed text-slate-600 dark:text-slate-300">
+            I co-founded <span class="font-semibold text-indigo-600 dark:text-indigo-400">Parabricks</span> to revolutionize genomic analysis using high-performance GPU software. Our mission was ambitious: deliver higher throughput at significantly lower costs than existing solutions. 
+          </p>
+          <div class="my-8 h-px w-24 bg-slate-200 dark:bg-slate-700 mx-auto"></div>
+          <p class="leading-relaxed text-slate-600 dark:text-slate-300">
+            In 2020, Parabricks was acquired by <span class="font-bold text-[#76B900]">NVIDIA</span>. I oversaw the integration and growth of the team within NVIDIA's healthcare ecosystem. Today, I focus on the bleeding edge of <strong>Generative AI</strong>, exploring how Large Language Models and accelerated computing shape the future.
+          </p>
         </div>
+      </div>
+    </section>
+
+    <section id="youtube" class="py-24">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4 reveal">
+          <div>
+            <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-3">
+              <span class="w-2 h-8 rounded bg-red-600"></span>
+              Latest on YouTube
+            </h2>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">Deep dives into AI and technology (Persian language content).</p>
+          </div>
+          <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="group flex items-center gap-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors">
+            View full channel <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="lg:col-span-2 group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal">
+                <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/WuqWQ4jRaP8?si=weZtbHq0ePn7zW7M" title="Main Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white truncate">Featured Analysis</h3>
+                </div>
+            </div>
+
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-100">
+                <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/T8Y7jZ4q1X0" title="Video 2" loading="lazy" allowfullscreen></iframe>
+                </div>
+                 <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white truncate">Technology Trends</h3>
+                </div>
+            </div>
+
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-200">
+                 <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/zHu78PKkics" title="Video 3" loading="lazy" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white truncate">AI Insights</h3>
+                </div>
+            </div>
+            
+             <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="hidden lg:flex flex-col items-center justify-center p-8 bg-slate-100 dark:bg-white/5 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors reveal delay-300">
+                <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center mb-3 text-red-600 dark:text-red-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </div>
+                <span class="font-semibold text-slate-700 dark:text-slate-300">More Videos</span>
+             </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcasts" class="py-24 bg-slate-100/50 dark:bg-black/20 border-t border-slate-200 dark:border-white/5">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white">Podcast Appearances</h2>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">Conversations on the future of tech and genomics</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-dark-card transition-all reveal delay-0">
+            <div class="aspect-[4/3] relative">
+              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/UliNhl5JlVk" loading="lazy" title="Podcast 1" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-dark-card transition-all reveal delay-100">
+            <div class="aspect-[4/3] relative">
+              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/8pCL_pq7zQM" loading="lazy" title="Podcast 2" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-dark-card transition-all reveal delay-200">
+            <div class="aspect-[4/3] relative">
+              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/pWCIFz2t8a8" loading="lazy" title="Podcast 3" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-black/5 dark:ring-white/10 bg-white dark:bg-dark-card transition-all reveal delay-300">
+            <div class="aspect-[4/3] relative">
+              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/l6YXMmAFVEo" loading="lazy" title="Podcast 4" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-[#0B1120]">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-slate-500 text-sm dark:text-slate-400 font-medium">
+        &copy; <script>document.write(new Date().getFullYear())</script> Mehrzad Samadi.
+      </div>
+      <div class="flex space-x-8">
+         <a href="https://twitter.com/mehrzadsamadi" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Twitter</a>
+         <a href="https://www.linkedin.com/in/mehrzads" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">LinkedIn</a>
+         <a href="https://www.youtube.com/@mehrzad.samadi" class="text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">YouTube</a>
+      </div>
     </div>
+  </footer>
 
-    <div class="entry">
-        <div class="entry-thumb">
-            <a href="https://www.youtube.com/watch?v=T8Y7jZ4q1X0"><img src="https://img.youtube.com/vi/T8Y7jZ4q1X0/0.jpg" alt="Video Thumb"></a>
-        </div>
-        <div class="entry-content">
-            <a href="https://www.youtube.com/watch?v=T8Y7jZ4q1X0" class="entry-title">Technology Trends in 2025</a>
-            <div class="entry-meta">YouTube Video</div>
-            Discussing the impact of deep learning on businesses and startups, specifically focusing on automation workflows.
-        </div>
-    </div>
+  <script>
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+      } else {
+        localStorage.theme = 'light';
+      }
+    });
 
-    <div class="entry">
-        <div class="entry-thumb">
-            <a href="https://www.youtube.com/watch?v=zHu78PKkics"><img src="https://img.youtube.com/vi/zHu78PKkics/0.jpg" alt="Video Thumb"></a>
-        </div>
-        <div class="entry-content">
-            <a href="https://www.youtube.com/watch?v=zHu78PKkics" class="entry-title">AI Insights & Models</a>
-            <div class="entry-meta">YouTube Video</div>
-            A technical review of open-weight models and how to achieve high performance on reasoning tasks using smaller architectures.
-        </div>
-    </div>
+    // Scroll Reveal Logic
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
 
-    <h2>Podcast Appearances</h2>
-    <ul class="simple-list">
-        <li>
-            <a href="https://www.youtube.com/watch?v=UliNhl5JlVk"><strong>The Future of Genomics</strong></a> <br>
-            Discussion on how GPUs revolutionized DNA sequencing speeds.
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=8pCL_pq7zQM"><strong>AI in Healthcare</strong></a> <br>
-            Covering the integration of Parabricks into NVIDIA's Clara ecosystem.
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=pWCIFz2t8a8"><strong>Startup Journey</strong></a> <br>
-            From founding a company to acquisition by a tech giant.
-        </li>
-    </ul>
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, observerOptions);
 
-    <h2>Bio & Timeline</h2>
-    <ul class="simple-list">
-        <li><strong>Present:</strong> GenAI Expert @ NVIDIA.</li>
-        <li><strong>2020:</strong> Parabricks acquired by NVIDIA.</li>
-        <li><strong>2016-2020:</strong> Co-Founder & CEO, Parabricks.</li>
-        <li><strong>Education:</strong> Focused on High-Performance Computing and GPU acceleration.</li>
-    </ul>
-
-    <br><br>
-    <div style="font-size: 12px; color: #888; border-top: 1px solid #eee; padding-top: 10px;">
-        &copy; 2025 Mehrzad Samadi.
-    </div>
-
-</div>
-
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
