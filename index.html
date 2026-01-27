@@ -369,15 +369,14 @@
       observer.observe(el);
     });
 
-    // YouTube Video Loader
-    const YOUTUBE_API_KEY = 'YOUR_YOUTUBE_API_KEY_HERE'; // Replace with your API key
+    // YouTube Video Loader using RSS feed (no API key needed!)
     const CHANNEL_ID = 'UCxhVFxUe0jcbHUixLb4iPVw'; // @mehrzad.samadi channel ID
     const MAX_RESULTS = 5;
 
     async function loadYouTubeVideos() {
       const container = document.getElementById('youtube-videos');
 
-      // Fallback videos if API key is not configured
+      // Fallback videos in case RSS fetch fails
       const fallbackVideos = [
         { id: 'WuqWQ4jRaP8', title: 'Latest Technology Discussion' },
         { id: 'T8Y7jZ4q1X0', title: 'AI and Technology Trends' },
@@ -388,23 +387,25 @@
 
       let videos = fallbackVideos;
 
-      // Try to fetch from YouTube API if key is configured
-      if (YOUTUBE_API_KEY !== 'YOUR_YOUTUBE_API_KEY_HERE') {
-        try {
-          const response = await fetch(
-            `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}&type=video`
-          );
+      // Try to fetch from YouTube RSS feed (no API key required!)
+      try {
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+        const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${MAX_RESULTS}`);
 
-          if (response.ok) {
-            const data = await response.json();
-            videos = data.items.map(item => ({
-              id: item.id.videoId,
-              title: item.snippet.title
-            }));
+        if (response.ok) {
+          const data = await response.json();
+          if (data.status === 'ok' && data.items) {
+            videos = data.items.map(item => {
+              const videoId = item.link.split('v=')[1];
+              return {
+                id: videoId,
+                title: item.title
+              };
+            });
           }
-        } catch (error) {
-          console.log('Using fallback videos');
         }
+      } catch (error) {
+        console.log('Using fallback videos:', error);
       }
 
       // Render videos
@@ -422,7 +423,7 @@
             </iframe>
           </div>
           <div class="p-4">
-            <h3 class="font-semibold text-slate-900 dark:text-white truncate">${video.title}</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">${video.title}</h3>
           </div>
         </div>
       `).join('');
