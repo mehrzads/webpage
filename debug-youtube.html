@@ -33,38 +33,57 @@
       tests.push({ name: 'User handle', url: rssUrl1 });
 
       // Test 2: channel_id format
-      if (input.startsWith('UC') || input.startsWith('@')) {
-        const channelId = input.startsWith('UC') ? input : null;
-        if (channelId) {
-          const rssUrl2 = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
-          tests.push({ name: 'Channel ID', url: rssUrl2 });
-        }
+      if (input.startsWith('UC')) {
+        const rssUrl2 = `https://www.youtube.com/feeds/videos.xml?channel_id=${input}`;
+        tests.push({ name: 'Channel ID', url: rssUrl2 });
+      } else if (!input.startsWith('@')) {
+        // Try as channel ID anyway
+        const rssUrl2 = `https://www.youtube.com/feeds/videos.xml?channel_id=${input}`;
+        tests.push({ name: 'Channel ID (assumed)', url: rssUrl2 });
       }
 
-      let results = '<h2>Results:</h2>';
+      let results = '<h2>Results (Direct RSS Parsing - No API Key Needed):</h2>';
 
       for (const test of tests) {
         try {
-          const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(test.url)}&count=5`;
-          const response = await fetch(apiUrl);
-          const data = await response.json();
+          const response = await fetch(test.url);
 
           results += `<h3>${test.name}</h3>`;
           results += `<p><strong>RSS URL:</strong> ${test.url}</p>`;
-          results += `<p><strong>Status:</strong> ${data.status}</p>`;
+          results += `<p><strong>HTTP Status:</strong> ${response.status}</p>`;
 
-          if (data.status === 'ok' && data.items && data.items.length > 0) {
-            results += `<p style="color: green;"><strong>✅ SUCCESS - Found ${data.items.length} videos</strong></p>`;
-            results += '<p><strong>Latest videos:</strong></p><ul>';
-            data.items.forEach(item => {
-              const videoId = item.link.split('v=')[1];
-              results += `<li>${item.title} (ID: ${videoId})</li>`;
-            });
-            results += '</ul>';
-            results += `<p><strong>Channel URL in feed:</strong> ${data.feed?.url || 'N/A'}</p>`;
+          if (response.ok) {
+            const xmlText = await response.text();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+            const entries = xmlDoc.querySelectorAll('entry');
+            const channelTitle = xmlDoc.querySelector('title')?.textContent;
+
+            if (entries.length > 0) {
+              results += `<p style="color: green;"><strong>✅ SUCCESS - Found ${entries.length} videos</strong></p>`;
+              results += `<p><strong>Channel:</strong> ${channelTitle}</p>`;
+              results += '<p><strong>Latest 5 videos:</strong></p><ul>';
+
+              for (let i = 0; i < Math.min(entries.length, 5); i++) {
+                const entry = entries[i];
+                const videoId = entry.querySelector('videoId')?.textContent ||
+                              entry.querySelector('yt\\:videoId')?.textContent;
+                const title = entry.querySelector('title')?.textContent;
+                const published = entry.querySelector('published')?.textContent;
+
+                if (videoId && title) {
+                  results += `<li><strong>${title}</strong><br>`;
+                  results += `Video ID: ${videoId}<br>`;
+                  results += `Published: ${published ? new Date(published).toLocaleDateString() : 'N/A'}</li>`;
+                }
+              }
+              results += '</ul>';
+            } else {
+              results += `<p style="color: orange;"><strong>⚠️ No videos found</strong></p>`;
+            }
           } else {
-            results += `<p style="color: red;"><strong>❌ FAILED</strong></p>`;
-            results += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            results += `<p style="color: red;"><strong>❌ FAILED - HTTP ${response.status}</strong></p>`;
           }
         } catch (error) {
           results += `<h3>${test.name}</h3>`;

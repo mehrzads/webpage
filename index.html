@@ -369,8 +369,8 @@
       observer.observe(el);
     });
 
-    // YouTube Video Loader using RSS feed (no API key needed!)
-    const CHANNEL_HANDLE = '@mehrzad.samadi';
+    // YouTube Video Loader - Direct RSS parsing (no API key needed!)
+    const CHANNEL_ID = 'UCxhVFxUe0jcbHUixLb4iPVw';
     const MAX_RESULTS = 5;
 
     async function loadYouTubeVideos() {
@@ -387,33 +387,41 @@
 
       let videos = fallbackVideos;
 
-      // Try to fetch from YouTube RSS feed using channel handle (no API key required!)
+      // Fetch YouTube RSS feed directly and parse XML
       try {
-        // Try with user handle first
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?user=${CHANNEL_HANDLE.replace('@', '')}`;
-        let response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${MAX_RESULTS}`);
-
-        if (!response.ok || (await response.clone().json()).status !== 'ok') {
-          // Fallback: try with channel ID format
-          const altRssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=UCxhVFxUe0jcbHUixLb4iPVw`;
-          response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(altRssUrl)}&count=${MAX_RESULTS}`);
-        }
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+        const response = await fetch(rssUrl);
 
         if (response.ok) {
-          const data = await response.json();
-          if (data.status === 'ok' && data.items && data.items.length > 0) {
-            videos = data.items.map(item => {
-              const videoId = item.link.split('v=')[1];
-              return {
-                id: videoId,
-                title: item.title
-              };
-            });
-            console.log('Loaded latest videos from channel:', videos);
+          const xmlText = await response.text();
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+          // Parse entries from the feed
+          const entries = xmlDoc.querySelectorAll('entry');
+          videos = [];
+
+          for (let i = 0; i < Math.min(entries.length, MAX_RESULTS); i++) {
+            const entry = entries[i];
+            const videoId = entry.querySelector('videoId')?.textContent ||
+                          entry.querySelector('yt\\:videoId')?.textContent;
+            const title = entry.querySelector('title')?.textContent;
+
+            if (videoId && title) {
+              videos.push({ id: videoId, title: title });
+            }
+          }
+
+          if (videos.length > 0) {
+            console.log('✅ Loaded latest videos from channel:', videos);
+          } else {
+            console.log('⚠️ No videos found, using fallback');
+            videos = fallbackVideos;
           }
         }
       } catch (error) {
-        console.log('Using fallback videos:', error);
+        console.log('❌ Error loading videos, using fallback:', error);
+        videos = fallbackVideos;
       }
 
       // Render videos
