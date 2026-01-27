@@ -370,7 +370,7 @@
     });
 
     // YouTube Video Loader using RSS feed (no API key needed!)
-    const CHANNEL_ID = 'UCxhVFxUe0jcbHUixLb4iPVw'; // @mehrzad.samadi channel ID
+    const CHANNEL_HANDLE = '@mehrzad.samadi';
     const MAX_RESULTS = 5;
 
     async function loadYouTubeVideos() {
@@ -387,14 +387,21 @@
 
       let videos = fallbackVideos;
 
-      // Try to fetch from YouTube RSS feed (no API key required!)
+      // Try to fetch from YouTube RSS feed using channel handle (no API key required!)
       try {
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-        const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${MAX_RESULTS}`);
+        // Try with user handle first
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?user=${CHANNEL_HANDLE.replace('@', '')}`;
+        let response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${MAX_RESULTS}`);
+
+        if (!response.ok || (await response.clone().json()).status !== 'ok') {
+          // Fallback: try with channel ID format
+          const altRssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=UCxhVFxUe0jcbHUixLb4iPVw`;
+          response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(altRssUrl)}&count=${MAX_RESULTS}`);
+        }
 
         if (response.ok) {
           const data = await response.json();
-          if (data.status === 'ok' && data.items) {
+          if (data.status === 'ok' && data.items && data.items.length > 0) {
             videos = data.items.map(item => {
               const videoId = item.link.split('v=')[1];
               return {
@@ -402,6 +409,7 @@
                 title: item.title
               };
             });
+            console.log('Loaded latest videos from channel:', videos);
           }
         }
       } catch (error) {

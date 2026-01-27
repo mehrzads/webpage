@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Channel ID Finder</title>
+  <style>
+    body { font-family: Arial; max-width: 800px; margin: 50px auto; padding: 20px; }
+    input { width: 100%; padding: 10px; margin: 10px 0; font-size: 16px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    pre { background: #f4f4f4; padding: 15px; overflow-x: auto; }
+    .result { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>YouTube Channel ID Finder</h1>
+  <p>Enter your YouTube channel handle (e.g., @mehrzad.samadi) or channel ID:</p>
+
+  <input type="text" id="channelInput" value="@mehrzad.samadi" placeholder="@username or channel ID">
+  <button onclick="testChannel()">Test Channel</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    async function testChannel() {
+      const input = document.getElementById('channelInput').value.trim();
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = '<p>Testing...</p>';
+
+      const tests = [];
+
+      // Test 1: user handle without @
+      const handle = input.replace('@', '');
+      const rssUrl1 = `https://www.youtube.com/feeds/videos.xml?user=${handle}`;
+      tests.push({ name: 'User handle', url: rssUrl1 });
+
+      // Test 2: channel_id format
+      if (input.startsWith('UC') || input.startsWith('@')) {
+        const channelId = input.startsWith('UC') ? input : null;
+        if (channelId) {
+          const rssUrl2 = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+          tests.push({ name: 'Channel ID', url: rssUrl2 });
+        }
+      }
+
+      let results = '<h2>Results:</h2>';
+
+      for (const test of tests) {
+        try {
+          const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(test.url)}&count=5`;
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+
+          results += `<h3>${test.name}</h3>`;
+          results += `<p><strong>RSS URL:</strong> ${test.url}</p>`;
+          results += `<p><strong>Status:</strong> ${data.status}</p>`;
+
+          if (data.status === 'ok' && data.items && data.items.length > 0) {
+            results += `<p style="color: green;"><strong>✅ SUCCESS - Found ${data.items.length} videos</strong></p>`;
+            results += '<p><strong>Latest videos:</strong></p><ul>';
+            data.items.forEach(item => {
+              const videoId = item.link.split('v=')[1];
+              results += `<li>${item.title} (ID: ${videoId})</li>`;
+            });
+            results += '</ul>';
+            results += `<p><strong>Channel URL in feed:</strong> ${data.feed?.url || 'N/A'}</p>`;
+          } else {
+            results += `<p style="color: red;"><strong>❌ FAILED</strong></p>`;
+            results += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+          }
+        } catch (error) {
+          results += `<h3>${test.name}</h3>`;
+          results += `<p style="color: red;"><strong>Error:</strong> ${error.message}</p>`;
+        }
+      }
+
+      resultDiv.innerHTML = results;
+    }
+
+    // Auto-run on load
+    window.onload = () => testChannel();
+  </script>
+</body>
+</html>
