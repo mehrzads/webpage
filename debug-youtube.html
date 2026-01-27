@@ -13,6 +13,9 @@
 <body>
   <h1>YouTube Channel ID Finder</h1>
   <p>Enter your YouTube channel handle (e.g., @mehrzad.samadi) or channel ID:</p>
+  <p style="background: #e3f2fd; padding: 10px; border-left: 4px solid #2196f3;">
+    <strong>Note:</strong> Using allOrigins CORS proxy to fetch YouTube RSS feeds (free service).
+  </p>
 
   <input type="text" id="channelInput" value="@mehrzad.samadi" placeholder="@username or channel ID">
   <button onclick="testChannel()">Test Channel</button>
@@ -42,14 +45,17 @@
         tests.push({ name: 'Channel ID (assumed)', url: rssUrl2 });
       }
 
-      let results = '<h2>Results (Direct RSS Parsing - No API Key Needed):</h2>';
+      let results = '<h2>Results (via CORS Proxy - No API Key Needed):</h2>';
 
       for (const test of tests) {
         try {
-          const response = await fetch(test.url);
+          // Use CORS proxy to avoid CORS issues
+          const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(test.url)}`;
+          const response = await fetch(proxyUrl);
 
           results += `<h3>${test.name}</h3>`;
           results += `<p><strong>RSS URL:</strong> ${test.url}</p>`;
+          results += `<p><strong>Proxy URL:</strong> ${proxyUrl}</p>`;
           results += `<p><strong>HTTP Status:</strong> ${response.status}</p>`;
 
           if (response.ok) {

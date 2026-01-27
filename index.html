@@ -369,7 +369,7 @@
       observer.observe(el);
     });
 
-    // YouTube Video Loader - Direct RSS parsing (no API key needed!)
+    // YouTube Video Loader - Using CORS proxy to fetch RSS feed
     const CHANNEL_ID = 'UCxhVFxUe0jcbHUixLb4iPVw';
     const MAX_RESULTS = 5;
 
@@ -387,10 +387,13 @@
 
       let videos = fallbackVideos;
 
-      // Fetch YouTube RSS feed directly and parse XML
+      // Fetch YouTube RSS feed via CORS proxy
       try {
         const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-        const response = await fetch(rssUrl);
+        // Use allOrigins as CORS proxy - free and reliable
+        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+
+        const response = await fetch(proxyUrl);
 
         if (response.ok) {
           const xmlText = await response.text();
