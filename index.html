@@ -390,8 +390,8 @@
       // Fetch YouTube RSS feed via CORS proxy
       try {
         const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-        // Use allOrigins as CORS proxy - free and reliable
-        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+        // Use corsproxy.io - more reliable for YouTube feeds
+        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
 
         const response = await fetch(proxyUrl);
 

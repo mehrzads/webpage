@@ -14,7 +14,7 @@
   <h1>YouTube Channel ID Finder</h1>
   <p>Enter your YouTube channel handle (e.g., @mehrzad.samadi) or channel ID:</p>
   <p style="background: #e3f2fd; padding: 10px; border-left: 4px solid #2196f3;">
-    <strong>Note:</strong> Using allOrigins CORS proxy to fetch YouTube RSS feeds (free service).
+    <strong>Note:</strong> Using corsproxy.io to fetch YouTube RSS feeds (free service).
   </p>
 
   <input type="text" id="channelInput" value="UCprtwWNkaWcAxcBV44lPHzQ" placeholder="@username or channel ID">
@@ -50,7 +50,7 @@
       for (const test of tests) {
         try {
           // Use CORS proxy to avoid CORS issues
-          const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(test.url)}`;
+          const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(test.url)}`;
           const response = await fetch(proxyUrl);
 
           results += `<h3>${test.name}</h3>`;
