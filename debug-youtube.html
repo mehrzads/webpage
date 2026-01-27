@@ -66,6 +66,9 @@
             const entries = xmlDoc.querySelectorAll('entry');
             const channelTitle = xmlDoc.querySelector('title')?.textContent;
 
+            // Show raw XML for debugging
+            results += `<details><summary>Show Raw XML Response (first 2000 chars)</summary><pre>${xmlText.substring(0, 2000)}</pre></details>`;
+
             if (entries.length > 0) {
               results += `<p style="color: green;"><strong>✅ SUCCESS - Found ${entries.length} videos</strong></p>`;
               results += `<p><strong>Channel:</strong> ${channelTitle}</p>`;
@@ -86,7 +89,9 @@
               }
               results += '</ul>';
             } else {
-              results += `<p style="color: orange;"><strong>⚠️ No videos found</strong></p>`;
+              results += `<p style="color: orange;"><strong>⚠️ No videos found in XML</strong></p>`;
+              results += `<p>Channel Title from XML: ${channelTitle || 'Not found'}</p>`;
+              results += `<p>Number of 'entry' elements: ${entries.length}</p>`;
             }
           } else {
             results += `<p style="color: red;"><strong>❌ FAILED - HTTP ${response.status}</strong></p>`;
