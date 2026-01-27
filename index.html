@@ -279,10 +279,60 @@
           </a>
         </div>
 
-        <div id="youtube-videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Videos will be loaded dynamically -->
-            <div class="col-span-full flex items-center justify-center py-12">
-              <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+        <!--
+          TO UPDATE VIDEOS: Replace the video IDs below with your latest uploads
+          Get video ID from URL: youtube.com/watch?v=VIDEO_ID_HERE
+          Keep the 5 most recent videos
+        -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Video 1 -->
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal">
+                <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/WuqWQ4jRaP8" title="Latest Technology Discussion" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">Latest Discussion</h3>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-100">
+                <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/T8Y7jZ4q1X0" title="AI and Technology" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                 <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">Technology Trends</h3>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-200">
+                 <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/zHu78PKkics" title="Deep Learning Discussion" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">AI Insights</h3>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-300">
+                 <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/UliNhl5JlVk" title="AI Innovation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">Innovation Talk</h3>
+                </div>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal delay-400">
+                 <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/8pCL_pq7zQM" title="Technology Leadership" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">Leadership Insights</h3>
+                </div>
             </div>
         </div>
       </div>
@@ -368,93 +418,6 @@
     document.querySelectorAll('.reveal').forEach(el => {
       observer.observe(el);
     });
-
-    // YouTube Video Loader - Using CORS proxy to fetch RSS feed
-    const CHANNEL_ID = 'UCprtwWNkaWcAxcBV44lPHzQ';
-    const MAX_RESULTS = 5;
-
-    async function loadYouTubeVideos() {
-      const container = document.getElementById('youtube-videos');
-
-      // Fallback videos in case RSS fetch fails
-      const fallbackVideos = [
-        { id: 'WuqWQ4jRaP8', title: 'Latest Technology Discussion' },
-        { id: 'T8Y7jZ4q1X0', title: 'AI and Technology Trends' },
-        { id: 'zHu78PKkics', title: 'Deep Learning Insights' },
-        { id: 'UliNhl5JlVk', title: 'AI Innovation' },
-        { id: '8pCL_pq7zQM', title: 'Technology Leadership' }
-      ];
-
-      let videos = fallbackVideos;
-
-      // Fetch YouTube RSS feed via CORS proxy
-      try {
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-        // Use corsproxy.io - more reliable for YouTube feeds
-        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
-
-        const response = await fetch(proxyUrl);
-
-        if (response.ok) {
-          const xmlText = await response.text();
-          const parser = new DOMParser();
-          const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-          // Parse entries from the feed
-          const entries = xmlDoc.querySelectorAll('entry');
-          videos = [];
-
-          for (let i = 0; i < Math.min(entries.length, MAX_RESULTS); i++) {
-            const entry = entries[i];
-            const videoId = entry.querySelector('videoId')?.textContent ||
-                          entry.querySelector('yt\\:videoId')?.textContent;
-            const title = entry.querySelector('title')?.textContent;
-
-            if (videoId && title) {
-              videos.push({ id: videoId, title: title });
-            }
-          }
-
-          if (videos.length > 0) {
-            console.log('✅ Loaded latest videos from channel:', videos);
-          } else {
-            console.log('⚠️ No videos found, using fallback');
-            videos = fallbackVideos;
-          }
-        }
-      } catch (error) {
-        console.log('❌ Error loading videos, using fallback:', error);
-        videos = fallbackVideos;
-      }
-
-      // Render videos
-      container.innerHTML = videos.map((video, index) => `
-        <div class="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ring-slate-200 dark:ring-white/10 reveal" style="animation-delay: ${index * 100}ms">
-          <div class="aspect-video w-full bg-slate-200 dark:bg-slate-900 relative">
-            <iframe
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/${video.id}"
-              title="${video.title}"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-slate-900 dark:text-white line-clamp-2">${video.title}</h3>
-          </div>
-        </div>
-      `).join('');
-
-      // Re-observe new elements for reveal animation
-      container.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-      });
-    }
-
-    // Load videos when page loads
-    loadYouTubeVideos();
   </script>
 </body>
 </html>
