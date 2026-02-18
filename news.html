@@ -165,12 +165,14 @@
             <div id="twitter-widget" class="rounded-xl overflow-hidden border border-apple-light-border dark:border-apple-dark-border">
               <a class="twitter-timeline"
                  href="https://twitter.com/mehrzadsamadi"
-                 data-chrome="noheader nofooter noborders transparent"
+                 data-chrome="noheader nofooter"
                  data-tweet-limit="8"
+                 data-height="600"
                  data-dnt="true"
                  id="twitter-timeline-anchor">
                 Tweets by @mehrzadsamadi
               </a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
@@ -294,14 +296,14 @@
 
     loadNews();
 
-    // Set Twitter widget theme based on current mode before SDK loads
+    // Set Twitter widget theme based on current page mode
     const twitterAnchor = document.getElementById('twitter-timeline-anchor');
     if (twitterAnchor) {
       twitterAnchor.setAttribute('data-theme',
         document.documentElement.classList.contains('dark') ? 'dark' : 'light');
     }
 
-    // Re-render widget on theme toggle by swapping the anchor and reloading
+    // Re-render widget on theme toggle
     document.getElementById('theme-toggle').addEventListener('click', () => {
       setTimeout(() => {
         const isDark = document.documentElement.classList.contains('dark');
@@ -310,26 +312,18 @@
           <a class="twitter-timeline"
              href="https://twitter.com/mehrzadsamadi"
              data-theme="${isDark ? 'dark' : 'light'}"
-             data-chrome="noheader nofooter noborders transparent"
+             data-chrome="noheader nofooter"
              data-tweet-limit="8"
+             data-height="600"
              data-dnt="true">
             Tweets by @mehrzadsamadi
-          </a>`;
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"><\/script>`;
         if (window.twttr && window.twttr.widgets) {
           window.twttr.widgets.load(container);
         }
       }, 50);
     });
-
-    // Load Twitter SDK
-    !function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (!d.getElementById(id)) {
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-    }(document, 'script', 'twitter-wjs');
   </script>
 </body>
 </html>
