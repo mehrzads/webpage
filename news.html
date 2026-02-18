@@ -114,7 +114,7 @@
       <!-- Page header -->
       <div class="mb-12">
         <h1 class="text-5xl font-bold tracking-tight text-black dark:text-white mb-4">Deep Learning News</h1>
-        <p class="text-[17px] text-apple-gray">Latest research and updates from the AI world — refreshed every time you visit.</p>
+        <p class="text-[17px] text-apple-gray">Latest research and updates from the AI world — auto-refreshed every hour. <span id="last-updated" class="text-sm"></span></p>
       </div>
 
       <!-- Source filter tabs -->
@@ -177,43 +177,6 @@
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
 
-    // Sources config
-    const SOURCES = [
-      {
-        id: 'arxiv',
-        name: 'Arxiv',
-        color: '#B31B1B',
-        textColor: '#fff',
-        url: 'https://rss.app/feeds/v1.1/_hmwdgI6kqnCHFkgJ.json',
-        // fallback direct RSS via proxy
-        rss: 'https://export.arxiv.org/rss/cs.LG',
-      },
-      {
-        id: 'huggingface',
-        name: 'HuggingFace',
-        color: '#FF9D00',
-        textColor: '#000',
-        rss: 'https://huggingface.co/blog/feed.xml',
-      },
-      {
-        id: 'deepmind',
-        name: 'DeepMind',
-        color: '#4285F4',
-        textColor: '#fff',
-        rss: 'https://deepmind.google/blog/rss.xml',
-      },
-      {
-        id: 'openai',
-        name: 'OpenAI',
-        color: '#10a37f',
-        textColor: '#fff',
-        rss: 'https://openai.com/blog/rss.xml',
-      },
-    ];
-
-    // RSS to JSON proxy (free, no key needed)
-    const RSS2JSON = 'https://api.rss2json.com/v1/api.json?count=10&rss_url=';
-
     let allItems = [];
     let activeFilter = 'all';
 
@@ -227,15 +190,9 @@
       return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
 
-    function stripHtml(html) {
-      const tmp = document.createElement('div');
-      tmp.innerHTML = html;
-      return tmp.textContent || tmp.innerText || '';
-    }
-
     function truncate(str, n) {
-      const s = stripHtml(str || '');
-      return s.length > n ? s.slice(0, n).trim() + '…' : s;
+      if (!str) return '';
+      return str.length > n ? str.slice(0, n).trim() + '…' : str;
     }
 
     function renderCard(item) {
@@ -266,31 +223,20 @@
       }
     }
 
-    async function fetchSource(source) {
-      try {
-        const res = await fetch(RSS2JSON + encodeURIComponent(source.rss));
-        const data = await res.json();
-        if (data.status !== 'ok' || !data.items) return [];
-        return data.items.slice(0, 10).map(item => ({
-          title: item.title,
-          link: item.link,
-          description: item.description || item.content || '',
-          pubDate: item.pubDate,
-          sourceId: source.id,
-          sourceName: source.name,
-          sourceBadgeColor: source.color,
-          sourceBadgeText: source.textColor,
-        }));
-      } catch {
-        return [];
-      }
-    }
-
     async function loadNews() {
-      const results = await Promise.allSettled(SOURCES.map(fetchSource));
-      allItems = results
-        .flatMap(r => r.status === 'fulfilled' ? r.value : [])
-        .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+      try {
+        const res = await fetch('/news-data.json?t=' + Date.now());
+        const data = await res.json();
+        allItems = data.items || [];
+
+        // Show last-updated time
+        if (data.updatedAt) {
+          const updated = document.getElementById('last-updated');
+          if (updated) updated.textContent = 'Updated ' + timeAgo(data.updatedAt);
+        }
+      } catch (e) {
+        allItems = [];
+      }
 
       document.getElementById('skeletons').classList.add('hidden');
       const grid = document.getElementById('news-grid');
