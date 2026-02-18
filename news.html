@@ -117,66 +117,39 @@
         <p class="text-[17px] text-apple-gray">Latest research and updates from the AI world — auto-refreshed every hour. <span id="last-updated" class="text-sm"></span></p>
       </div>
 
-      <!-- Layout: news + twitter sidebar -->
-      <div class="flex flex-col lg:flex-row gap-8 items-start">
+      <!-- Source filter tabs -->
+      <div class="flex flex-wrap gap-2 mb-10" id="filter-tabs">
+        <button data-source="all" class="filter-btn active px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-black dark:border-white bg-black dark:bg-white text-white dark:text-black">All</button>
+        <button data-source="arxiv" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">Arxiv</button>
+        <button data-source="huggingface" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">HuggingFace</button>
+        <button data-source="deepmind" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">DeepMind</button>
+        <button data-source="openai" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">OpenAI</button>
+      </div>
 
-        <!-- Left: News feed -->
-        <div class="flex-1 min-w-0">
-          <!-- Source filter tabs -->
-          <div class="flex flex-wrap gap-2 mb-8" id="filter-tabs">
-            <button data-source="all" class="filter-btn active px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-black dark:border-white bg-black dark:bg-white text-white dark:text-black">All</button>
-            <button data-source="arxiv" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">Arxiv</button>
-            <button data-source="huggingface" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">HuggingFace</button>
-            <button data-source="deepmind" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">DeepMind</button>
-            <button data-source="openai" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">OpenAI</button>
-          </div>
+      <!-- Skeleton loaders -->
+      <div id="skeletons" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <script>
+          for (let i = 0; i < 9; i++) {
+            document.write(`
+              <div class="rounded-xl border border-apple-light-border dark:border-apple-dark-border p-5 space-y-3">
+                <div class="skeleton h-3 w-20"></div>
+                <div class="skeleton h-5 w-full"></div>
+                <div class="skeleton h-5 w-3/4"></div>
+                <div class="skeleton h-3 w-full mt-2"></div>
+                <div class="skeleton h-3 w-5/6"></div>
+                <div class="skeleton h-3 w-16 mt-2"></div>
+              </div>
+            `);
+          }
+        </script>
+      </div>
 
-          <!-- Skeleton loaders -->
-          <div id="skeletons" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <script>
-              for (let i = 0; i < 6; i++) {
-                document.write(`
-                  <div class="rounded-xl border border-apple-light-border dark:border-apple-dark-border p-5 space-y-3">
-                    <div class="skeleton h-3 w-20"></div>
-                    <div class="skeleton h-5 w-full"></div>
-                    <div class="skeleton h-5 w-3/4"></div>
-                    <div class="skeleton h-3 w-full mt-2"></div>
-                    <div class="skeleton h-3 w-5/6"></div>
-                    <div class="skeleton h-3 w-16 mt-2"></div>
-                  </div>
-                `);
-              }
-            </script>
-          </div>
+      <!-- News grid -->
+      <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
 
-          <!-- News grid -->
-          <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden"></div>
-
-          <!-- Error state -->
-          <div id="error-state" class="hidden text-center py-24">
-            <p class="text-apple-gray text-lg">Couldn't load news right now. <a href="" class="text-black dark:text-white underline">Try again</a>.</p>
-          </div>
-        </div>
-
-        <!-- Right: Twitter sidebar -->
-        <div class="w-full lg:w-80 xl:w-96 flex-shrink-0">
-          <div class="sticky top-24">
-            <h2 class="text-lg font-semibold text-black dark:text-white mb-4">Latest Tweets</h2>
-            <div id="twitter-widget" class="rounded-xl overflow-hidden border border-apple-light-border dark:border-apple-dark-border">
-              <a class="twitter-timeline"
-                 href="https://twitter.com/mehrzadsamadi"
-                 data-chrome="noheader nofooter"
-                 data-tweet-limit="8"
-                 data-height="600"
-                 data-dnt="true"
-                 id="twitter-timeline-anchor">
-                Tweets by @mehrzadsamadi
-              </a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-          </div>
-        </div>
-
+      <!-- Error state -->
+      <div id="error-state" class="hidden text-center py-24">
+        <p class="text-apple-gray text-lg">Couldn't load news right now. <a href="" class="text-black dark:text-white underline">Try again</a>.</p>
       </div>
 
     </div>
@@ -296,34 +269,6 @@
 
     loadNews();
 
-    // Set Twitter widget theme based on current page mode
-    const twitterAnchor = document.getElementById('twitter-timeline-anchor');
-    if (twitterAnchor) {
-      twitterAnchor.setAttribute('data-theme',
-        document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    }
-
-    // Re-render widget on theme toggle
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-      setTimeout(() => {
-        const isDark = document.documentElement.classList.contains('dark');
-        const container = document.getElementById('twitter-widget');
-        container.innerHTML = `
-          <a class="twitter-timeline"
-             href="https://twitter.com/mehrzadsamadi"
-             data-theme="${isDark ? 'dark' : 'light'}"
-             data-chrome="noheader nofooter"
-             data-tweet-limit="8"
-             data-height="600"
-             data-dnt="true">
-            Tweets by @mehrzadsamadi
-          </a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"><\/script>`;
-        if (window.twttr && window.twttr.widgets) {
-          window.twttr.widgets.load(container);
-        }
-      }, 50);
-    });
   </script>
 </body>
 </html>
