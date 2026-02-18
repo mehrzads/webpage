@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Learning News - Mehrzad Samadi</title>
+  <meta name="description" content="Latest news and research in deep learning and generative AI, curated by Mehrzad Samadi.">
+  <link rel="canonical" href="https://mehrzad.ai/news" />
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+          },
+          colors: {
+            nvidia: '#76B900',
+            apple: {
+              gray: '#86868B',
+              'light-bg': '#F5F5F7',
+              'light-card': '#FFFFFF',
+              'light-border': '#D2D2D7',
+              'dark-bg': '#000000',
+              'dark-card': '#1D1D1F',
+              'dark-elevated': '#2C2C2E',
+              'dark-border': '#424245',
+            }
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #D2D2D7; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #424245; }
+    html { scroll-padding-top: 100px; }
+
+    .source-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .skeleton {
+      background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 8px;
+    }
+    .dark .skeleton {
+      background: linear-gradient(90deg, #2c2c2e 25%, #3a3a3c 50%, #2c2c2e 75%);
+      background-size: 200% 100%;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  </style>
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
+
+<body class="bg-white text-black antialiased selection:bg-black selection:text-white dark:bg-black dark:text-white transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-black/80 backdrop-blur-xl border-b border-black/10 dark:border-white/10 transition-all">
+    <div class="mx-auto max-w-[1120px] px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-semibold tracking-tight group">
+        Mehrzad<span class="text-black dark:text-white group-hover:opacity-60 transition-opacity">.</span>
+      </a>
+
+      <div class="flex items-center gap-6">
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8 text-[17px] text-black/70 dark:text-white/70">
+            <li><a href="/#about" class="hover:text-black dark:hover:text-white transition-colors">About</a></li>
+            <li><a href="/#youtube" class="hover:text-black dark:hover:text-white transition-colors">YouTube</a></li>
+            <li><a href="/#podcasts" class="hover:text-black dark:hover:text-white transition-colors">Podcasts</a></li>
+            <li><a href="/news" class="text-black dark:text-white font-medium transition-colors">News</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-black/70 dark:text-white/70 focus:outline-none">
+          <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-24 px-6">
+    <div class="mx-auto max-w-[1120px]">
+
+      <!-- Page header -->
+      <div class="mb-12">
+        <h1 class="text-5xl font-bold tracking-tight text-black dark:text-white mb-4">Deep Learning News</h1>
+        <p class="text-[17px] text-apple-gray">Latest research and updates from the AI world — refreshed every time you visit.</p>
+      </div>
+
+      <!-- Source filter tabs -->
+      <div class="flex flex-wrap gap-2 mb-10" id="filter-tabs">
+        <button data-source="all" class="filter-btn active px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-black dark:border-white bg-black dark:bg-white text-white dark:text-black">All</button>
+        <button data-source="arxiv" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">Arxiv</button>
+        <button data-source="huggingface" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">HuggingFace</button>
+        <button data-source="deepmind" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">DeepMind</button>
+        <button data-source="openai" class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium border transition-colors border-apple-light-border dark:border-apple-dark-border text-apple-gray hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">OpenAI</button>
+      </div>
+
+      <!-- Skeleton loaders -->
+      <div id="skeletons" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <script>
+          for (let i = 0; i < 9; i++) {
+            document.write(`
+              <div class="rounded-xl border border-apple-light-border dark:border-apple-dark-border p-5 space-y-3">
+                <div class="skeleton h-3 w-20"></div>
+                <div class="skeleton h-5 w-full"></div>
+                <div class="skeleton h-5 w-3/4"></div>
+                <div class="skeleton h-3 w-full mt-2"></div>
+                <div class="skeleton h-3 w-5/6"></div>
+                <div class="skeleton h-3 w-16 mt-2"></div>
+              </div>
+            `);
+          }
+        </script>
+      </div>
+
+      <!-- News grid -->
+      <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
+
+      <!-- Error state -->
+      <div id="error-state" class="hidden text-center py-24">
+        <p class="text-apple-gray text-lg">Couldn't load news right now. <a href="" class="text-black dark:text-white underline">Try again</a>.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-16 border-t border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-black">
+    <div class="mx-auto max-w-[1120px] px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-apple-gray text-xs">
+        &copy; <span id="current-year"></span> Mehrzad Samadi.
+      </div>
+      <div class="flex space-x-8 text-xs">
+        <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">Twitter</a>
+        <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">LinkedIn</a>
+        <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    // Sources config
+    const SOURCES = [
+      {
+        id: 'arxiv',
+        name: 'Arxiv',
+        color: '#B31B1B',
+        textColor: '#fff',
+        url: 'https://rss.app/feeds/v1.1/_hmwdgI6kqnCHFkgJ.json',
+        // fallback direct RSS via proxy
+        rss: 'https://export.arxiv.org/rss/cs.LG',
+      },
+      {
+        id: 'huggingface',
+        name: 'HuggingFace',
+        color: '#FF9D00',
+        textColor: '#000',
+        rss: 'https://huggingface.co/blog/feed.xml',
+      },
+      {
+        id: 'deepmind',
+        name: 'DeepMind',
+        color: '#4285F4',
+        textColor: '#fff',
+        rss: 'https://deepmind.google/blog/rss.xml',
+      },
+      {
+        id: 'openai',
+        name: 'OpenAI',
+        color: '#10a37f',
+        textColor: '#fff',
+        rss: 'https://openai.com/blog/rss.xml',
+      },
+    ];
+
+    // RSS to JSON proxy (free, no key needed)
+    const RSS2JSON = 'https://api.rss2json.com/v1/api.json?count=10&rss_url=';
+
+    let allItems = [];
+    let activeFilter = 'all';
+
+    function timeAgo(dateStr) {
+      const date = new Date(dateStr);
+      if (isNaN(date)) return '';
+      const diff = (Date.now() - date.getTime()) / 1000;
+      if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+      if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+      if (diff < 604800) return `${Math.floor(diff / 86400)}d ago`;
+      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    }
+
+    function stripHtml(html) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+    function truncate(str, n) {
+      const s = stripHtml(str || '');
+      return s.length > n ? s.slice(0, n).trim() + '…' : s;
+    }
+
+    function renderCard(item) {
+      return `
+        <a href="${item.link}" target="_blank" rel="noopener noreferrer" data-source="${item.sourceId}"
+           class="news-card group flex flex-col rounded-xl border border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-apple-dark-card p-5 hover:border-black/30 dark:hover:border-white/30 hover:shadow-md transition-all duration-200">
+          <div class="flex items-center justify-between mb-3">
+            <span class="source-badge" style="background:${item.sourceBadgeColor};color:${item.sourceBadgeText}">${item.sourceName}</span>
+            <span class="text-xs text-apple-gray">${timeAgo(item.pubDate)}</span>
+          </div>
+          <h2 class="font-semibold text-[15px] text-black dark:text-white leading-snug mb-2 group-hover:opacity-80 transition-opacity line-clamp-3">${item.title}</h2>
+          <p class="text-[13px] text-apple-gray leading-relaxed line-clamp-3 flex-1">${truncate(item.description, 180)}</p>
+          <div class="mt-4 text-xs font-medium text-black/50 dark:text-white/40 group-hover:text-black dark:group-hover:text-white transition-colors">Read more →</div>
+        </a>
+      `;
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('news-grid');
+      const filtered = activeFilter === 'all'
+        ? allItems
+        : allItems.filter(i => i.sourceId === activeFilter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p class="col-span-3 text-center text-apple-gray py-12">No articles found.</p>';
+      } else {
+        grid.innerHTML = filtered.map(renderCard).join('');
+      }
+    }
+
+    async function fetchSource(source) {
+      try {
+        const res = await fetch(RSS2JSON + encodeURIComponent(source.rss));
+        const data = await res.json();
+        if (data.status !== 'ok' || !data.items) return [];
+        return data.items.slice(0, 10).map(item => ({
+          title: item.title,
+          link: item.link,
+          description: item.description || item.content || '',
+          pubDate: item.pubDate,
+          sourceId: source.id,
+          sourceName: source.name,
+          sourceBadgeColor: source.color,
+          sourceBadgeText: source.textColor,
+        }));
+      } catch {
+        return [];
+      }
+    }
+
+    async function loadNews() {
+      const results = await Promise.allSettled(SOURCES.map(fetchSource));
+      allItems = results
+        .flatMap(r => r.status === 'fulfilled' ? r.value : [])
+        .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
+      document.getElementById('skeletons').classList.add('hidden');
+      const grid = document.getElementById('news-grid');
+      grid.classList.remove('hidden');
+
+      if (allItems.length === 0) {
+        document.getElementById('error-state').classList.remove('hidden');
+        grid.classList.add('hidden');
+        return;
+      }
+
+      renderGrid();
+    }
+
+    // Filter tabs
+    document.getElementById('filter-tabs').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      activeFilter = btn.dataset.source;
+
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black', 'border-black', 'dark:border-white', 'active');
+        b.classList.add('border-apple-light-border', 'dark:border-apple-dark-border', 'text-apple-gray');
+      });
+      btn.classList.add('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black', 'border-black', 'dark:border-white', 'active');
+      btn.classList.remove('border-apple-light-border', 'dark:border-apple-dark-border', 'text-apple-gray');
+
+      renderGrid();
+    });
+
+    loadNews();
+  </script>
+</body>
+</html>
