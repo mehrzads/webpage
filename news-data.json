@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-18T22:17:26Z",
+  "updatedAt": "2026-02-18T22:43:43Z",
   "items": [
     {
       "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
@@ -142,6 +142,36 @@
       "sourceBadgeText": "#000"
     },
     {
+      "title": "Topping the GPU MODE Kernel Leaderboard with NVIDIA cuda.compute",
+      "link": "https://developer.nvidia.com/blog/topping-the-gpu-mode-kernel-leaderboard-with-nvidia-cuda-compute/",
+      "description": "Python dominates machine learning for its ergonomics, but writing truly fast GPU code has historically meant dropping into C++ to write custom kernels and to...",
+      "pubDate": "2026-02-17T22:19:16Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How NVIDIA Extreme Hardware-Software Co-Design Delivered a Large Inference Boost for Sarvam AI’s Sovereign Models",
+      "link": "https://developer.nvidia.com/blog/how-nvidia-extreme-hardware-software-co-design-delivered-a-large-inference-boost-for-sarvam-ais-sovereign-models/",
+      "description": "As global AI adoption accelerates, developers face a growing challenge: delivering large language model (LLM) performance that meets real-world latency and cost...",
+      "pubDate": "2026-02-17T22:18:51Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Unlock Massive Token Throughput with GPU Fractioning in NVIDIA Run:ai",
+      "link": "https://developer.nvidia.com/blog/unlock-massive-token-throughput-with-gpu-fractioning-in-nvidia-runai/",
+      "description": "As AI workloads scale, achieving high throughput, efficient resource usage, and predictable latency becomes essential. NVIDIA Run:ai addresses these challenges...",
+      "pubDate": "2026-02-17T20:27:05Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Accelerating discovery in India through AI-powered science and education",
       "link": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
       "description": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
@@ -149,6 +179,16 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
+      "link": "https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/",
+      "description": "Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...",
+      "pubDate": "2026-02-13T20:50:10Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
@@ -182,6 +222,46 @@
       "sourceBadgeText": "#000"
     },
     {
+      "title": "Using Accelerated Computing to Live-Steer Scientific Experiments at Massive Research Facilities",
+      "link": "https://developer.nvidia.com/blog/using-accelerated-computing-to-live-steer-scientific-experiments-at-massive-research-facilities/",
+      "description": "Scientists and engineers who design and build unique scientific research facilities face similar challenges. These include managing massive data rates that...",
+      "pubDate": "2026-02-11T18:32:07Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "The Death of Traditional Testing: Agentic Development Broke a 50-Year-Old Field, JiTTesting Can Revive It",
+      "link": "https://engineering.fb.com/2026/02/11/developer-tools/the-death-of-traditional-testing-agentic-development-jit-testing-revival/",
+      "description": "WHAT IT IS The rise of agentic software development means code is being written, reviewed, and shipped faster than ever before across the entire industry. It also means that testing frameworks need to evolve for this rapidly changing landscape. Faster development demands faster testing that can catch bugs as they land in a codebase, without [...] Read More... The post The Death of Traditional Test",
+      "pubDate": "Wed, 11 Feb 2026 17:00:05 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
+      "link": "https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab/",
+      "description": "Building robust, intelligent robots requires testing them in complex environments. However, gathering data in the physical world is expensive, slow, and often...",
+      "pubDate": "2026-02-10T00:41:27Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters",
+      "link": "https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/",
+      "description": "We’re sharing details of the role backend aggregation (BAG) plays in building Meta’s gigawatt-scale AI clusters like Prometheus. BAG allows us to seamlessly connect thousands of GPUs across multiple data centers and regions. Our BAG implementation is connecting two different network fabrics – Disaggregated Schedule Fabric (DSF) and Non-Scheduled Fabric (NSF). Once it’s complete our AI [...] Read M",
+      "pubDate": "Mon, 09 Feb 2026 17:00:33 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
       "link": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
       "description": "Research papers point to the growing impact of Deep Think across fields",
@@ -202,6 +282,46 @@
       "sourceBadgeText": "#000"
     },
     {
+      "title": "3 Ways NVFP4 Accelerates AI Training and Inference",
+      "link": "https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/",
+      "description": "The latest AI models continue to grow in size and complexity, demanding increasing amounts of compute performance for training and inference—far beyond what...",
+      "pubDate": "2026-02-07T00:33:25Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Automating Inference Optimizations with NVIDIA TensorRT LLM AutoDeploy",
+      "link": "https://developer.nvidia.com/blog/automating-inference-optimizations-with-nvidia-tensorrt-llm-autodeploy/",
+      "description": "NVIDIA TensorRT LLM enables developers to build high-performance inference engines for large language models (LLMs), but deploying a new architecture...",
+      "pubDate": "2026-02-06T19:46:46Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale",
+      "link": "https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale/",
+      "description": "Painkiller RTX sets a new standard for how small teams can balance massive visual ambition with limited resources by integrating generative AI. By upscaling...",
+      "pubDate": "2026-02-06T00:06:57Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How to Build License-Compliant Synthetic Data Pipelines for AI Model Distillation",
+      "link": "https://developer.nvidia.com/blog/how-to-build-license-compliant-synthetic-data-pipelines-for-ai-model-distillation/",
+      "description": "Specialized AI models are built to perform specific tasks or solve particular problems. But if you’ve ever tried to fine-tune or distill a domain-specific...",
+      "pubDate": "2026-02-05T21:17:57Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Introducing SyGra Studio",
       "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
       "description": "",
@@ -210,6 +330,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "No Display? No Problem: Cross-Device Passkey Authentication for XR Devices",
+      "link": "https://engineering.fb.com/2026/02/04/security/cross-device-passkey-authentication-for-xr-devices-meta-quest/",
+      "description": "We’re sharing a novel approach to enabling cross-device passkey authentication for devices with inaccessible displays (like XR devices). Our approach bypasses the use of QR codes and enables cross-device authentication without the need for an on-device display, while still complying with all trust and proximity requirements. This approach builds on work done by the FIDO [...] Read More... The post",
+      "pubDate": "Wed, 04 Feb 2026 22:00:07 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "Community Evals: Because we're done trusting black-box leaderboards over the community",
@@ -252,6 +382,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "Rust at Scale: An Added Layer of Security for WhatsApp",
+      "link": "https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/",
+      "description": "WhatsApp has adopted and rolled out a new layer of security for users – built with Rust – as part of its effort to harden defenses against malware threats. WhatsApp’s experience creating and distributing our media consistency library in Rust to billions of devices and browsers proves Rust is production ready at a global scale. [...] Read More... The post Rust at Scale: An Added Layer of Security f",
+      "pubDate": "Tue, 27 Jan 2026 15:00:09 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "D4RT: Teaching AI to see the world in four dimensions",
       "link": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
       "description": "D4RT: Unified, efficient 4D reconstruction and tracking up to 300x faster than prior methods.",
@@ -259,6 +399,16 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Adapting the Facebook Reels RecSys AI Model Based on User Feedback",
+      "link": "https://engineering.fb.com/2026/01/14/ml-applications/adapting-the-facebook-reels-recsys-ai-model-based-on-user-feedback/",
+      "description": "We’ve improved personalized video recommendations on Facebook Reels by moving beyond metrics such as likes and watch time and directly leveraging user feedback. Our new User True Interest Survey (UTIS) model, now helps surface more niche, high-quality content and boosts engagement, retention, and satisfaction. We’re doubling down on personalization, tackling challenges like sparse user data [...] ",
+      "pubDate": "Wed, 14 Jan 2026 20:51:33 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
       "sourceBadgeText": "#fff"
     },
     {
@@ -272,6 +422,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "CSS at Scale With StyleX",
+      "link": "https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/",
+      "description": "Build a large enough website with a large enough codebase, and you’ll eventually find that CSS presents challenges at scale. It’s no different at Meta, which is why we open-sourced StyleX, a solution for CSS at scale. StyleX combines the ergonomics of CSS-in-JS with the performance of static CSS. It allows atomic styling of components [...] Read More... The post CSS at Scale With StyleX appeared f",
+      "pubDate": "Mon, 12 Jan 2026 18:34:59 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
       "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
       "description": "Google 2025 recap: Research breakthroughs of the year",
@@ -279,6 +439,36 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Python Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption",
+      "link": "https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/",
+      "description": "The 2025 Typed Python Survey, conducted by contributors from JetBrains, Meta, and the broader Python typing community, offers a comprehensive look at the current state of Python’s type system and developer tooling. With 1,241 responses (a 15% increase from last year), the survey captures the evolving sentiment, challenges, and opportunities around Python typing in the [...] Read More... The post P",
+      "pubDate": "Mon, 22 Dec 2025 14:00:16 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "DrP: Meta’s Root Cause Analysis Platform at Scale",
+      "link": "https://engineering.fb.com/2025/12/19/data-infrastructure/drp-metas-root-cause-analysis-platform-at-scale/",
+      "description": "Incident investigation can be a daunting task in today’s digital landscape, where large-scale systems comprise numerous interconnected components and dependencies DrP is a root cause analysis (RCA) platform, designed by Meta, to programmatically automate the investigation process, significantly reducing the mean time to resolve (MTTR) for incidents and alleviating on-call toil Today, DrP is used [",
+      "pubDate": "Fri, 19 Dec 2025 17:35:13 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How We Built Meta Ray-Ban Display: From Zero to Polish",
+      "link": "https://engineering.fb.com/2025/12/17/virtual-reality/meta-ray-ban-display-from-zero-to-polish/",
+      "description": "We’re going behind the scenes of the Meta Ray-Ban Display, Meta’s most advanced AI glasses yet. In a previous episode we met the team behind the Meta Neural Band, the EMG wristband packaged with the Ray-Ban Display. Now we’re delving into the glasses themselves. Kenan and Emanuel, from Meta’s Wearables org, join Pascal Hartig on [...] Read More... The post How We Built Meta Ray-Ban Display: From Z",
+      "pubDate": "Wed, 17 Dec 2025 14:00:17 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
       "sourceBadgeText": "#fff"
     },
     {
@@ -299,6 +489,26 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "v1.0.0",
+      "link": "https://github.com/deepseek-ai/DeepSeek-V3/releases/tag/v1.0.0",
+      "description": "This release is created for archival purposes and DOI generation.",
+      "pubDate": "2025-06-27T08:46:37Z",
+      "sourceId": "deepseek",
+      "sourceName": "DeepSeek",
+      "sourceBadgeColor": "#4D6BFE",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "v1.0.0",
+      "link": "https://github.com/deepseek-ai/DeepSeek-R1/releases/tag/v1.0.0",
+      "description": "This release is created for archival purposes and DOI generation.",
+      "pubDate": "2025-06-27T08:39:13Z",
+      "sourceId": "deepseek",
+      "sourceName": "DeepSeek",
+      "sourceBadgeColor": "#4D6BFE",
       "sourceBadgeText": "#fff"
     }
   ]
