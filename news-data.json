@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-18T22:43:43Z",
+  "updatedAt": "2026-02-18T23:00:08Z",
   "items": [
     {
       "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
@@ -489,26 +489,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "v1.0.0",
-      "link": "https://github.com/deepseek-ai/DeepSeek-V3/releases/tag/v1.0.0",
-      "description": "This release is created for archival purposes and DOI generation.",
-      "pubDate": "2025-06-27T08:46:37Z",
-      "sourceId": "deepseek",
-      "sourceName": "DeepSeek",
-      "sourceBadgeColor": "#4D6BFE",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "v1.0.0",
-      "link": "https://github.com/deepseek-ai/DeepSeek-R1/releases/tag/v1.0.0",
-      "description": "This release is created for archival purposes and DOI generation.",
-      "pubDate": "2025-06-27T08:39:13Z",
-      "sourceId": "deepseek",
-      "sourceName": "DeepSeek",
-      "sourceBadgeColor": "#4D6BFE",
       "sourceBadgeText": "#fff"
     }
   ]
