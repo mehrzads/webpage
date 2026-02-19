@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-19T17:18:19Z",
+  "updatedAt": "2026-02-19T18:18:18Z",
   "items": [
     {
       "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
@@ -10,6 +10,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
+      "link": "https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/",
+      "description": "Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...",
+      "pubDate": "2026-02-19T17:43:54Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
@@ -30,6 +40,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Advancing independent research on AI alignment",
+      "link": "https://openai.com/index/advancing-independent-research-ai-alignment",
+      "description": "OpenAI commits $7.5M to The Alignment Project to fund independent AI alignment research, strengthening global efforts to address AGI safety and security risks.",
+      "pubDate": "Thu, 19 Feb 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "A Koopman-Bayesian Framework for High-Fidelity, Perceptually Optimized Haptic Surgical Simulation",
@@ -142,6 +162,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization",
+      "link": "https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/",
+      "description": "NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors, but...",
+      "pubDate": "2026-02-18T20:23:30Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
       "link": "https://huggingface.co/blog/ibm-research/itbenchandmast",
       "description": "",
@@ -212,16 +242,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
-      "link": "https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/",
-      "description": "Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...",
-      "pubDate": "2026-02-13T20:50:10Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "GPT-5.2 derives a new result in theoretical physics",
       "link": "https://openai.com/index/new-result-theoretical-physics",
       "description": "A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude, later formally proved and verified by OpenAI and academic collaborators.",
@@ -242,9 +262,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Scaling social science research",
-      "link": "https://openai.com/index/scaling-social-science-research",
-      "description": "GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn qualitative text and images into quantitative data, helping social scientists analyze research at scale.",
+      "title": "Beyond rate limits: scaling access to Codex and Sora",
+      "link": "https://openai.com/index/beyond-rate-limits",
+      "description": "How OpenAI built a real-time access system combining rate limits, usage tracking, and credits to power continuous access to Sora and Codex.",
       "pubDate": "Fri, 13 Feb 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -252,9 +272,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Beyond rate limits: scaling access to Codex and Sora",
-      "link": "https://openai.com/index/beyond-rate-limits",
-      "description": "How OpenAI built a real-time access system combining rate limits, usage tracking, and credits to power continuous access to Sora and Codex.",
+      "title": "Scaling social science research",
+      "link": "https://openai.com/index/scaling-social-science-research",
+      "description": "GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn qualitative text and images into quantitative data, helping social scientists analyze research at scale.",
       "pubDate": "Fri, 13 Feb 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -362,9 +382,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Testing ads in ChatGPT",
-      "link": "https://openai.com/index/testing-ads-in-chatgpt",
-      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
+      "title": "Bringing ChatGPT to GenAI.mil",
+      "link": "https://openai.com/index/bringing-chatgpt-to-genaimil",
+      "description": "OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S. defense teams.",
       "pubDate": "Mon, 09 Feb 2026 11:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -372,9 +392,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Bringing ChatGPT to GenAI.mil",
-      "link": "https://openai.com/index/bringing-chatgpt-to-genaimil",
-      "description": "OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S. defense teams.",
+      "title": "Testing ads in ChatGPT",
+      "link": "https://openai.com/index/testing-ads-in-chatgpt",
+      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
       "pubDate": "Mon, 09 Feb 2026 11:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -406,26 +426,6 @@
       "link": "https://developer.nvidia.com/blog/automating-inference-optimizations-with-nvidia-tensorrt-llm-autodeploy/",
       "description": "NVIDIA TensorRT LLM enables developers to build high-performance inference engines for large language models (LLMs), but deploying a new architecture...",
       "pubDate": "2026-02-06T19:46:46Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Making AI work for everyone, everywhere: our approach to localization",
-      "link": "https://openai.com/index/our-approach-to-localization",
-      "description": "OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety.",
-      "pubDate": "Fri, 06 Feb 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale",
-      "link": "https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale/",
-      "description": "Painkiller RTX sets a new standard for how small teams can balance massive visual ambition with limited resources by integrating generative AI. By upscaling...",
-      "pubDate": "2026-02-06T00:06:57Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
