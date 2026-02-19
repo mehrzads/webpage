@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-02-19T04:18:18Z",
+  "updatedAt": "2026-02-19T05:18:18Z",
   "items": [
+    {
+      "title": "A Koopman-Bayesian Framework for High-Fidelity, Perceptually Optimized Haptic Surgical Simulation",
+      "link": "https://arxiv.org/abs/2602.15834",
+      "description": "arXiv:2602.15834v1 Announce Type: new Abstract: We introduce a unified framework that combines nonlinear dynamics, perceptual psychophysics and high frequency haptic rendering to enhance realism in surgical simulation. The interaction of the surgical device with soft tissue is elevated to an augmented state space with a Koopman operator formulation, allowing linear prediction and control of the dy",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Memes-as-Replies: Can Models Select Humorous Manga Panel Responses?",
+      "link": "https://arxiv.org/abs/2602.15842",
+      "description": "arXiv:2602.15842v1 Announce Type: new Abstract: Memes are a popular element of modern web communication, used not only as static artifacts but also as interactive replies within conversations. While computational research has focused on analyzing the intrinsic properties of memes, the dynamic and contextual use of memes to create humor remains an understudied area of web science. To address this g",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Kalman-Inspired Runtime Stability and Recovery in Hybrid Reasoning Systems",
+      "link": "https://arxiv.org/abs/2602.15855",
+      "description": "arXiv:2602.15855v1 Announce Type: new Abstract: Hybrid reasoning systems that combine learned components with model-based inference are increasingly deployed in tool-augmented decision loops, yet their runtime behavior under partial observability and sustained evidence mismatch remains poorly understood. In practice, failures often arise as gradual divergence of internal reasoning dynamics rather ",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Genetic Generalized Additive Models",
+      "link": "https://arxiv.org/abs/2602.15877",
+      "description": "arXiv:2602.15877v1 Announce Type: new Abstract: Generalized Additive Models (GAMs) balance predictive accuracy and interpretability, but manually configuring their structure is challenging. We propose using the multi-objective genetic algorithm NSGA-II to automatically optimize GAMs, jointly minimizing prediction error (RMSE) and a Complexity Penalty that captures sparsity, smoothness, and uncerta",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "IT-OSE: Exploring Optimal Sample Size for Industrial Data Augmentation",
+      "link": "https://arxiv.org/abs/2602.15878",
+      "description": "arXiv:2602.15878v1 Announce Type: new Abstract: In industrial scenarios, data augmentation is an effective approach to improve model performance. However, its benefits are not unidirectionally beneficial. There is no theoretical research or established estimation for the optimal sample size (OSS) in augmentation, nor is there an established metric to evaluate the accuracy of OSS or its deviation f",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "BamaER: A Behavior-Aware Memory-Augmented Model for Exercise Recommendation",
+      "link": "https://arxiv.org/abs/2602.15879",
+      "description": "arXiv:2602.15879v1 Announce Type: new Abstract: Exercise recommendation focuses on personalized exercise selection conditioned on students' learning history, personal interests, and other individualized characteristics. Despite notable progress, most existing methods represent student learning solely as exercise sequences, overlooking rich behavioral interaction information. This limited represent",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Distributed physics-informed neural networks via domain decomposition for fast flow reconstruction",
+      "link": "https://arxiv.org/abs/2602.15883",
+      "description": "arXiv:2602.15883v1 Announce Type: new Abstract: Physics-Informed Neural Networks (PINNs) offer a powerful paradigm for flow reconstruction, seamlessly integrating sparse velocity measurements with the governing Navier-Stokes equations to recover complete velocity and latent pressure fields. However, scaling such models to large spatiotemporal domains is hindered by computational bottlenecks and op",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Adaptive Semi-Supervised Training of P300 ERP-BCI Speller System with Minimum Calibration Effort",
+      "link": "https://arxiv.org/abs/2602.15955",
+      "description": "arXiv:2602.15955v1 Announce Type: new Abstract: A P300 ERP-based Brain-Computer Interface (BCI) speller is an assistive communication tool. It searches for the P300 event-related potential (ERP) elicited by target stimuli, distinguishing it from the neural responses to non-target stimuli embedded in electroencephalogram (EEG) signals. Conventional methods require a lengthy calibration procedure to",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions",
+      "link": "https://arxiv.org/abs/2602.15961",
+      "description": "arXiv:2602.15961v1 Announce Type: new Abstract: The rapid expansion of renewable energy, particularly wind and solar power, has made reliable forecasting critical for power system operations. While recent deep learning models have achieved strong average accuracy, the increasing frequency and intensity of climate-driven extreme weather events pose severe threats to grid stability and operational s",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "B-DENSE: Branching For Dense Ensemble Network Learning",
+      "link": "https://arxiv.org/abs/2602.15971",
+      "description": "arXiv:2602.15971v1 Announce Type: new Abstract: Inspired by non-equilibrium thermodynamics, diffusion models have achieved state-of-the-art performance in generative modeling. However, their iterative sampling nature results in high inference latency. While recent distillation techniques accelerate sampling, they discard intermediate trajectory steps. This sparse supervision leads to a loss of str",
+      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Introducing OpenAI for India",
       "link": "https://openai.com/index/openai-for-india",
@@ -29,106 +129,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Near-Optimal Sample Complexity for Online Constrained MDPs",
-      "link": "https://arxiv.org/abs/2602.15076",
-      "description": "arXiv:2602.15076v1 Announce Type: new Abstract: Safety is a fundamental challenge in reinforcement learning (RL), particularly in real-world applications such as autonomous driving, robotics, and healthcare. To address this, Constrained Markov Decision Processes (CMDPs) are commonly used to enforce safety constraints while optimizing performance. However, existing methods often suffer from signifi",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Hybrid Feature Learning with Time Series Embeddings for Equipment Anomaly Prediction",
-      "link": "https://arxiv.org/abs/2602.15089",
-      "description": "arXiv:2602.15089v1 Announce Type: new Abstract: In predictive maintenance of equipment, deep learning-based time series anomaly detection has garnered significant attention; however, pure deep learning approaches often fail to achieve sufficient accuracy on real-world data. This study proposes a hybrid approach that integrates 64-dimensional time series embeddings from Granite TinyTimeMixer with 2",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "PolyNODE: Variable-dimension Neural ODEs on M-polyfolds",
-      "link": "https://arxiv.org/abs/2602.15128",
-      "description": "arXiv:2602.15128v1 Announce Type: new Abstract: Neural ordinary differential equations (NODEs) are geometric deep learning models based on dynamical systems and flows generated by vector fields on manifolds. Despite numerous successful applications, particularly within the flow matching paradigm, all existing NODE models are fundamentally constrained to fixed-dimensional dynamics by the intrinsic ",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Refine Now, Query Fast: A Decoupled Refinement Paradigm for Implicit Neural Fields",
-      "link": "https://arxiv.org/abs/2602.15155",
-      "description": "arXiv:2602.15155v1 Announce Type: new Abstract: Implicit Neural Representations (INRs) have emerged as promising surrogates for large 3D scientific simulations due to their ability to continuously model spatial and conditional fields, yet they face a critical fidelity-speed dilemma: deep MLPs suffer from high inference cost, while efficient embedding-based models lack sufficient expressiveness. To",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Learning Representations from Incomplete EHR Data with Dual-Masked Autoencoding",
-      "link": "https://arxiv.org/abs/2602.15159",
-      "description": "arXiv:2602.15159v1 Announce Type: new Abstract: Learning from electronic health records (EHRs) time series is challenging due to irregular sam- pling, heterogeneous missingness, and the resulting sparsity of observations. Prior self-supervised meth- ods either impute before learning, represent missingness through a dedicated input signal, or optimize solely for imputation, reducing their capacity ",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Seeing to Generalize: How Visual Data Corrects Binding Shortcuts",
-      "link": "https://arxiv.org/abs/2602.15183",
-      "description": "arXiv:2602.15183v1 Announce Type: new Abstract: Vision Language Models (VLMs) are designed to extend Large Language Models (LLMs) with visual capabilities, yet in this work we observe a surprising phenomenon: VLMs can outperform their underlying LLMs on purely text-only tasks, particularly in long-context information retrieval. To investigate this effect, we build a controlled synthetic retrieval ",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Learning Data-Efficient and Generalizable Neural Operators via Fundamental Physics Knowledge",
-      "link": "https://arxiv.org/abs/2602.15184",
-      "description": "arXiv:2602.15184v1 Announce Type: new Abstract: Recent advances in scientific machine learning (SciML) have enabled neural operators (NOs) to serve as powerful surrogates for modeling the dynamic evolution of physical systems governed by partial differential equations (PDEs). While existing approaches focus primarily on learning simulations from the target PDE, they often overlook more fundamental",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "COMPOT: Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers Compression",
-      "link": "https://arxiv.org/abs/2602.15200",
-      "description": "arXiv:2602.15200v1 Announce Type: new Abstract: Post-training compression of Transformer models commonly relies on truncated singular value decomposition (SVD). However, enforcing a single shared subspace can degrade accuracy even at moderate compression. Sparse dictionary learning provides a more flexible union-of-subspaces representation, but existing approaches often suffer from iterative dicti",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "MAVRL: Learning Reward Functions from Multiple Feedback Types with Amortized Variational Inference",
-      "link": "https://arxiv.org/abs/2602.15206",
-      "description": "arXiv:2602.15206v1 Announce Type: new Abstract: Reward learning typically relies on a single feedback type or combines multiple feedback types using manually weighted loss terms. Currently, it remains unclear how to jointly learn reward functions from heterogeneous feedback types such as demonstrations, comparisons, ratings, and stops that provide qualitatively different signals. We address this c",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "\\\"UberWeb: Insights from Multilingual Curation for a 20-Trillion-Token Dataset",
-      "link": "https://arxiv.org/abs/2602.15210",
-      "description": "arXiv:2602.15210v1 Announce Type: new Abstract: Multilinguality is a core capability for modern foundation models, yet training high-quality multilingual models remains challenging due to uneven data availability across languages. A further challenge is the performance interference that can arise from joint multilingual training, commonly referred to as the \"curse of multilinguality\". We study mul",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
