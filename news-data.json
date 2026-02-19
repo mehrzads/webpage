@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-02-19T15:18:19Z",
+  "updatedAt": "2026-02-19T16:18:19Z",
   "items": [
     {
-      "title": "From Scarcity to Scale: How Synthetic Personas Can Bootstrap Japanese AI Development",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata",
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "link": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "description": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+      "pubDate": "Thu, 19 Feb 2026 16:06:14 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
       "description": "",
-      "pubDate": "Thu, 19 Feb 2026 14:57:24 GMT",
+      "pubDate": "Thu, 19 Feb 2026 15:32:38 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
@@ -576,16 +586,6 @@
       "link": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/",
       "description": "Gemini 3 Flash offers frontier intelligence built for speed at a fraction of the cost.",
       "pubDate": "Wed, 17 Dec 2025 11:58:17 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Gemma Scope 2: helping the AI safety community deepen understanding of complex language model behavior",
-      "link": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
-      "description": "Open interpretability tools for language models are now available across the entire Gemma 3 family with the release of Gemma Scope 2.",
-      "pubDate": "Tue, 16 Dec 2025 10:14:24 +0000",
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
