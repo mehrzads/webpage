@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-02-19T16:18:19Z",
+  "updatedAt": "2026-02-19T17:18:19Z",
   "items": [
+    {
+      "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+      "link": "https://huggingface.co/blog/unsloth-jobs",
+      "description": "",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "link": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
@@ -466,16 +476,6 @@
       "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
       "description": "",
       "pubDate": "Tue, 03 Feb 2026 17:40:14 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
-      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
-      "description": "",
-      "pubDate": "Tue, 03 Feb 2026 15:03:19 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
