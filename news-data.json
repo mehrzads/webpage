@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-02-19T14:18:18Z",
+  "updatedAt": "2026-02-19T15:18:19Z",
   "items": [
+    {
+      "title": "From Scarcity to Scale: How Synthetic Personas Can Bootstrap Japanese AI Development",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata",
+      "description": "",
+      "pubDate": "Thu, 19 Feb 2026 14:57:24 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "A Koopman-Bayesian Framework for High-Fidelity, Perceptually Optimized Haptic Surgical Simulation",
       "link": "https://arxiv.org/abs/2602.15834",
@@ -136,16 +146,6 @@
       "link": "https://huggingface.co/blog/gradio-html-one-shot-apps",
       "description": "",
       "pubDate": "Wed, 18 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "NVIDIA Nemotron 2 Nano 9B Japanese: 日本のソブリンAIを支える最先端小規模言語モデル",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja",
-      "description": "",
-      "pubDate": "Tue, 17 Feb 2026 23:28:52 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
