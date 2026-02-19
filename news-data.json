@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-19T21:18:18Z",
+  "updatedAt": "2026-02-19T22:18:19Z",
   "items": [
     {
       "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
@@ -10,6 +10,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization",
+      "link": "https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/",
+      "description": "NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors, but...",
+      "pubDate": "2026-02-19T21:34:26Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
@@ -159,16 +169,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization",
-      "link": "https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/",
-      "description": "NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors, but...",
-      "pubDate": "2026-02-18T20:23:30Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
