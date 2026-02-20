@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-20T14:18:18Z",
+  "updatedAt": "2026-02-20T15:18:18Z",
   "items": [
     {
       "title": "MMCAformer: Macro-Micro Cross-Attention Transformer for Traffic Speed Prediction with Microscopic Connected Vehicle Driving Behavior",
@@ -100,6 +100,16 @@
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+      "link": "https://huggingface.co/blog/ggml-joins-hf",
+      "description": "",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
     },
     {
       "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
@@ -466,16 +476,6 @@
       "link": "https://huggingface.co/blog/community-evals",
       "description": "",
       "pubDate": "Wed, 04 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "H Company's new Holo2 model takes the lead in UI Localization",
-      "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
-      "description": "",
-      "pubDate": "Tue, 03 Feb 2026 17:40:14 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
