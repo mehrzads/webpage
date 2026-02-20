@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-02-20T04:18:19Z",
+  "updatedAt": "2026-02-20T05:18:19Z",
   "items": [
+    {
+      "title": "MMCAformer: Macro-Micro Cross-Attention Transformer for Traffic Speed Prediction with Microscopic Connected Vehicle Driving Behavior",
+      "link": "https://arxiv.org/abs/2602.16730",
+      "description": "arXiv:2602.16730v1 Announce Type: new Abstract: Accurate speed prediction is crucial for proactive traffic management to enhance traffic efficiency and safety. Existing studies have primarily relied on aggregated, macroscopic traffic flow data to predict future traffic trends, whereas road traffic dynamics are also influenced by individual, microscopic human driving behaviors. Recent Connected Veh",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A Few-Shot LLM Framework for Extreme Day Classification in Electricity Markets",
+      "link": "https://arxiv.org/abs/2602.16735",
+      "description": "arXiv:2602.16735v1 Announce Type: new Abstract: This paper proposes a few-shot classification framework based on Large Language Models (LLMs) to predict whether the next day will have spikes in real-time electricity prices. The approach aggregates system state information, including electricity demand, renewable generation, weather forecasts, and recent electricity prices, into a set of statistica",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Real-time Secondary Crash Likelihood Prediction Excluding Post Primary Crash Features",
+      "link": "https://arxiv.org/abs/2602.16739",
+      "description": "arXiv:2602.16739v1 Announce Type: new Abstract: Secondary crash likelihood prediction is a critical component of an active traffic management system to mitigate congestion and adverse impacts caused by secondary crashes. However, existing approaches mainly rely on post-crash features (e.g., crash type and severity) that are rarely available in real time, limiting their practical applicability. To ",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Quantifying LLM Attention-Head Stability: Implications for Circuit Universality",
+      "link": "https://arxiv.org/abs/2602.16740",
+      "description": "arXiv:2602.16740v1 Announce Type: new Abstract: In mechanistic interpretability, recent work scrutinizes transformer \"circuits\" - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whet",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "DeepVision-103K: A Visually Diverse, Broad-Coverage, and Verifiable Mathematical Dataset for Multimodal Reasoning",
+      "link": "https://arxiv.org/abs/2602.16742",
+      "description": "arXiv:2602.16742v1 Announce Type: new Abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, ",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "PETS: A Principled Framework Towards Optimal Trajectory Allocation for Efficient Test-Time Self-Consistency",
+      "link": "https://arxiv.org/abs/2602.16745",
+      "description": "arXiv:2602.16745v1 Announce Type: new Abstract: Test-time scaling can improve model performance by aggregating stochastic reasoning trajectories. However, achieving sample-efficient test-time self-consistency under a limited budget remains an open challenge. We introduce PETS (Principled and Efficient Test-TimeSelf-Consistency), which initiates a principled study of trajectory allocation through a",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Low-Dimensional and Transversely Curved Optimization Dynamics in Grokking",
+      "link": "https://arxiv.org/abs/2602.16746",
+      "description": "arXiv:2602.16746v1 Announce Type: new Abstract: Grokking -- the delayed transition from memorization to generalization in small algorithmic tasks -- remains poorly understood. We present a geometric analysis of optimization dynamics in transformers trained on modular arithmetic. PCA of attention weight trajectories reveals that training evolves predominantly within a low-dimensional execution subs",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "LiveClin: A Live Clinical Benchmark without Leakage",
+      "link": "https://arxiv.org/abs/2602.16747",
+      "description": "arXiv:2602.16747v1 Announce Type: new Abstract: The reliability of medical LLM evaluation is critically undermined by data contamination and knowledge obsolescence, leading to inflated scores on static benchmarks. To address these challenges, we introduce LiveClin, a live benchmark designed for approximating real-world clinical practice. Built from contemporary, peer-reviewed case reports and upda",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Attending to Routers Aids Indoor Wireless Localization",
+      "link": "https://arxiv.org/abs/2602.16762",
+      "description": "arXiv:2602.16762v1 Announce Type: new Abstract: Modern machine learning-based wireless localization using Wi-Fi signals continues to face significant challenges in achieving groundbreaking performance across diverse environments. A major limitation is that most existing algorithms do not appropriately weight the information from different routers during aggregation, resulting in suboptimal converg",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction",
+      "link": "https://arxiv.org/abs/2602.16764",
+      "description": "arXiv:2602.16764v1 Announce Type: new Abstract: Low Earth orbit (LEO) satellites are leveraged to support new position, navigation, and timing (PNT) service alternatives to GNSS. These alternatives require accurate propagation of satellite position and velocity with a realistic quantification of uncertainty. It is commonly assumed that the propagated uncertainty distribution is Gaussian; however, ",
+      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
       "link": "https://huggingface.co/blog/unsloth-jobs",
@@ -59,106 +159,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "A Koopman-Bayesian Framework for High-Fidelity, Perceptually Optimized Haptic Surgical Simulation",
-      "link": "https://arxiv.org/abs/2602.15834",
-      "description": "arXiv:2602.15834v1 Announce Type: new Abstract: We introduce a unified framework that combines nonlinear dynamics, perceptual psychophysics and high frequency haptic rendering to enhance realism in surgical simulation. The interaction of the surgical device with soft tissue is elevated to an augmented state space with a Koopman operator formulation, allowing linear prediction and control of the dy",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Memes-as-Replies: Can Models Select Humorous Manga Panel Responses?",
-      "link": "https://arxiv.org/abs/2602.15842",
-      "description": "arXiv:2602.15842v1 Announce Type: new Abstract: Memes are a popular element of modern web communication, used not only as static artifacts but also as interactive replies within conversations. While computational research has focused on analyzing the intrinsic properties of memes, the dynamic and contextual use of memes to create humor remains an understudied area of web science. To address this g",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Kalman-Inspired Runtime Stability and Recovery in Hybrid Reasoning Systems",
-      "link": "https://arxiv.org/abs/2602.15855",
-      "description": "arXiv:2602.15855v1 Announce Type: new Abstract: Hybrid reasoning systems that combine learned components with model-based inference are increasingly deployed in tool-augmented decision loops, yet their runtime behavior under partial observability and sustained evidence mismatch remains poorly understood. In practice, failures often arise as gradual divergence of internal reasoning dynamics rather ",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Genetic Generalized Additive Models",
-      "link": "https://arxiv.org/abs/2602.15877",
-      "description": "arXiv:2602.15877v1 Announce Type: new Abstract: Generalized Additive Models (GAMs) balance predictive accuracy and interpretability, but manually configuring their structure is challenging. We propose using the multi-objective genetic algorithm NSGA-II to automatically optimize GAMs, jointly minimizing prediction error (RMSE) and a Complexity Penalty that captures sparsity, smoothness, and uncerta",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "IT-OSE: Exploring Optimal Sample Size for Industrial Data Augmentation",
-      "link": "https://arxiv.org/abs/2602.15878",
-      "description": "arXiv:2602.15878v1 Announce Type: new Abstract: In industrial scenarios, data augmentation is an effective approach to improve model performance. However, its benefits are not unidirectionally beneficial. There is no theoretical research or established estimation for the optimal sample size (OSS) in augmentation, nor is there an established metric to evaluate the accuracy of OSS or its deviation f",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "BamaER: A Behavior-Aware Memory-Augmented Model for Exercise Recommendation",
-      "link": "https://arxiv.org/abs/2602.15879",
-      "description": "arXiv:2602.15879v1 Announce Type: new Abstract: Exercise recommendation focuses on personalized exercise selection conditioned on students' learning history, personal interests, and other individualized characteristics. Despite notable progress, most existing methods represent student learning solely as exercise sequences, overlooking rich behavioral interaction information. This limited represent",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Distributed physics-informed neural networks via domain decomposition for fast flow reconstruction",
-      "link": "https://arxiv.org/abs/2602.15883",
-      "description": "arXiv:2602.15883v1 Announce Type: new Abstract: Physics-Informed Neural Networks (PINNs) offer a powerful paradigm for flow reconstruction, seamlessly integrating sparse velocity measurements with the governing Navier-Stokes equations to recover complete velocity and latent pressure fields. However, scaling such models to large spatiotemporal domains is hindered by computational bottlenecks and op",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Adaptive Semi-Supervised Training of P300 ERP-BCI Speller System with Minimum Calibration Effort",
-      "link": "https://arxiv.org/abs/2602.15955",
-      "description": "arXiv:2602.15955v1 Announce Type: new Abstract: A P300 ERP-based Brain-Computer Interface (BCI) speller is an assistive communication tool. It searches for the P300 event-related potential (ERP) elicited by target stimuli, distinguishing it from the neural responses to non-target stimuli embedded in electroencephalogram (EEG) signals. Conventional methods require a lengthy calibration procedure to",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions",
-      "link": "https://arxiv.org/abs/2602.15961",
-      "description": "arXiv:2602.15961v1 Announce Type: new Abstract: The rapid expansion of renewable energy, particularly wind and solar power, has made reliable forecasting critical for power system operations. While recent deep learning models have achieved strong average accuracy, the increasing frequency and intensity of climate-driven extreme weather events pose severe threats to grid stability and operational s",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "B-DENSE: Branching For Dense Ensemble Network Learning",
-      "link": "https://arxiv.org/abs/2602.15971",
-      "description": "arXiv:2602.15971v1 Announce Type: new Abstract: Inspired by non-equilibrium thermodynamics, diffusion models have achieved state-of-the-art performance in generative modeling. However, their iterative sampling nature results in high inference latency. While recent distillation techniques accelerate sampling, they discard intermediate trajectory steps. This sparse supervision leads to a loss of str",
-      "pubDate": "Thu, 19 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
