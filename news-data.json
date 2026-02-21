@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-21T04:18:18Z",
+  "updatedAt": "2026-02-21T05:18:18Z",
   "items": [
     {
       "title": "Our First Proof submissions",
@@ -9,106 +9,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "MMCAformer: Macro-Micro Cross-Attention Transformer for Traffic Speed Prediction with Microscopic Connected Vehicle Driving Behavior",
-      "link": "https://arxiv.org/abs/2602.16730",
-      "description": "arXiv:2602.16730v1 Announce Type: new Abstract: Accurate speed prediction is crucial for proactive traffic management to enhance traffic efficiency and safety. Existing studies have primarily relied on aggregated, macroscopic traffic flow data to predict future traffic trends, whereas road traffic dynamics are also influenced by individual, microscopic human driving behaviors. Recent Connected Veh",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "A Few-Shot LLM Framework for Extreme Day Classification in Electricity Markets",
-      "link": "https://arxiv.org/abs/2602.16735",
-      "description": "arXiv:2602.16735v1 Announce Type: new Abstract: This paper proposes a few-shot classification framework based on Large Language Models (LLMs) to predict whether the next day will have spikes in real-time electricity prices. The approach aggregates system state information, including electricity demand, renewable generation, weather forecasts, and recent electricity prices, into a set of statistica",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Real-time Secondary Crash Likelihood Prediction Excluding Post Primary Crash Features",
-      "link": "https://arxiv.org/abs/2602.16739",
-      "description": "arXiv:2602.16739v1 Announce Type: new Abstract: Secondary crash likelihood prediction is a critical component of an active traffic management system to mitigate congestion and adverse impacts caused by secondary crashes. However, existing approaches mainly rely on post-crash features (e.g., crash type and severity) that are rarely available in real time, limiting their practical applicability. To ",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Quantifying LLM Attention-Head Stability: Implications for Circuit Universality",
-      "link": "https://arxiv.org/abs/2602.16740",
-      "description": "arXiv:2602.16740v1 Announce Type: new Abstract: In mechanistic interpretability, recent work scrutinizes transformer \"circuits\" - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whet",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "DeepVision-103K: A Visually Diverse, Broad-Coverage, and Verifiable Mathematical Dataset for Multimodal Reasoning",
-      "link": "https://arxiv.org/abs/2602.16742",
-      "description": "arXiv:2602.16742v1 Announce Type: new Abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, ",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "PETS: A Principled Framework Towards Optimal Trajectory Allocation for Efficient Test-Time Self-Consistency",
-      "link": "https://arxiv.org/abs/2602.16745",
-      "description": "arXiv:2602.16745v1 Announce Type: new Abstract: Test-time scaling can improve model performance by aggregating stochastic reasoning trajectories. However, achieving sample-efficient test-time self-consistency under a limited budget remains an open challenge. We introduce PETS (Principled and Efficient Test-TimeSelf-Consistency), which initiates a principled study of trajectory allocation through a",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Low-Dimensional and Transversely Curved Optimization Dynamics in Grokking",
-      "link": "https://arxiv.org/abs/2602.16746",
-      "description": "arXiv:2602.16746v1 Announce Type: new Abstract: Grokking -- the delayed transition from memorization to generalization in small algorithmic tasks -- remains poorly understood. We present a geometric analysis of optimization dynamics in transformers trained on modular arithmetic. PCA of attention weight trajectories reveals that training evolves predominantly within a low-dimensional execution subs",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "LiveClin: A Live Clinical Benchmark without Leakage",
-      "link": "https://arxiv.org/abs/2602.16747",
-      "description": "arXiv:2602.16747v1 Announce Type: new Abstract: The reliability of medical LLM evaluation is critically undermined by data contamination and knowledge obsolescence, leading to inflated scores on static benchmarks. To address these challenges, we introduce LiveClin, a live benchmark designed for approximating real-world clinical practice. Built from contemporary, peer-reviewed case reports and upda",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Attending to Routers Aids Indoor Wireless Localization",
-      "link": "https://arxiv.org/abs/2602.16762",
-      "description": "arXiv:2602.16762v1 Announce Type: new Abstract: Modern machine learning-based wireless localization using Wi-Fi signals continues to face significant challenges in achieving groundbreaking performance across diverse environments. A major limitation is that most existing algorithms do not appropriately weight the information from different routers during aggregation, resulting in suboptimal converg",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction",
-      "link": "https://arxiv.org/abs/2602.16764",
-      "description": "arXiv:2602.16764v1 Announce Type: new Abstract: Low Earth orbit (LEO) satellites are leveraged to support new position, navigation, and timing (PNT) service alternatives to GNSS. These alternatives require accurate propagation of satellite position and velocity with a realistic quantification of uncertainty. It is commonly assumed that the propagated uncertainty distribution is Gaussian; however, ",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
