@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-22T23:18:18Z",
+  "updatedAt": "2026-02-23T00:18:18Z",
   "items": [
     {
       "title": "Our First Proof submissions",
@@ -120,6 +120,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Introducing EVMbench",
+      "link": "https://openai.com/index/introducing-evmbench",
+      "description": "OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.",
+      "pubDate": "Wed, 18 Feb 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "Topping the GPU MODE Kernel Leaderboard with NVIDIA cuda.compute",
@@ -299,16 +309,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Bringing ChatGPT to GenAI.mil",
-      "link": "https://openai.com/index/bringing-chatgpt-to-genaimil",
-      "description": "OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S. defense teams.",
-      "pubDate": "Mon, 09 Feb 2026 11:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
