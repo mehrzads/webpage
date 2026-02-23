@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-02-23T17:18:19Z",
+  "updatedAt": "2026-02-23T18:18:19Z",
   "items": [
+    {
+      "title": "Using NVFP4 Low-Precision Model Training for Higher Throughput Without Losing Accuracy",
+      "link": "https://developer.nvidia.com/blog/using-nvfp4-low-precision-model-training-for-higher-throughput-without-losing-accuracy/",
+      "description": "As the sizes of AI models and datasets continue to increase, relying only on higher-precision BF16 training is no longer sufficient. Key challenges such as...",
+      "pubDate": "2026-02-23T17:08:05Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Why we no longer evaluate SWE-bench Verified",
+      "link": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified",
+      "description": "SWE-bench Verified is increasingly contaminated and mismeasures frontier coding progress. Our analysis shows flawed tests and training leakage. We recommend SWE-bench Pro.",
+      "pubDate": "Mon, 23 Feb 2026 11:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "OpenAI announces Frontier Alliance Partners",
       "link": "https://openai.com/index/frontier-alliance-partners",
@@ -342,16 +362,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Introducing GPT-5.3-Codex-Spark",
-      "link": "https://openai.com/index/introducing-gpt-5-3-codex-spark",
-      "description": "Introducing GPT-5.3-Codex-Spark—our first real-time coding model. 15x faster generation, 128k context, now in research preview for ChatGPT Pro users.",
-      "pubDate": "Thu, 12 Feb 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
       "link": "https://huggingface.co/blog/openenv-turing",
       "description": "",
@@ -436,16 +446,6 @@
       "link": "https://developer.nvidia.com/blog/automating-inference-optimizations-with-nvidia-tensorrt-llm-autodeploy/",
       "description": "NVIDIA TensorRT LLM enables developers to build high-performance inference engines for large language models (LLMs), but deploying a new architecture...",
       "pubDate": "2026-02-06T19:46:46Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "How to Build License-Compliant Synthetic Data Pipelines for AI Model Distillation",
-      "link": "https://developer.nvidia.com/blog/how-to-build-license-compliant-synthetic-data-pipelines-for-ai-model-distillation/",
-      "description": "Specialized AI models are built to perform specific tasks or solve particular problems. But if you’ve ever tried to fine-tune or distill a domain-specific...",
-      "pubDate": "2026-02-05T21:17:57Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
