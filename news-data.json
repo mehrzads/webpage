@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-02-24T01:18:18Z",
+  "updatedAt": "2026-02-24T02:18:18Z",
   "items": [
+    {
+      "title": "3 Ways NVFP4 Accelerates AI Training and Inference",
+      "link": "https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/",
+      "description": "The latest AI models continue to grow in size and complexity, demanding increasing amounts of compute performance for training and inference—far beyond what...",
+      "pubDate": "2026-02-24T01:22:59Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
+      "link": "https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab/",
+      "description": "Building robust, intelligent robots requires testing them in complex environments. However, gathering data in the physical world is expensive, slow, and often...",
+      "pubDate": "2026-02-24T01:21:55Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
       "link": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
@@ -392,16 +412,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
-      "link": "https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab/",
-      "description": "Building robust, intelligent robots requires testing them in complex environments. However, gathering data in the physical world is expensive, slow, and often...",
-      "pubDate": "2026-02-10T00:41:27Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters",
       "link": "https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/",
       "description": "We’re sharing details of the role backend aggregation (BAG) plays in building Meta’s gigawatt-scale AI clusters like Prometheus. BAG allows us to seamlessly connect thousands of GPUs across multiple data centers and regions. Our BAG implementation is connecting two different network fabrics – Disaggregated Schedule Fabric (DSF) and Non-Scheduled Fabric (NSF). Once it’s complete our AI [...] Read M",
@@ -430,16 +440,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "3 Ways NVFP4 Accelerates AI Training and Inference",
-      "link": "https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/",
-      "description": "The latest AI models continue to grow in size and complexity, demanding increasing amounts of compute performance for training and inference—far beyond what...",
-      "pubDate": "2026-02-07T00:33:25Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "Automating Inference Optimizations with NVIDIA TensorRT LLM AutoDeploy",
