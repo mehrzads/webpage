@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-02-24T21:18:18Z",
+  "updatedAt": "2026-02-24T22:18:19Z",
   "items": [
+    {
+      "title": "RCCLX: Innovating GPU communications on AMD platforms",
+      "link": "https://engineering.fb.com/2026/02/24/data-center-engineering/rrcclx-innovating-gpu-communications-amd-platforms-meta/",
+      "description": "We are open-sourcing the initial version of RCCLX – an enhanced version of RCCL that we developed and tested on Meta’s internal workloads. RCCLX is fully integrated with Torchcomms and aims to empower researchers and developers to accelerate innovation, regardless of their chosen backend. Communication patterns for AI models are constantly evolving, as are hardware [...] Read More... The post RCCL",
+      "pubDate": "Tue, 24 Feb 2026 21:30:54 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Using NVFP4 Low-Precision Model Training for Higher Throughput Without Losing Accuracy",
       "link": "https://developer.nvidia.com/blog/using-nvfp4-low-precision-model-training-for-higher-throughput-without-losing-accuracy/",
@@ -9,6 +19,16 @@
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Arvind KC appointed Chief People Officer",
+      "link": "https://openai.com/index/arvind-kc-chief-people-officer",
+      "description": "OpenAI appoints Arvind KC as Chief People Officer to help scale the company, strengthen its culture, and lead how work evolves in the age of AI.",
+      "pubDate": "Tue, 24 Feb 2026 13:40:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -352,16 +372,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Beyond rate limits: scaling access to Codex and Sora",
-      "link": "https://openai.com/index/beyond-rate-limits",
-      "description": "How OpenAI built a real-time access system combining rate limits, usage tracking, and credits to power continuous access to Sora and Codex.",
-      "pubDate": "Fri, 13 Feb 2026 09:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Custom Kernels for All from Codex and Claude",
       "link": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
       "description": "",
@@ -566,16 +576,6 @@
       "link": "https://engineering.fb.com/2025/12/19/data-infrastructure/drp-metas-root-cause-analysis-platform-at-scale/",
       "description": "Incident investigation can be a daunting task in today’s digital landscape, where large-scale systems comprise numerous interconnected components and dependencies DrP is a root cause analysis (RCA) platform, designed by Meta, to programmatically automate the investigation process, significantly reducing the mean time to resolve (MTTR) for incidents and alleviating on-call toil Today, DrP is used [",
       "pubDate": "Fri, 19 Dec 2025 17:35:13 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "How We Built Meta Ray-Ban Display: From Zero to Polish",
-      "link": "https://engineering.fb.com/2025/12/17/virtual-reality/meta-ray-ban-display-from-zero-to-polish/",
-      "description": "We’re going behind the scenes of the Meta Ray-Ban Display, Meta’s most advanced AI glasses yet. In a previous episode we met the team behind the Meta Neural Band, the EMG wristband packaged with the Ray-Ban Display. Now we’re delving into the glasses themselves. Kenan and Emanuel, from Meta’s Wearables org, join Pascal Hartig on [...] Read More... The post How We Built Meta Ray-Ban Display: From Z",
-      "pubDate": "Wed, 17 Dec 2025 14:00:17 +0000",
       "sourceId": "meta",
       "sourceName": "Meta",
       "sourceBadgeColor": "#0064E0",
