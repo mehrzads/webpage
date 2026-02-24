@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-02-24T04:18:18Z",
+  "updatedAt": "2026-02-24T05:18:18Z",
   "items": [
+    {
+      "title": "Revisiting the Seasonal Trend Decomposition for Enhanced Time Series Forecasting",
+      "link": "https://arxiv.org/abs/2602.18465",
+      "description": "arXiv:2602.18465v1 Announce Type: new Abstract: Time series forecasting presents significant challenges in real-world applications across various domains. Building upon the decomposition of the time series, we enhance the architecture of machine learning models for better multivariate time series forecasting. To achieve this, we focus on the trend and seasonal components individually and investiga",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Physiologically Informed Deep Learning: A Multi-Scale Framework for Next-Generation PBPK Modeling",
+      "link": "https://arxiv.org/abs/2602.18472",
+      "description": "arXiv:2602.18472v1 Announce Type: new Abstract: Physiologically Based Pharmacokinetic (PBPK) modeling is a cornerstone of model-informed drug development (MIDD), providing a mechanistic framework to predict drug absorption, distribution, metabolism, and excretion (ADME). Despite its utility, adoption is hindered by high computational costs for large-scale simulations, difficulty in parameter ident",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Decentralized Attention Fails Centralized Signals: Rethinking Transformers for Medical Time Series",
+      "link": "https://arxiv.org/abs/2602.18473",
+      "description": "arXiv:2602.18473v1 Announce Type: new Abstract: Accurate analysis of medical time series (MedTS) data, such as electroencephalography (EEG) and electrocardiography (ECG), plays a pivotal role in healthcare applications, including the diagnosis of brain and heart diseases. MedTS data typically exhibit two critical patterns: temporal dependencies within individual channels and channel dependencies a",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Support Vector Data Description for Radar Target Detection",
+      "link": "https://arxiv.org/abs/2602.18486",
+      "description": "arXiv:2602.18486v1 Announce Type: new Abstract: Classical radar detection techniques rely on adaptive detectors that estimate the noise covariance matrix from target-free secondary data. While effective in Gaussian environments, these methods degrade in the presence of clutter, which is better modeled by heavy-tailed distributions such as the Complex Elliptically Symmetric (CES) and Compound-Gauss",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Learning to Remember: End-to-End Training of Memory Agents for Long-Context Reasoning",
+      "link": "https://arxiv.org/abs/2602.18493",
+      "description": "arXiv:2602.18493v1 Announce Type: new Abstract: Long-context LLMs and Retrieval-Augmented Generation (RAG) systems process information passively, deferring state tracking, contradiction resolution, and evidence aggregation to query time, which becomes brittle under ultra long streams with frequent updates. We propose the Unified Memory Agent (UMA), an end-to-end reinforcement learning framework th",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Weak-Form Evolutionary Kolmogorov-Arnold Networks for Solving Partial Differential Equations",
+      "link": "https://arxiv.org/abs/2602.18515",
+      "description": "arXiv:2602.18515v1 Announce Type: new Abstract: Partial differential equations (PDEs) form a central component of scientific computing. Among recent advances in deep learning, evolutionary neural networks have been developed to successively capture the temporal dynamics of time-dependent PDEs via parameter evolution. The parameter updates are obtained by solving a linear system derived from the go",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Measuring the Prevalence of Policy Violating Content with ML Assisted Sampling and LLM Labeling",
+      "link": "https://arxiv.org/abs/2602.18518",
+      "description": "arXiv:2602.18518v1 Announce Type: new Abstract: Content safety teams need metrics that reflect what users actually experience, not only what is reported. We study prevalence: the fraction of user views (impressions) that went to content violating a given policy on a given day. Accurate prevalence measurement is challenging because violations are often rare and human labeling is costly, making freq",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Wide Open Gazes: Quantifying Visual Exploratory Behavior in Soccer with Pose Enhanced Positional Data",
+      "link": "https://arxiv.org/abs/2602.18519",
+      "description": "arXiv:2602.18519v1 Announce Type: new Abstract: Traditional approaches to measuring visual exploratory behavior in soccer rely on counting visual exploratory actions (VEAs) based on rapid head movements exceeding 125{\\deg}/s, but this method suffer from player position bias (i.e., a focus on central midfielders), annotation challenges, binary measurement constraints (i.e., a player is scanning, or",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "AdaptStress: Online Adaptive Learning for Interpretable and Personalized Stress Prediction Using Multivariate and Sparse Physiological Signals",
+      "link": "https://arxiv.org/abs/2602.18521",
+      "description": "arXiv:2602.18521v1 Announce Type: new Abstract: Continuous stress forecasting could potentially contribute to lifestyle interventions. This paper presents a novel, explainable, and individualized approach for stress prediction using physiological data from consumer-grade smartwatches. We develop a time series forecasting model that leverages multivariate features, including heart rate variability,",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "The Geometry of Multi-Task Grokking: Transverse Instability, Superposition, and Weight Decay Phase Structure",
+      "link": "https://arxiv.org/abs/2602.18523",
+      "description": "arXiv:2602.18523v1 Announce Type: new Abstract: Grokking -- the abrupt transition from memorization to generalization long after near-zero training loss -- has been studied mainly in single-task settings. We extend geometric analysis to multi-task modular arithmetic, training shared-trunk Transformers on dual-task (mod-add + mod-mul) and tri-task (mod-add + mod-mul + mod-sq) objectives across a sy",
+      "pubDate": "Tue, 24 Feb 2026 00:00:00 -0500",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "3 Ways NVFP4 Accelerates AI Training and Inference",
       "link": "https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/",
@@ -59,106 +159,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Reducing Text Bias in Synthetically Generated MCQAs for VLMs in Autonomous Driving",
-      "link": "https://arxiv.org/abs/2602.17677",
-      "description": "arXiv:2602.17677v1 Announce Type: new Abstract: Multiple Choice Question Answering (MCQA) benchmarks are an established standard for measuring Vision Language Model (VLM) performance in driving tasks. However, we observe the known phenomenon that synthetically generated MCQAs are highly susceptible to hidden textual cues that allow models to exploit linguistic patterns rather than visual context. ",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Joint Parameter and State-Space Bayesian Optimization: Using Process Expertise to Accelerate Manufacturing Optimization",
-      "link": "https://arxiv.org/abs/2602.17679",
-      "description": "arXiv:2602.17679v1 Announce Type: new Abstract: Bayesian optimization (BO) is a powerful method for optimizing black-box manufacturing processes, but its performance is often limited when dealing with high-dimensional multi-stage systems, where we can observe intermediate outputs. Standard BO models the process as a black box and ignores the intermediate observations and the underlying process str",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "BioBridge: Bridging Proteins and Language for Enhanced Biological Reasoning with LLMs",
-      "link": "https://arxiv.org/abs/2602.17680",
-      "description": "arXiv:2602.17680v1 Announce Type: new Abstract: Existing Protein Language Models (PLMs) often suffer from limited adaptability to multiple tasks and exhibit poor generalization across diverse biological contexts. In contrast, general-purpose Large Language Models (LLMs) lack the capability to interpret protein sequences and fall short in domain-specific knowledge, limiting their capacity for effec",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "LATMiX: Learnable Affine Transformations for Microscaling Quantization of LLMs",
-      "link": "https://arxiv.org/abs/2602.17681",
-      "description": "arXiv:2602.17681v1 Announce Type: new Abstract: Post-training quantization (PTQ) is a widely used approach for reducing the memory and compute costs of large language models (LLMs). Recent studies have shown that applying invertible transformations to activations can significantly improve quantization robustness by reducing activation outliers; however, existing approaches are largely restricted t",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Duality Models: An Embarrassingly Simple One-step Generation Paradigm",
-      "link": "https://arxiv.org/abs/2602.17682",
-      "description": "arXiv:2602.17682v1 Announce Type: new Abstract: Consistency-based generative models like Shortcut and MeanFlow achieve impressive results via a target-aware design for solving the Probability Flow ODE (PF-ODE). Typically, such methods introduce a target time $r$ alongside the current time $t$ to modulate outputs between a local multi-step derivative ($r = t$) and a global few-step integral ($r = 0",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Probabilistic NDVI Forecasting from Sparse Satellite Time Series and Weather Covariates",
-      "link": "https://arxiv.org/abs/2602.17683",
-      "description": "arXiv:2602.17683v1 Announce Type: new Abstract: Accurate short-term forecasting of vegetation dynamics is a key enabler for data-driven decision support in precision agriculture. Normalized Difference Vegetation Index (NDVI) forecasting from satellite observations, however, remains challenging due to sparse and irregular sampling caused by cloud coverage, as well as the heterogeneous climatic cond",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "CodeScaler: Scaling Code LLM Training and Test-Time Inference via Execution-Free Reward Models",
-      "link": "https://arxiv.org/abs/2602.17684",
-      "description": "arXiv:2602.17684v1 Announce Type: new Abstract: Reinforcement Learning from Verifiable Rewards (RLVR) has driven recent progress in code large language models by leveraging execution-based feedback from unit tests, but its scalability is fundamentally constrained by the availability and reliability of high-quality test cases. We propose CodeScaler, an execution-free reward model designed to scale ",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Optimal Multi-Debris Mission Planning in LEO: A Deep Reinforcement Learning Approach with Co-Elliptic Transfers and Refueling",
-      "link": "https://arxiv.org/abs/2602.17685",
-      "description": "arXiv:2602.17685v1 Announce Type: new Abstract: This paper addresses the challenge of multi target active debris removal (ADR) in Low Earth Orbit (LEO) by introducing a unified coelliptic maneuver framework that combines Hohmann transfers, safety ellipse proximity operations, and explicit refueling logic. We benchmark three distinct planning algorithms Greedy heuristic, Monte Carlo Tree Search (MC",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Curriculum Learning for Efficient Chain-of-Thought Distillation via Structure-Aware Masking and GRPO",
-      "link": "https://arxiv.org/abs/2602.17686",
-      "description": "arXiv:2602.17686v1 Announce Type: new Abstract: Distilling Chain-of-Thought (CoT) reasoning from large language models into compact student models presents a fundamental challenge: teacher rationales are often too verbose for smaller models to faithfully reproduce. Existing approaches either compress reasoning into single-step, losing the interpretability that makes CoT valuable. We present a thre",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "AnCoder: Anchored Code Generation via Discrete Diffusion Models",
-      "link": "https://arxiv.org/abs/2602.17688",
-      "description": "arXiv:2602.17688v1 Announce Type: new Abstract: Diffusion language models offer a compelling alternative to autoregressive code generation, enabling global planning and iterative refinement of complex program logic. However, existing approaches fail to respect the rigid structure of programming languages and, as a result, often produce broken programs that fail to execute. To address this, we intr",
-      "pubDate": "Mon, 23 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
