@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-25T13:18:39Z",
+  "updatedAt": "2026-02-25T14:18:47Z",
   "items": [
     {
       "title": "Tensor Network Generator-Enhanced Optimization for Traveling Salesman Problem",
@@ -99,6 +99,16 @@
       "sourceId": "arxiv",
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Disrupting malicious uses of AI | February 2026",
+      "link": "https://openai.com/index/disrupting-malicious-ai-uses",
+      "description": "Our latest threat report examines how malicious actors combine AI models with websites and social platforms—and what it means for detection and defense.",
+      "pubDate": "Wed, 25 Feb 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -356,16 +366,6 @@
       "link": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
       "description": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT to help organizations defend against prompt injection and AI-driven data exfiltration.",
       "pubDate": "Fri, 13 Feb 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Scaling social science research",
-      "link": "https://openai.com/index/scaling-social-science-research",
-      "description": "GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn qualitative text and images into quantitative data, helping social scientists analyze research at scale.",
-      "pubDate": "Fri, 13 Feb 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
