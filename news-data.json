@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-25T22:18:18Z",
+  "updatedAt": "2026-02-25T23:18:18Z",
   "items": [
     {
       "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
@@ -132,7 +132,7 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "RCCLX: Innovating GPU communications on AMD platforms",
+      "title": "RCCLX: Innovating GPU Communications on AMD Platforms",
       "link": "https://engineering.fb.com/2026/02/24/data-center-engineering/rrcclx-innovating-gpu-communications-amd-platforms-meta/",
       "description": "We are open-sourcing the initial version of RCCLX – an enhanced version of RCCL that we developed and tested on Meta’s internal workloads. RCCLX is fully integrated with Torchcomms and aims to empower researchers and developers to accelerate innovation, regardless of their chosen backend. Communication patterns for AI models are constantly evolving, as are hardware [...] Read More... The post RCCL",
       "pubDate": "Tue, 24 Feb 2026 21:30:54 +0000",
