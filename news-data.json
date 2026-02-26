@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-26T16:18:19Z",
+  "updatedAt": "2026-02-26T17:18:19Z",
   "items": [
     {
       "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
@@ -9,6 +9,16 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Pacific Northwest National Laboratory and OpenAI partner to accelerate federal permitting",
+      "link": "https://openai.com/index/pacific-northwest-national-laboratory",
+      "description": "OpenAI and Pacific Northwest National Laboratory introduce DraftNEPABench, a new benchmark evaluating how AI coding agents can accelerate federal permitting—showing potential to reduce NEPA drafting time by up to 15% and modernize infrastructure reviews.",
+      "pubDate": "Thu, 26 Feb 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -379,16 +389,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "GPT-5.2 derives a new result in theoretical physics",
-      "link": "https://openai.com/index/new-result-theoretical-physics",
-      "description": "A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude, later formally proved and verified by OpenAI and academic collaborators.",
-      "pubDate": "Fri, 13 Feb 2026 11:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
