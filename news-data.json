@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-02-26T15:18:22Z",
+  "updatedAt": "2026-02-26T16:18:19Z",
   "items": [
+    {
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "link": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "description": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+      "pubDate": "Thu, 26 Feb 2026 16:01:50 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "OpenAI Codex and Figma launch seamless code-to-design experience",
       "link": "https://openai.com/index/figma-partnership",
@@ -579,16 +589,6 @@
       "sourceId": "meta",
       "sourceName": "Meta",
       "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Gemini 3 Flash: frontier intelligence built for speed",
-      "link": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/",
-      "description": "Gemini 3 Flash offers frontier intelligence built for speed at a fraction of the cost.",
-      "pubDate": "Wed, 17 Dec 2025 11:58:17 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
       "sourceBadgeText": "#fff"
     }
   ]
