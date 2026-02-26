@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-26T11:18:18Z",
+  "updatedAt": "2026-02-26T12:18:18Z",
   "items": [
     {
       "title": "Latent Context Compilation: Distilling Long Context into Compact Portable Memory",
@@ -100,6 +100,16 @@
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Mixture of Experts (MoEs) in Transformers",
+      "link": "https://huggingface.co/blog/moe-transformers",
+      "description": "",
+      "pubDate": "Thu, 26 Feb 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
     },
     {
       "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
@@ -480,16 +490,6 @@
       "sourceName": "Meta",
       "sourceBadgeColor": "#0064E0",
       "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Community Evals: Because we're done trusting black-box leaderboards over the community",
-      "link": "https://huggingface.co/blog/community-evals",
-      "description": "",
-      "pubDate": "Wed, 04 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
     },
     {
       "title": "Project Genie: Experimenting with infinite, interactive worlds",
