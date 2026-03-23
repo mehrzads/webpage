@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-23T11:18:19Z",
+  "updatedAt": "2026-03-23T12:18:20Z",
   "items": [
     {
       "title": "Speculating Experts Accelerates Inference for Mixture-of-Experts",
@@ -112,6 +112,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "Building a Zero-Trust Architecture for Confidential AI Factories",
+      "link": "https://developer.nvidia.com/blog/building-a-zero-trust-architecture-for-confidential-ai-factories/",
+      "description": "AI is moving from experimentation to production. However, most data enterprises need exists outside the public cloud. This includes sensitive information like...",
+      "pubDate": "2026-03-20T20:18:07Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Build a Domain-Specific Embedding Model in Under a Day",
       "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
       "description": "",
@@ -176,16 +186,6 @@
       "link": "https://developer.nvidia.com/blog/using-simulation-to-build-robotic-systems-for-hospital-automation/",
       "description": "Healthcare faces a structural demand–capacity crisis: a projected global shortfall of ~10 million clinicians by 2030, billions of diagnostic exams annually...",
       "pubDate": "2026-03-20T12:28:31Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell",
-      "link": "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/",
-      "description": "AI has evolved from assistants following your directions to agents that act independently. Called claws, these agents can take a goal, figure out how to achieve...",
-      "pubDate": "2026-03-20T12:24:15Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
