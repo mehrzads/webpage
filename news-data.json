@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-03-23T20:18:19Z",
+  "updatedAt": "2026-03-23T21:18:19Z",
   "items": [
+    {
+      "title": "NVIDIA IGX Thor Powers Industrial, Medical, and Robotics Edge AI Applications",
+      "link": "https://developer.nvidia.com/blog/nvidia-igx-thor-powers-industrial-medical-and-robotics-edge-ai-applications/",
+      "description": "Industrial and medical systems are rapidly increasing the use of high-performance AI to improve worker productivity, human-machine interaction, and downtime...",
+      "pubDate": "2026-03-23T20:30:47Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Speculating Experts Accelerates Inference for Mixture-of-Experts",
       "link": "https://arxiv.org/abs/2603.19289",
@@ -140,16 +150,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "NVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories",
-      "link": "https://developer.nvidia.com/blog/nvidia-vera-cpu-delivers-high-performance-bandwidth-and-efficiency-for-ai-factories/",
-      "description": "AI is evolving, and reasoning models are increasing token demand, placing new requirements on every layer of AI infrastructure. More than ever, compute must...",
-      "pubDate": "2026-03-20T18:25:04Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark",
