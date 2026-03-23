@@ -1,6 +1,496 @@
 {
-  "updatedAt": "2026-02-27T01:18:18Z",
+  "updatedAt": "2026-03-23T06:18:19Z",
   "items": [
+    {
+      "title": "Speculating Experts Accelerates Inference for Mixture-of-Experts",
+      "link": "https://arxiv.org/abs/2603.19289",
+      "description": "arXiv:2603.19289v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) models have gained popularity as a means of scaling the capacity of large language models (LLMs) while maintaining sparse activations and reduced per-token compute. However, in memory-constrained inference settings, expert weights must be offloaded to CPU, creating a performance bottleneck from CPU-GPU transfers during decodi",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A Visualization for Comparative Analysis of Regression Models",
+      "link": "https://arxiv.org/abs/2603.19291",
+      "description": "arXiv:2603.19291v1 Announce Type: new Abstract: As regression is a widely studied problem, many methods have been proposed to solve it, each of them often requiring setting different hyper-parameters. Therefore, selecting the proper method for a given application may be very difficult and relies on comparing their performances. Performance is usually measured using various metrics such as Mean Abs",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Maximizing mutual information between user-contexts and responses improve LLM personalization with no additional data",
+      "link": "https://arxiv.org/abs/2603.19294",
+      "description": "arXiv:2603.19294v1 Announce Type: new Abstract: While post-training has successfully improved large language models (LLMs) across a variety of domains, these gains heavily rely on human-labeled data or external verifiers. Existing data has already been exploited, and new high-quality data is expensive to collect. More fundamentally, true intelligence goes far beyond tasks that are easily verifiabl",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "BrainSCL: Subtype-Guided Contrastive Learning for Brain Disorder Diagnosis",
+      "link": "https://arxiv.org/abs/2603.19295",
+      "description": "arXiv:2603.19295v1 Announce Type: new Abstract: Mental disorder populations exhibit pronounced heterogeneity -- that is, the significant differences between samples -- poses a significant challenge to the definition of positive pairs in contrastive learning. To address this, we propose a subtype-guided contrastive learning framework that models patient heterogeneity as latent subtypes and incorpor",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "TTQ: Activation-Aware Test-Time Quantization to Accelerate LLM Inference On The Fly",
+      "link": "https://arxiv.org/abs/2603.19296",
+      "description": "arXiv:2603.19296v1 Announce Type: new Abstract: To tackle the huge computational demand of large foundation models, activation-aware compression techniques without retraining have been introduced. However, since these methods highly rely on calibration data, domain shift issues may arise for unseen downstream tasks. We propose a test-time quantization (TTQ) framework which compresses large models ",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "CLaRE-ty Amid Chaos: Quantifying Representational Entanglement to Predict Ripple Effects in LLM Editing",
+      "link": "https://arxiv.org/abs/2603.19297",
+      "description": "arXiv:2603.19297v1 Announce Type: new Abstract: The static knowledge representations of large language models (LLMs) inevitably become outdated or incorrect over time. While model-editing techniques offer a promising solution by modifying a model's factual associations, they often produce unpredictable ripple effects, which are unintended behavioral changes that propagate even to the hidden space.",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A Dynamic Bayesian and Machine Learning Framework for Quantitative Evaluation and Prediction of Operator Situation Awareness in Nuclear Power Plants",
+      "link": "https://arxiv.org/abs/2603.19298",
+      "description": "arXiv:2603.19298v1 Announce Type: new Abstract: Operator situation awareness is a pivotal yet elusive determinant of human reliability in complex nuclear control environments. Existing assessment methods, such as SAGAT and SART, remain static, retrospective, and detached from the evolving cognitive dynamics that drive operational risk. To overcome these limitations, this study introduces the dynam",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "PRIME-CVD: A Parametrically Rendered Informatics Medical Environment for Education in Cardiovascular Risk Modelling",
+      "link": "https://arxiv.org/abs/2603.19299",
+      "description": "arXiv:2603.19299v1 Announce Type: new Abstract: In recent years, progress in medical informatics and machine learning has been accelerated by the availability of openly accessible benchmark datasets. However, patient-level electronic medical record (EMR) data are rarely available for teaching or methodological development due to privacy, governance, and re-identification risks. This has limited re",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Parameter-Efficient Token Embedding Editing for Clinical Class-Level Unlearning",
+      "link": "https://arxiv.org/abs/2603.19302",
+      "description": "arXiv:2603.19302v1 Announce Type: new Abstract: Machine unlearning is increasingly important for clinical language models, where privacy regulations and institutional policies may require removing sensitive information from deployed systems without retraining from scratch. In practice, deletion requests must balance effective forgetting of targeted information with preservation of model utility an",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Exploring Subnetwork Interactions in Heterogeneous Brain Network via Prior-Informed Graph Learning",
+      "link": "https://arxiv.org/abs/2603.19307",
+      "description": "arXiv:2603.19307v1 Announce Type: new Abstract: Modeling the complex interactions among functional subnetworks is crucial for the diagnosis of mental disorders and the identification of functional pathways. However, learning the interactions of the underlying subnetworks remains a significant challenge for existing Transformer-based methods due to the limited number of training samples. To address",
+      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Build a Domain-Specific Embedding Model in Under a Day",
+      "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+      "description": "",
+      "pubDate": "Fri, 20 Mar 2026 19:38:16 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "NVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories",
+      "link": "https://developer.nvidia.com/blog/nvidia-vera-cpu-delivers-high-performance-bandwidth-and-efficiency-for-ai-factories/",
+      "description": "AI is evolving, and reasoning models are increasing token demand, placing new requirements on every layer of AI infrastructure. More than ever, compute must...",
+      "pubDate": "2026-03-20T18:25:04Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark",
+      "link": "https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/",
+      "description": "Autonomous AI agents are driving the next wave of AI innovation. These agents must often manage long-running tasks that use multiple communication channels and...",
+      "pubDate": "2026-03-20T18:12:53Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-libraries",
+      "description": "",
+      "pubDate": "Fri, 20 Mar 2026 14:14:46 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Design, Simulate, and Scale AI Factory Infrastructure with NVIDIA DSX Air",
+      "link": "https://developer.nvidia.com/blog/design-simulate-and-scale-ai-factory-infrastructure-with-nvidia-dsx-air/",
+      "description": "Building AI factories is complex and requires efficient integration across compute, networking, security, and storage systems. To achieve rapid Time to AI and...",
+      "pubDate": "2026-03-20T12:29:58Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How NVIDIA Dynamo 1.0 Powers Multi-Node Inference at Production Scale",
+      "link": "https://developer.nvidia.com/blog/nvidia-dynamo-1-production-ready/",
+      "description": "Reasoning models are growing rapidly in size and are increasingly being integrated into agentic AI workflows that interact with other models and external tools....",
+      "pubDate": "2026-03-20T12:29:22Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Using Simulation to Build Robotic Systems for Hospital Automation",
+      "link": "https://developer.nvidia.com/blog/using-simulation-to-build-robotic-systems-for-hospital-automation/",
+      "description": "Healthcare faces a structural demand–capacity crisis: a projected global shortfall of ~10 million clinicians by 2030, billions of diagnostic exams annually...",
+      "pubDate": "2026-03-20T12:28:31Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Inside NVIDIA Groq 3 LPX: The Low-Latency Inference Accelerator for the NVIDIA Vera Rubin Platform",
+      "link": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/",
+      "description": "NVIDIA Groq 3 LPX is a new rack-scale inference accelerator for the NVIDIA Vera Rubin platform, designed for the low-latency and large-context demands of...",
+      "pubDate": "2026-03-20T12:24:36Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell",
+      "link": "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/",
+      "description": "AI has evolved from assistants following your directions to agents that act independently. Called claws, these agents can take a goal, figure out how to achieve...",
+      "pubDate": "2026-03-20T12:24:15Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Introducing NVIDIA BlueField-4-Powered CMX Context Memory Storage Platform for the Next Frontier of AI",
+      "link": "https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/",
+      "description": "AI‑native organizations increasingly face scaling challenges as agentic AI workflows drive context windows to millions of tokens and models scale toward...",
+      "pubDate": "2026-03-19T16:48:21Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Building the AI Grid with NVIDIA: Orchestrating Intelligence Everywhere",
+      "link": "https://developer.nvidia.com/blog/building-the-ai-grid-with-nvidia-orchestrating-intelligence-everywhere/",
+      "description": "AI-native services are exposing a new bottleneck in AI infrastructure: As millions of users, agents, and devices demand access to intelligence, the challenge is...",
+      "pubDate": "2026-03-19T16:48:15Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain",
+      "link": "https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/",
+      "description": "While consumer AI offers powerful capabilities, workplace tools often suffer from disjointed data and limited context. Built with LangChain, the NVIDIA AI-Q...",
+      "pubDate": "2026-03-19T16:48:13Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How we monitor internal coding agents for misalignment",
+      "link": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
+      "description": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.",
+      "pubDate": "Thu, 19 Mar 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "OpenAI to acquire Astral",
+      "link": "https://openai.com/index/openai-to-acquire-astral",
+      "description": "Accelerates Codex growth to power the next generation of Python developer tools",
+      "pubDate": "Thu, 19 Mar 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Friend Bubbles: Enhancing Social Discovery on Facebook Reels",
+      "link": "https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/",
+      "description": "Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to, helping you discover new content and making it easier to connect over shared interests. This article explains the technical architecture behind friend bubbles, including how machine learning estimates relationship strength and ranks content your friends have interacted with to create more [...] Read More... The",
+      "pubDate": "Wed, 18 Mar 2026 18:19:33 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Ranking Engineer Agent (REA): The Autonomous AI Agent Accelerating Meta’s Ads Ranking Innovation",
+      "link": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "description": "Meta’s Ranking Engineer Agent (REA) autonomously executes key steps across the end-to-end machine learning (ML) lifecycle for ads ranking models. This post covers REA’s ML experimentation capabilities: autonomously generating hypotheses, launching training jobs, debugging failures, and iterating on results. Future posts will cover additional REA capabilities. REA reduces the need for manual interv",
+      "pubDate": "Tue, 17 Mar 2026 20:07:52 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "State of Open Source on Hugging Face: Spring 2026",
+      "link": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "description": "",
+      "pubDate": "Tue, 17 Mar 2026 16:37:55 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Measuring progress toward AGI: A cognitive framework",
+      "link": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+      "description": "We’re introducing a framework to measure progress toward AGI, and launching a Kaggle hackathon to build the relevant evaluations.",
+      "pubDate": "Tue, 17 Mar 2026 16:03:47 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Holotron-12B - High Throughput Computer Use Agent",
+      "link": "https://huggingface.co/blog/Hcompany/holotron-12b",
+      "description": "",
+      "pubDate": "Tue, 17 Mar 2026 12:33:39 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Introducing GPT-5.4 mini and nano",
+      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.",
+      "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "link": "https://openai.com/index/japan-teen-safety-blueprint",
+      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
+      "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Equipping workers with insights about compensation",
+      "link": "https://openai.com/index/equipping-workers-with-insights-about-compensation",
+      "description": "New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.",
+      "pubDate": "Tue, 17 Mar 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Why Codex Security Doesn’t Include a SAST Report",
+      "link": "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "description": "A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives.",
+      "pubDate": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps",
+      "link": "https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/",
+      "description": "Even seemingly simple engineering tasks — like updating an API — can become monumental undertakings when you’re dealing with millions of lines of code and thousands of engineers, especially if the changes are security-related. Nowhere is this more apparent than in mobile security, where a single class of vulnerability can be replicated across hundreds of [...] Read More... The post Patch Me If You",
+      "pubDate": "Fri, 13 Mar 2026 16:00:26 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Rakuten fixes issues twice as fast with Codex",
+      "link": "https://openai.com/index/rakuten",
+      "description": "Rakuten uses Codex, the coding agent from OpenAI, to ship software faster and safer, reducing MTTR 50%, automating CI/CD reviews, and delivering full-stack builds in weeks.",
+      "pubDate": "Wed, 11 Mar 2026 13:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Designing AI agents to resist prompt injection",
+      "link": "https://openai.com/index/designing-agents-to-resist-prompt-injection",
+      "description": "How ChatGPT defends against prompt injection and social engineering by constraining risky actions and protecting sensitive data in agent workflows.",
+      "pubDate": "Wed, 11 Mar 2026 11:30:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "From model to agent: Equipping the Responses API with a computer environment",
+      "link": "https://openai.com/index/equip-responses-api-computer-environment",
+      "description": "How OpenAI built an agent runtime using the Responses API, shell tool, and hosted containers to run secure, scalable agents with files, tools, and state.",
+      "pubDate": "Wed, 11 Mar 2026 11:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
+      "link": "https://openai.com/index/wayfair",
+      "description": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
+      "pubDate": "Wed, 11 Mar 2026 11:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Introducing Storage Buckets on the Hugging Face Hub",
+      "link": "https://huggingface.co/blog/storage-buckets",
+      "description": "",
+      "pubDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
+      "link": "https://huggingface.co/blog/async-rl-training-landscape",
+      "description": "",
+      "pubDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "How Advanced Browsing Protection Works in Messenger",
+      "link": "https://engineering.fb.com/2026/03/09/security/how-advanced-browsing-protection-works-in-messenger/",
+      "description": "We’re sharing the technical details behind how Advanced Browsing Protection (ABP) in Messenger protects the privacy of the links clicked on within chats while still warning people about malicious links. We hope that this post has helped to illuminate some of the engineering challenges and infrastructure components involved for providing this feature for our users. [...] Read More... The post How A",
+      "pubDate": "Mon, 09 Mar 2026 16:00:36 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+      "link": "https://deepmind.google/blog/10-years-of-alphago/",
+      "description": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+      "pubDate": "Mon, 09 Mar 2026 13:52:36 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+      "link": "https://huggingface.co/blog/ulysses-sp",
+      "description": "",
+      "pubDate": "Mon, 09 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "LeRobot v0.5.0: Scaling Every Dimension",
+      "link": "https://huggingface.co/blog/lerobot-release-v050",
+      "description": "",
+      "pubDate": "Mon, 09 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+      "link": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+      "description": "",
+      "pubDate": "Thu, 05 Mar 2026 14:16:49 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+      "link": "https://huggingface.co/blog/modular-diffusers",
+      "description": "",
+      "pubDate": "Thu, 05 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+      "description": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+      "pubDate": "Tue, 03 Mar 2026 16:35:55 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "FFmpeg at Meta: Media Processing at Scale",
+      "link": "https://engineering.fb.com/2026/03/02/video-engineering/ffmpeg-at-meta-media-processing-at-scale/",
+      "description": "FFmpeg is truly a multi-tool for media processing. As an industry-standard tool it supports a wide variety of audio and video codecs and container formats. It can also orchestrate complex chains of filters for media editing and manipulation. For the people who use our apps, FFmpeg plays an important role in enabling new video experiences [...] Read More... The post FFmpeg at Meta: Media Processing",
+      "pubDate": "Mon, 02 Mar 2026 20:00:12 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Investing in Infrastructure: Meta’s Renewed Commitment to jemalloc",
+      "link": "https://engineering.fb.com/2026/03/02/data-infrastructure/investing-in-infrastructure-metas-renewed-commitment-to-jemalloc/",
+      "description": "Meta recognizes the long-term benefits of jemalloc, a high-performance memory allocator, in its software infrastructure. We are renewing focus on jemalloc, aiming to reduce maintenance needs and modernize the codebase while continuing to evolve the allocator to adapt to the latest hardware and workloads. We are committed to continuing to develop jemalloc development with the [...] Read More... The",
+      "pubDate": "Mon, 02 Mar 2026 17:00:04 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
       "link": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
@@ -9,166 +499,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Pacific Northwest National Laboratory and OpenAI partner to accelerate federal permitting",
-      "link": "https://openai.com/index/pacific-northwest-national-laboratory",
-      "description": "OpenAI and Pacific Northwest National Laboratory introduce DraftNEPABench, a new benchmark evaluating how AI coding agents can accelerate federal permitting—showing potential to reduce NEPA drafting time by up to 15% and modernize infrastructure reviews.",
-      "pubDate": "Thu, 26 Feb 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "OpenAI Codex and Figma launch seamless code-to-design experience",
-      "link": "https://openai.com/index/figma-partnership",
-      "description": "OpenAI and Figma launch a new Codex integration that connects code and design, enabling teams to move between implementation and the Figma canvas to iterate and ship faster.",
-      "pubDate": "Thu, 26 Feb 2026 06:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Latent Context Compilation: Distilling Long Context into Compact Portable Memory",
-      "link": "https://arxiv.org/abs/2602.21221",
-      "description": "arXiv:2602.21221v1 Announce Type: new Abstract: Efficient long-context LLM deployment is stalled by a dichotomy between amortized compression, which struggles with out-of-distribution generalization, and Test-Time Training, which incurs prohibitive synthetic data costs and requires modifying model weights, creating stateful parameters that complicate concurrent serving. We propose Latent Context C",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "ACAR: Adaptive Complexity Routing for Multi-Model Ensembles with Auditable Decision Traces",
-      "link": "https://arxiv.org/abs/2602.21231",
-      "description": "arXiv:2602.21231v1 Announce Type: new Abstract: We present ACAR (Adaptive Complexity and Attribution Routing), a measurement framework for studying multi-model orchestration under auditable conditions. ACAR uses self-consistency variance (sigma) computed from N=3 probe samples to route tasks across single-model, two-model, and three-model execution modes. The system is implemented on top of TEAMLL",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Urban Vibrancy Embedding and Application on Traffic Prediction",
-      "link": "https://arxiv.org/abs/2602.21232",
-      "description": "arXiv:2602.21232v1 Announce Type: new Abstract: Urban vibrancy reflects the dynamic human activity within urban spaces and is often measured using mobile data that captures floating population trends. This study proposes a novel approach to derive Urban Vibrancy embeddings from real-time floating population data to enhance traffic prediction models. Specifically, we utilize variational autoencoder",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "AngelSlim: A more accessible, comprehensive, and efficient toolkit for large model compression",
-      "link": "https://arxiv.org/abs/2602.21233",
-      "description": "arXiv:2602.21233v1 Announce Type: new Abstract: This technical report introduces AngelSlim, a comprehensive and versatile toolkit for large model compression developed by the Tencent Hunyuan team. By consolidating cutting-edge algorithms, including quantization, speculative decoding, token pruning, and distillation. AngelSlim provides a unified pipeline that streamlines the transition from model c",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Group Orthogonalized Policy Optimization:Group Policy Optimization as Orthogonal Projection in Hilbert Space",
-      "link": "https://arxiv.org/abs/2602.21269",
-      "description": "arXiv:2602.21269v1 Announce Type: new Abstract: We present Group Orthogonalized Policy Optimization (GOPO), a new alignment algorithm for large language models derived from the geometry of Hilbert function spaces. Instead of optimizing on the probability simplex and inheriting the exponential curvature of Kullback-Leibler divergence, GOPO lifts alignment into the Hilbert space L2(pi_k) of square-i",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Neural network optimization strategies and the topography of the loss landscape",
-      "link": "https://arxiv.org/abs/2602.21276",
-      "description": "arXiv:2602.21276v1 Announce Type: new Abstract: Neural networks are trained by optimizing multi-dimensional sets of fitting parameters on non-convex loss landscapes. Low-loss regions of the landscapes correspond to the parameter sets that perform well on the training data. A key issue in machine learning is the performance of trained neural networks on previously unseen test data. Here, we investi",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Robust AI Evaluation through Maximal Lotteries",
-      "link": "https://arxiv.org/abs/2602.21297",
-      "description": "arXiv:2602.21297v1 Announce Type: new Abstract: The standard way to evaluate language models on subjective tasks is through pairwise comparisons: an annotator chooses the \"better\" of two responses to a prompt. Leaderboards aggregate these comparisons into a single Bradley-Terry (BT) ranking, forcing heterogeneous preferences into a total order and violating basic social-choice desiderata. In contr",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "SymTorch: A Framework for Symbolic Distillation of Deep Neural Networks",
-      "link": "https://arxiv.org/abs/2602.21307",
-      "description": "arXiv:2602.21307v1 Announce Type: new Abstract: Symbolic distillation replaces neural networks, or components thereof, with interpretable, closed-form mathematical expressions. This approach has shown promise in discovering physical laws and mathematical relationships directly from trained deep learning models, yet adoption remains limited due to the engineering barrier of integrating symbolic reg",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Shared Nature, Unique Nurture: PRISM for Pluralistic Reasoning via In-context Structure Modeling",
-      "link": "https://arxiv.org/abs/2602.21317",
-      "description": "arXiv:2602.21317v1 Announce Type: new Abstract: Large Language Models (LLMs) are converging towards a singular Artificial Hivemind, where shared Nature (pre-training priors) result in a profound collapse of distributional diversity, limiting the distinct perspectives necessary for creative exploration and scientific discovery. To address this, we propose to equip models with inference-time Nurture",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Uncertainty-Aware Diffusion Model for Multimodal Highway Trajectory Prediction via DDIM Sampling",
-      "link": "https://arxiv.org/abs/2602.21319",
-      "description": "arXiv:2602.21319v1 Announce Type: new Abstract: Accurate and uncertainty-aware trajectory prediction remains a core challenge for autonomous driving, driven by complex multi-agent interactions, diverse scene contexts and the inherently stochastic nature of future motion. Diffusion-based generative models have recently shown strong potential for capturing multimodal futures, yet existing approaches",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 -0500",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Mixture of Experts (MoEs) in Transformers",
-      "link": "https://huggingface.co/blog/moe-transformers",
-      "description": "",
-      "pubDate": "Thu, 26 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
-      "link": "https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab/",
-      "description": "Building robust, intelligent robots requires testing them in complex environments. However, gathering data in the physical world is expensive, slow, and often...",
-      "pubDate": "2026-02-25T18:15:25Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Disrupting malicious uses of AI | February 2026",
-      "link": "https://openai.com/index/disrupting-malicious-ai-uses",
-      "description": "Our latest threat report examines how malicious actors combine AI models with websites and social platforms—and what it means for detection and defense.",
-      "pubDate": "Wed, 25 Feb 2026 00:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Making Softmax More Efficient with NVIDIA Blackwell Ultra",
-      "link": "https://developer.nvidia.com/blog/making-softmax-more-efficient-with-nvidia-blackwell-ultra/",
-      "description": "LLM context lengths are exploding, and architectures are moving toward complex attention schemes like Multi-Head Latent Attention (MLA) and Grouped Query...",
-      "pubDate": "2026-02-24T23:30:09Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
@@ -182,106 +512,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Using NVFP4 Low-Precision Model Training for Higher Throughput Without Losing Accuracy",
-      "link": "https://developer.nvidia.com/blog/using-nvfp4-low-precision-model-training-for-higher-throughput-without-losing-accuracy/",
-      "description": "As the sizes of AI models and datasets continue to increase, relying only on higher-precision BF16 training is no longer sufficient. Key challenges such as...",
-      "pubDate": "2026-02-24T18:05:13Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Arvind KC appointed Chief People Officer",
-      "link": "https://openai.com/index/arvind-kc-chief-people-officer",
-      "description": "OpenAI appoints Arvind KC as Chief People Officer to help scale the company, strengthen its culture, and lead how work evolves in the age of AI.",
-      "pubDate": "Tue, 24 Feb 2026 13:40:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
-      "link": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
-      "description": "",
-      "pubDate": "Tue, 24 Feb 2026 00:00:21 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Why we no longer evaluate SWE-bench Verified",
-      "link": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified",
-      "description": "SWE-bench Verified is increasingly contaminated and mismeasures frontier coding progress. Our analysis shows flawed tests and training leakage. We recommend SWE-bench Pro.",
-      "pubDate": "Mon, 23 Feb 2026 11:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "OpenAI announces Frontier Alliance Partners",
-      "link": "https://openai.com/index/frontier-alliance-partners",
-      "description": "OpenAI announces Frontier Alliance Partners to help enterprises move from AI pilots to production with secure, scalable agent deployments.",
-      "pubDate": "Mon, 23 Feb 2026 05:30:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Our First Proof submissions",
-      "link": "https://openai.com/index/first-proof-submissions",
-      "description": "We share our AI model’s proof attempts for the First Proof math challenge, testing research-grade reasoning on expert-level problems.",
-      "pubDate": "Fri, 20 Feb 2026 14:30:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
-      "link": "https://huggingface.co/blog/ggml-joins-hf",
-      "description": "",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
-      "link": "https://huggingface.co/blog/unsloth-jobs",
-      "description": "",
-      "pubDate": "Fri, 20 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization",
-      "link": "https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/",
-      "description": "NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors, but...",
-      "pubDate": "2026-02-19T21:34:26Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
-      "link": "https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/",
-      "description": "Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...",
-      "pubDate": "2026-02-19T17:43:54Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "link": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
       "description": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
@@ -292,36 +522,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Advancing independent research on AI alignment",
-      "link": "https://openai.com/index/advancing-independent-research-ai-alignment",
-      "description": "OpenAI commits $7.5M to The Alignment Project to fund independent AI alignment research, strengthening global efforts to address AGI safety and security risks.",
-      "pubDate": "Thu, 19 Feb 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Introducing OpenAI for India",
-      "link": "https://openai.com/index/openai-for-india",
-      "description": "OpenAI for India expands AI access across the country—building local infrastructure, powering enterprises, and advancing workforce skills.",
-      "pubDate": "Wed, 18 Feb 2026 21:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
-      "link": "https://huggingface.co/blog/ibm-research/itbenchandmast",
-      "description": "",
-      "pubDate": "Wed, 18 Feb 2026 16:15:45 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
       "title": "A new way to express yourself: Gemini can now create music",
       "link": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
       "description": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
@@ -329,56 +529,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "One-Shot Any Web App with Gradio's gr.HTML",
-      "link": "https://huggingface.co/blog/gradio-html-one-shot-apps",
-      "description": "",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Introducing EVMbench",
-      "link": "https://openai.com/index/introducing-evmbench",
-      "description": "OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.",
-      "pubDate": "Wed, 18 Feb 2026 00:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Topping the GPU MODE Kernel Leaderboard with NVIDIA cuda.compute",
-      "link": "https://developer.nvidia.com/blog/topping-the-gpu-mode-kernel-leaderboard-with-nvidia-cuda-compute/",
-      "description": "Python dominates machine learning for its ergonomics, but writing truly fast GPU code has historically meant dropping into C++ to write custom kernels and to...",
-      "pubDate": "2026-02-17T22:19:16Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "How NVIDIA Extreme Hardware-Software Co-Design Delivered a Large Inference Boost for Sarvam AI’s Sovereign Models",
-      "link": "https://developer.nvidia.com/blog/how-nvidia-extreme-hardware-software-co-design-delivered-a-large-inference-boost-for-sarvam-ais-sovereign-models/",
-      "description": "As global AI adoption accelerates, developers face a growing challenge: delivering large language model (LLM) performance that meets real-world latency and cost...",
-      "pubDate": "2026-02-17T22:18:51Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Unlock Massive Token Throughput with GPU Fractioning in NVIDIA Run:ai",
-      "link": "https://developer.nvidia.com/blog/unlock-massive-token-throughput-with-gpu-fractioning-in-nvidia-runai/",
-      "description": "As AI workloads scale, achieving high throughput, efficient resource usage, and predictable latency becomes essential. NVIDIA Run:ai addresses these challenges...",
-      "pubDate": "2026-02-17T20:27:05Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
@@ -392,16 +542,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Custom Kernels for All from Codex and Claude",
-      "link": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-      "description": "",
-      "pubDate": "Fri, 13 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
       "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
       "link": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
       "description": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges.",
@@ -409,26 +549,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
-      "link": "https://huggingface.co/blog/openenv-turing",
-      "description": "",
-      "pubDate": "Thu, 12 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Using Accelerated Computing to Live-Steer Scientific Experiments at Massive Research Facilities",
-      "link": "https://developer.nvidia.com/blog/using-accelerated-computing-to-live-steer-scientific-experiments-at-massive-research-facilities/",
-      "description": "Scientists and engineers who design and build unique scientific research facilities face similar challenges. These include managing massive data rates that...",
-      "pubDate": "2026-02-11T18:32:07Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
@@ -462,46 +582,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Transformers.js v4 Preview: Now Available on NPM!",
-      "link": "https://huggingface.co/blog/transformersjs-v4",
-      "description": "",
-      "pubDate": "Mon, 09 Feb 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Automating Inference Optimizations with NVIDIA TensorRT LLM AutoDeploy",
-      "link": "https://developer.nvidia.com/blog/automating-inference-optimizations-with-nvidia-tensorrt-llm-autodeploy/",
-      "description": "NVIDIA TensorRT LLM enables developers to build high-performance inference engines for large language models (LLMs), but deploying a new architecture...",
-      "pubDate": "2026-02-06T19:46:46Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Introducing SyGra Studio",
-      "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
-      "description": "",
-      "pubDate": "Thu, 05 Feb 2026 16:52:28 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "No Display? No Problem: Cross-Device Passkey Authentication for XR Devices",
-      "link": "https://engineering.fb.com/2026/02/04/security/cross-device-passkey-authentication-for-xr-devices-meta-quest/",
-      "description": "We’re sharing a novel approach to enabling cross-device passkey authentication for devices with inaccessible displays (like XR devices). Our approach bypasses the use of QR codes and enables cross-device authentication without the need for an on-device display, while still complying with all trust and proximity requirements. This approach builds on work done by the FIDO [...] Read More... The post",
-      "pubDate": "Wed, 04 Feb 2026 22:00:07 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Project Genie: Experimenting with infinite, interactive worlds",
       "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
       "description": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds.",
@@ -509,86 +589,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Rust at Scale: An Added Layer of Security for WhatsApp",
-      "link": "https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/",
-      "description": "WhatsApp has adopted and rolled out a new layer of security for users – built with Rust – as part of its effort to harden defenses against malware threats. WhatsApp’s experience creating and distributing our media consistency library in Rust to billions of devices and browsers proves Rust is production ready at a global scale. [...] Read More... The post Rust at Scale: An Added Layer of Security f",
-      "pubDate": "Tue, 27 Jan 2026 15:00:09 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "D4RT: Teaching AI to see the world in four dimensions",
-      "link": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
-      "description": "D4RT: Unified, efficient 4D reconstruction and tracking up to 300x faster than prior methods.",
-      "pubDate": "Fri, 16 Jan 2026 10:39:00 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Adapting the Facebook Reels RecSys AI Model Based on User Feedback",
-      "link": "https://engineering.fb.com/2026/01/14/ml-applications/adapting-the-facebook-reels-recsys-ai-model-based-on-user-feedback/",
-      "description": "We’ve improved personalized video recommendations on Facebook Reels by moving beyond metrics such as likes and watch time and directly leveraging user feedback. Our new User True Interest Survey (UTIS) model, now helps surface more niche, high-quality content and boosts engagement, retention, and satisfaction. We’re doubling down on personalization, tackling challenges like sparse user data [...] ",
-      "pubDate": "Wed, 14 Jan 2026 20:51:33 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Veo 3.1 Ingredients to Video: More consistency, creativity and control",
-      "link": "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
-      "description": "Our latest Veo update generates lively, dynamic clips that feel natural and engaging — and supports vertical video generation.",
-      "pubDate": "Tue, 13 Jan 2026 17:00:18 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "CSS at Scale With StyleX",
-      "link": "https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/",
-      "description": "Build a large enough website with a large enough codebase, and you’ll eventually find that CSS presents challenges at scale. It’s no different at Meta, which is why we open-sourced StyleX, a solution for CSS at scale. StyleX combines the ergonomics of CSS-in-JS with the performance of static CSS. It allows atomic styling of components [...] Read More... The post CSS at Scale With StyleX appeared f",
-      "pubDate": "Mon, 12 Jan 2026 18:34:59 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
-      "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
-      "description": "Google 2025 recap: Research breakthroughs of the year",
-      "pubDate": "Tue, 23 Dec 2025 17:01:02 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Python Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption",
-      "link": "https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/",
-      "description": "The 2025 Typed Python Survey, conducted by contributors from JetBrains, Meta, and the broader Python typing community, offers a comprehensive look at the current state of Python’s type system and developer tooling. With 1,241 responses (a 15% increase from last year), the survey captures the evolving sentiment, challenges, and opportunities around Python typing in the [...] Read More... The post P",
-      "pubDate": "Mon, 22 Dec 2025 14:00:16 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "DrP: Meta’s Root Cause Analysis Platform at Scale",
-      "link": "https://engineering.fb.com/2025/12/19/data-infrastructure/drp-metas-root-cause-analysis-platform-at-scale/",
-      "description": "Incident investigation can be a daunting task in today’s digital landscape, where large-scale systems comprise numerous interconnected components and dependencies DrP is a root cause analysis (RCA) platform, designed by Meta, to programmatically automate the investigation process, significantly reducing the mean time to resolve (MTTR) for incidents and alleviating on-call toil Today, DrP is used [",
-      "pubDate": "Fri, 19 Dec 2025 17:35:13 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
       "sourceBadgeText": "#fff"
     }
   ]
