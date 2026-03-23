@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-23T06:18:19Z",
+  "updatedAt": "2026-03-23T07:18:21Z",
   "items": [
     {
       "title": "Speculating Experts Accelerates Inference for Mixture-of-Experts",
@@ -102,6 +102,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "Deploying Disaggregated LLM Inference Workloads on Kubernetes",
+      "link": "https://developer.nvidia.com/blog/deploying-disaggregated-llm-inference-workloads-on-kubernetes/",
+      "description": "As large language model (LLM) inference workloads grow in complexity, a single monolithic serving process starts to hit its limits. Prefill and decode stages...",
+      "pubDate": "2026-03-22T21:33:34Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "Build a Domain-Specific Embedding Model in Under a Day",
       "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
       "description": "",
@@ -166,16 +176,6 @@
       "link": "https://developer.nvidia.com/blog/using-simulation-to-build-robotic-systems-for-hospital-automation/",
       "description": "Healthcare faces a structural demand–capacity crisis: a projected global shortfall of ~10 million clinicians by 2030, billions of diagnostic exams annually...",
       "pubDate": "2026-03-20T12:28:31Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Inside NVIDIA Groq 3 LPX: The Low-Latency Inference Accelerator for the NVIDIA Vera Rubin Platform",
-      "link": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/",
-      "description": "NVIDIA Groq 3 LPX is a new rack-scale inference accelerator for the NVIDIA Vera Rubin platform, designed for the low-latency and large-context demands of...",
-      "pubDate": "2026-03-20T12:24:36Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
