@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-03-24T15:18:19Z",
+  "updatedAt": "2026-03-24T16:18:20Z",
   "items": [
+    {
+      "title": "Powering product discovery in ChatGPT",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
+      "pubDate": "Tue, 24 Mar 2026 09:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Update on the OpenAI Foundation",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.",
+      "pubDate": "Tue, 24 Mar 2026 09:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "JointFM-0.1: A Foundation Model for Multi-Target Joint Distributional Prediction",
       "link": "https://arxiv.org/abs/2603.20266",
@@ -112,6 +132,16 @@
       "sourceBadgeText": "#000"
     },
     {
+      "title": "Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety",
+      "link": "https://developer.nvidia.com/blog/building-nvidia-nemotron-3-agents-for-reasoning-multimodal-rag-voice-and-safety/",
+      "description": "Agentic AI is an ecosystem where specialized models work together to handle planning, reasoning, retrieval, and safety guardrailing. As these systems scale,...",
+      "pubDate": "2026-03-23T22:06:08Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "NVIDIA IGX Thor Powers Industrial, Medical, and Robotics Edge AI Applications",
       "link": "https://developer.nvidia.com/blog/nvidia-igx-thor-powers-industrial-medical-and-robotics-edge-ai-applications/",
       "description": "Industrial and medical systems are rapidly increasing the use of high-performance AI to improve worker productivity, human-machine interaction, and downtime...",
@@ -180,16 +210,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Design, Simulate, and Scale AI Factory Infrastructure with NVIDIA DSX Air",
-      "link": "https://developer.nvidia.com/blog/design-simulate-and-scale-ai-factory-infrastructure-with-nvidia-dsx-air/",
-      "description": "Building AI factories is complex and requires efficient integration across compute, networking, security, and storage systems. To achieve rapid Time to AI and...",
-      "pubDate": "2026-03-20T12:29:58Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "How NVIDIA Dynamo 1.0 Powers Multi-Node Inference at Production Scale",
@@ -366,26 +386,6 @@
       "link": "https://openai.com/index/rakuten",
       "description": "Rakuten uses Codex, the coding agent from OpenAI, to ship software faster and safer, reducing MTTR 50%, automating CI/CD reviews, and delivering full-stack builds in weeks.",
       "pubDate": "Wed, 11 Mar 2026 13:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Designing AI agents to resist prompt injection",
-      "link": "https://openai.com/index/designing-agents-to-resist-prompt-injection",
-      "description": "How ChatGPT defends against prompt injection and social engineering by constraining risky actions and protecting sensitive data in agent workflows.",
-      "pubDate": "Wed, 11 Mar 2026 11:30:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
-      "link": "https://openai.com/index/wayfair",
-      "description": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
-      "pubDate": "Wed, 11 Mar 2026 11:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
