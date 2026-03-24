@@ -1,8 +1,108 @@
 {
-  "updatedAt": "2026-03-24T03:18:19Z",
+  "updatedAt": "2026-03-24T04:18:19Z",
   "items": [
     {
-      "title": "A New Framework for Evaluation of Voice Agents (EVA)",
+      "title": "JointFM-0.1: A Foundation Model for Multi-Target Joint Distributional Prediction",
+      "link": "https://arxiv.org/abs/2603.20266",
+      "description": "arXiv:2603.20266v1 Announce Type: new Abstract: Despite the rapid advancements in Artificial Intelligence (AI), Stochastic Differential Equations (SDEs) remain the gold-standard formalism for modeling systems under uncertainty. However, applying SDEs in practice is fraught with challenges: modeling risk is high, calibration is often brittle, and high-fidelity simulations are computationally expens",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "MARLIN: Multi-Agent Reinforcement Learning for Incremental DAG Discovery",
+      "link": "https://arxiv.org/abs/2603.20295",
+      "description": "arXiv:2603.20295v1 Announce Type: new Abstract: Uncovering causal structures from observational data is crucial for understanding complex systems and making informed decisions. While reinforcement learning (RL) has shown promise in identifying these structures in the form of a directed acyclic graph (DAG), existing methods often lack efficiency, making them unsuitable for online applications. In t",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Collaborative Adaptive Curriculum for Progressive Knowledge Distillation",
+      "link": "https://arxiv.org/abs/2603.20296",
+      "description": "arXiv:2603.20296v1 Announce Type: new Abstract: Recent advances in collaborative knowledge distillation have demonstrated cutting-edge performance for resource-constrained distributed multimedia learning scenarios. However, achieving such competitiveness requires addressing a fundamental mismatch: high-dimensional teacher knowledge complexity versus heterogeneous client learning capacities, which ",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Transformer-Based Predictive Maintenance for Risk-Aware Instrument Calibration",
+      "link": "https://arxiv.org/abs/2603.20297",
+      "description": "arXiv:2603.20297v1 Announce Type: new Abstract: Accurate calibration is essential for instruments whose measurements must remain traceable, reliable, and compliant over long operating periods. Fixed-interval programs are easy to administer, but they ignore that instruments drift at different rates under different conditions. This paper studies calibration scheduling as a predictive maintenance pro",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Rolling-Origin Validation Reverses Model Rankings in Multi-Step PM10 Forecasting: XGBoost, SARIMA, and Persistence",
+      "link": "https://arxiv.org/abs/2603.20315",
+      "description": "arXiv:2603.20315v1 Announce Type: new Abstract: (a) Many air quality forecasting studies report gains from machine learning, but evaluations often use static chronological splits and omit persistence baselines, so the operational added value under routine updating is unclear. (b) Using 2,350 daily PM10 observations from 2017 to 2024 at an urban background monitoring station in southern Europe, we ",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Probing the Latent World: Emergent Discrete Symbols and Physical Structure in Latent Representations",
+      "link": "https://arxiv.org/abs/2603.20327",
+      "description": "arXiv:2603.20327v1 Announce Type: new Abstract: Video world models trained with Joint Embedding Predictive Architectures (JEPA) acquire rich spatiotemporal representations by predicting masked regions in latent space rather than reconstructing pixels. This removes the visual verification pathway of generative models, creating a structural interpretability gap: the encoder has learned physical stru",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Bounded Coupled AI Learning Dynamics in Tri-Hierarchical Drone Swarms",
+      "link": "https://arxiv.org/abs/2603.20333",
+      "description": "arXiv:2603.20333v1 Announce Type: new Abstract: Modern autonomous multi-agent systems combine heterogeneous learning mechanisms operating at different timescales. An open question remains: can one formally guarantee that coupled dynamics of such mechanisms stay within the admissible operational regime? This paper studies a tri-hierarchical swarm learning system where three mechanisms act simultane",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Hybrid Autoencoder-Isolation Forest approach for time series anomaly detection in C70XP cyclotron operation data at ARRONAX",
+      "link": "https://arxiv.org/abs/2603.20335",
+      "description": "arXiv:2603.20335v1 Announce Type: new Abstract: The Interest Public Group ARRONAX's C70XP cyclotron, used for radioisotope production for medical and research applications, relies on complex and costly systems that are prone to failures, leading to operational disruptions. In this context, this study aims to develop a machine learning-based method for early anomaly detection, from sensor measureme",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Graph-Aware Text-Only Backdoor Poisoning for Text-Attributed Graphs",
+      "link": "https://arxiv.org/abs/2603.20339",
+      "description": "arXiv:2603.20339v1 Announce Type: new Abstract: Many learning systems now use graph data in which each node also contains text, such as papers with abstracts or users with posts. Because these texts often come from open platforms, an attacker may be able to quietly poison a small part of the training data and later make the model produce wrong predictions on demand. This paper studies that risk in",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Interpretable Multiple Myeloma Prognosis with Observational Medical Outcomes Partnership Data",
+      "link": "https://arxiv.org/abs/2603.20341",
+      "description": "arXiv:2603.20341v1 Announce Type: new Abstract: Machine learning (ML) promises better clinical decision-making, yet opaque model behavior limits the adoption in healthcare. We propose two novel regularization techniques for ensuring the interpretability of ML models trained on real-world data. In particular, we consider the prediction of five-year survival for multiple myeloma patients using clini",
+      "pubDate": "Tue, 24 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A New Framework for Evaluating Voice Agents (EVA)",
       "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
       "description": "",
       "pubDate": "Tue, 24 Mar 2026 02:01:52 GMT",
@@ -19,106 +119,6 @@
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Speculating Experts Accelerates Inference for Mixture-of-Experts",
-      "link": "https://arxiv.org/abs/2603.19289",
-      "description": "arXiv:2603.19289v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) models have gained popularity as a means of scaling the capacity of large language models (LLMs) while maintaining sparse activations and reduced per-token compute. However, in memory-constrained inference settings, expert weights must be offloaded to CPU, creating a performance bottleneck from CPU-GPU transfers during decodi",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "A Visualization for Comparative Analysis of Regression Models",
-      "link": "https://arxiv.org/abs/2603.19291",
-      "description": "arXiv:2603.19291v1 Announce Type: new Abstract: As regression is a widely studied problem, many methods have been proposed to solve it, each of them often requiring setting different hyper-parameters. Therefore, selecting the proper method for a given application may be very difficult and relies on comparing their performances. Performance is usually measured using various metrics such as Mean Abs",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Maximizing mutual information between user-contexts and responses improve LLM personalization with no additional data",
-      "link": "https://arxiv.org/abs/2603.19294",
-      "description": "arXiv:2603.19294v1 Announce Type: new Abstract: While post-training has successfully improved large language models (LLMs) across a variety of domains, these gains heavily rely on human-labeled data or external verifiers. Existing data has already been exploited, and new high-quality data is expensive to collect. More fundamentally, true intelligence goes far beyond tasks that are easily verifiabl",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "BrainSCL: Subtype-Guided Contrastive Learning for Brain Disorder Diagnosis",
-      "link": "https://arxiv.org/abs/2603.19295",
-      "description": "arXiv:2603.19295v1 Announce Type: new Abstract: Mental disorder populations exhibit pronounced heterogeneity -- that is, the significant differences between samples -- poses a significant challenge to the definition of positive pairs in contrastive learning. To address this, we propose a subtype-guided contrastive learning framework that models patient heterogeneity as latent subtypes and incorpor",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "TTQ: Activation-Aware Test-Time Quantization to Accelerate LLM Inference On The Fly",
-      "link": "https://arxiv.org/abs/2603.19296",
-      "description": "arXiv:2603.19296v1 Announce Type: new Abstract: To tackle the huge computational demand of large foundation models, activation-aware compression techniques without retraining have been introduced. However, since these methods highly rely on calibration data, domain shift issues may arise for unseen downstream tasks. We propose a test-time quantization (TTQ) framework which compresses large models ",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "CLaRE-ty Amid Chaos: Quantifying Representational Entanglement to Predict Ripple Effects in LLM Editing",
-      "link": "https://arxiv.org/abs/2603.19297",
-      "description": "arXiv:2603.19297v1 Announce Type: new Abstract: The static knowledge representations of large language models (LLMs) inevitably become outdated or incorrect over time. While model-editing techniques offer a promising solution by modifying a model's factual associations, they often produce unpredictable ripple effects, which are unintended behavioral changes that propagate even to the hidden space.",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "A Dynamic Bayesian and Machine Learning Framework for Quantitative Evaluation and Prediction of Operator Situation Awareness in Nuclear Power Plants",
-      "link": "https://arxiv.org/abs/2603.19298",
-      "description": "arXiv:2603.19298v1 Announce Type: new Abstract: Operator situation awareness is a pivotal yet elusive determinant of human reliability in complex nuclear control environments. Existing assessment methods, such as SAGAT and SART, remain static, retrospective, and detached from the evolving cognitive dynamics that drive operational risk. To overcome these limitations, this study introduces the dynam",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "PRIME-CVD: A Parametrically Rendered Informatics Medical Environment for Education in Cardiovascular Risk Modelling",
-      "link": "https://arxiv.org/abs/2603.19299",
-      "description": "arXiv:2603.19299v1 Announce Type: new Abstract: In recent years, progress in medical informatics and machine learning has been accelerated by the availability of openly accessible benchmark datasets. However, patient-level electronic medical record (EMR) data are rarely available for teaching or methodological development due to privacy, governance, and re-identification risks. This has limited re",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Parameter-Efficient Token Embedding Editing for Clinical Class-Level Unlearning",
-      "link": "https://arxiv.org/abs/2603.19302",
-      "description": "arXiv:2603.19302v1 Announce Type: new Abstract: Machine unlearning is increasingly important for clinical language models, where privacy regulations and institutional policies may require removing sensitive information from deployed systems without retraining from scratch. In practice, deletion requests must balance effective forgetting of targeted information with preservation of model utility an",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Exploring Subnetwork Interactions in Heterogeneous Brain Network via Prior-Informed Graph Learning",
-      "link": "https://arxiv.org/abs/2603.19307",
-      "description": "arXiv:2603.19307v1 Announce Type: new Abstract: Modeling the complex interactions among functional subnetworks is crucial for the diagnosis of mental disorders and the identification of functional pathways. However, learning the interactions of the underlying subnetworks remains a significant challenge for existing Transformer-based methods due to the limited number of training samples. To address",
-      "pubDate": "Mon, 23 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
@@ -312,9 +312,9 @@
       "sourceBadgeText": "#000"
     },
     {
-      "title": "Introducing GPT-5.4 mini and nano",
-      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
-      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.",
+      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "link": "https://openai.com/index/japan-teen-safety-blueprint",
+      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
       "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -322,9 +322,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
-      "link": "https://openai.com/index/japan-teen-safety-blueprint",
-      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.",
       "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -382,9 +382,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "From model to agent: Equipping the Responses API with a computer environment",
-      "link": "https://openai.com/index/equip-responses-api-computer-environment",
-      "description": "How OpenAI built an agent runtime using the Responses API, shell tool, and hosted containers to run secure, scalable agents with files, tools, and state.",
+      "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
+      "link": "https://openai.com/index/wayfair",
+      "description": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
       "pubDate": "Wed, 11 Mar 2026 11:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
