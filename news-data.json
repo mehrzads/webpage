@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-03-24T01:18:21Z",
+  "updatedAt": "2026-03-24T02:18:19Z",
   "items": [
+    {
+      "title": "A New Framework for Evaluation of Voice Agents (EVA)",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
+      "description": "",
+      "pubDate": "Tue, 24 Mar 2026 02:01:52 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "NVIDIA IGX Thor Powers Industrial, Medical, and Robotics Edge AI Applications",
       "link": "https://developer.nvidia.com/blog/nvidia-igx-thor-powers-industrial-medical-and-robotics-edge-ai-applications/",
@@ -446,16 +456,6 @@
       "link": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
       "description": "",
       "pubDate": "Thu, 05 Mar 2026 14:16:49 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
-      "link": "https://huggingface.co/blog/modular-diffusers",
-      "description": "",
-      "pubDate": "Thu, 05 Mar 2026 00:00:00 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
