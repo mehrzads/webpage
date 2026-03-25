@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-03-25T16:18:20Z",
+  "updatedAt": "2026-03-25T17:18:20Z",
   "items": [
+    {
+      "title": "Maximize AI Infrastructure Throughput by Consolidating Underutilized GPU Workloads",
+      "link": "https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/",
+      "description": "In production Kubernetes environments, the difference between model requirements and GPU size creates inefficiencies. Lightweight automatic speech recognition...",
+      "pubDate": "2026-03-25T16:36:00Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "How Centralized Radar Processing on NVIDIA DRIVE Enables Safer, Smarter Level 4 Autonomy",
+      "link": "https://developer.nvidia.com/blog/how-centralized-radar-processing-on-nvidia-drive-enables-safer-smarter-level-4-autonomy/",
+      "description": "In the current state of automotive radar, machine learning engineers can't work with camera-equivalent raw RGB images. Instead, they work with the output of...",
+      "pubDate": "2026-03-25T16:22:58Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Lyria 3 Pro: Create longer tracks in more",
       "link": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
@@ -12,13 +32,13 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "How Centralized Radar Processing on NVIDIA DRIVE Enables Safer, Smarter Level 4 Autonomy",
-      "link": "https://developer.nvidia.com/blog/how-centralized-radar-processing-on-nvidia-drive-enables-safer-smarter-level-4-autonomy/",
-      "description": "In the current state of automotive radar, machine learning engineers can't work with camera-equivalent raw RGB images. Instead, they work with the output of...",
-      "pubDate": "2026-03-25T15:58:59Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
+      "title": "Inside our approach to the Model Spec",
+      "link": "https://openai.com/index/our-approach-to-the-model-spec",
+      "description": "Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.",
+      "pubDate": "Wed, 25 Mar 2026 10:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -119,6 +139,16 @@
       "sourceId": "arxiv",
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Introducing the OpenAI Safety Bug Bounty program",
+      "link": "https://openai.com/index/safety-bug-bounty",
+      "description": "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.",
+      "pubDate": "Wed, 25 Mar 2026 00:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -262,16 +292,6 @@
       "sourceBadgeText": "#000"
     },
     {
-      "title": "Using Simulation to Build Robotic Systems for Hospital Automation",
-      "link": "https://developer.nvidia.com/blog/using-simulation-to-build-robotic-systems-for-hospital-automation/",
-      "description": "Healthcare faces a structural demand–capacity crisis: a projected global shortfall of ~10 million clinicians by 2030, billions of diagnostic exams annually...",
-      "pubDate": "2026-03-20T12:28:31Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Building the AI Grid with NVIDIA: Orchestrating Intelligence Everywhere",
       "link": "https://developer.nvidia.com/blog/building-the-ai-grid-with-nvidia-orchestrating-intelligence-everywhere/",
       "description": "AI-native services are exposing a new bottleneck in AI infrastructure: As millions of users, agents, and devices demand access to intelligence, the challenge is...",
@@ -366,26 +386,6 @@
       "link": "https://openai.com/index/japan-teen-safety-blueprint",
       "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
       "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Equipping workers with insights about compensation",
-      "link": "https://openai.com/index/equipping-workers-with-insights-about-compensation",
-      "description": "New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.",
-      "pubDate": "Tue, 17 Mar 2026 00:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Why Codex Security Doesn’t Include a SAST Report",
-      "link": "https://openai.com/index/why-codex-security-doesnt-include-sast",
-      "description": "A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives.",
-      "pubDate": "Mon, 16 Mar 2026 00:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
