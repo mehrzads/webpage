@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-25T10:18:19Z",
+  "updatedAt": "2026-03-25T11:18:19Z",
   "items": [
     {
       "title": "Beyond Hard Constraints: Budget-Conditioned Reachability For Safe Offline Reinforcement Learning",
@@ -112,6 +112,16 @@
       "sourceBadgeText": "#fff"
     },
     {
+      "title": "Scaling Token Factory Revenue and AI Efficiency by Maximizing Performance per Watt",
+      "link": "https://developer.nvidia.com/blog/scaling-token-factory-revenue-and-ai-efficiency-by-maximizing-performance-per-watt/",
+      "description": "In the AI era, power is the ultimate constraint, and every AI factory operates within a hard limit. This makes performance per watt—the rate at which power is...",
+      "pubDate": "2026-03-24T20:13:04Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
       "title": "How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain",
       "link": "https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/",
       "description": "While consumer AI offers powerful capabilities, workplace tools often suffer from disjointed data and limited context. Built with LangChain, the NVIDIA AI-Q...",
@@ -210,16 +220,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark",
-      "link": "https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/",
-      "description": "Autonomous AI agents are driving the next wave of AI innovation. These agents must often manage long-running tasks that use multiple communication channels and...",
-      "pubDate": "2026-03-20T18:12:53Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
