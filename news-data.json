@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-03-27T20:18:19Z",
+  "updatedAt": "2026-03-27T21:18:19Z",
   "items": [
+    {
+      "title": "STADLER reshapes knowledge work at a 230-year-old company",
+      "link": "https://openai.com/index/stadler",
+      "description": "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.",
+      "pubDate": "Fri, 27 Mar 2026 22:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Beyond Accuracy: Introducing a Symbolic-Mechanistic Approach to Interpretable Evaluation",
       "link": "https://arxiv.org/abs/2603.23517",
@@ -395,16 +405,6 @@
       "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
       "link": "https://openai.com/index/japan-teen-safety-blueprint",
       "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
-      "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Introducing GPT-5.4 mini and nano",
-      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
-      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.",
       "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
