@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-03-30T03:18:20Z",
+  "updatedAt": "2026-03-30T04:18:19Z",
   "items": [
+    {
+      "title": "Empowering Epidemic Response: The Role of Reinforcement Learning in Infectious Disease Control",
+      "link": "https://arxiv.org/abs/2603.25771",
+      "description": "arXiv:2603.25771v1 Announce Type: new Abstract: Reinforcement learning (RL), owing to its adaptability to various dynamic systems in many real-world scenarios and the capability of maximizing long-term outcomes under different constraints, has been used in infectious disease control to optimize the intervention strategies for controlling infectious disease spread and responding to outbreaks in rec",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Pure and Physics-Guided Deep Learning Solutions for Spatio-Temporal Groundwater Level Prediction at Arbitrary Locations",
+      "link": "https://arxiv.org/abs/2603.25779",
+      "description": "arXiv:2603.25779v1 Announce Type: new Abstract: Groundwater represents a key element of the water cycle, yet it exhibits intricate and context-dependent relationships that make its modeling a challenging task. Theory-based models have been the cornerstone of scientific understanding. However, their computational demands, simplifying assumptions, and calibration requirements limit their use. In rec",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "MAGNET: Autonomous Expert Model Generation via Decentralized Autoresearch and BitNet Training",
+      "link": "https://arxiv.org/abs/2603.25813",
+      "description": "arXiv:2603.25813v1 Announce Type: new Abstract: We present MAGNET (Model Autonomously Growing Network), a decentralized system for autonomous generation, training, and serving of domain-expert language models across commodity hardware. MAGNET integrates four components: (1) autoresearch, an autonomous ML research pipeline that automates dataset generation, hyperparameter exploration, evaluation, a",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A Compression Perspective on Simplicity Bias",
+      "link": "https://arxiv.org/abs/2603.25839",
+      "description": "arXiv:2603.25839v1 Announce Type: new Abstract: Deep neural networks exhibit a simplicity bias, a well-documented tendency to favor simple functions over complex ones. In this work, we cast new light on this phenomenon through the lens of the Minimum Description Length principle, formalizing supervised learning as a problem of optimal two-part lossless compression. Our theory explains how simplici",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Incorporating contextual information into KGWAS for interpretable GWAS discovery",
+      "link": "https://arxiv.org/abs/2603.25855",
+      "description": "arXiv:2603.25855v1 Announce Type: new Abstract: Genome-Wide Association Studies (GWAS) identify associations between genetic variants and disease; however, moving beyond associations to causal mechanisms is critical for therapeutic target prioritization. The recently proposed Knowledge Graph GWAS (KGWAS) framework addresses this challenge by linking genetic variants to downstream gene-gene interac",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "In-Context Molecular Property Prediction with LLMs: A Blinding Study on Memorization and Knowledge Conflicts",
+      "link": "https://arxiv.org/abs/2603.25857",
+      "description": "arXiv:2603.25857v1 Announce Type: new Abstract: The capabilities of large language models (LLMs) have expanded beyond natural language processing to scientific prediction tasks, including molecular property prediction. However, their effectiveness in in-context learning remains ambiguous, particularly given the potential for training data contamination in widely used benchmarks. This paper investi",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Why Safety Probes Catch Liars But Miss Fanatics",
+      "link": "https://arxiv.org/abs/2603.25861",
+      "description": "arXiv:2603.25861v1 Announce Type: new Abstract: Activation-based probes have emerged as a promising approach for detecting deceptively aligned AI systems by identifying internal conflict between true and stated goals. We identify a fundamental blind spot: probes fail on coherent misalignment - models that believe their harmful behavior is virtuous rather than strategically hiding it. We prove that",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "DRiffusion: Draft-and-Refine Process Parallelizes Diffusion Models with Ease",
+      "link": "https://arxiv.org/abs/2603.25872",
+      "description": "arXiv:2603.25872v1 Announce Type: new Abstract: Diffusion models have achieved remarkable success in generating high-fidelity content but suffer from slow, iterative sampling, resulting in high latency that limits their use in interactive applications. We introduce DRiffusion, a parallel sampling framework that parallelizes diffusion inference through a draft-and-refine process. DRiffusion employs",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Data-Driven Plasticity Modeling via Acoustic Profiling",
+      "link": "https://arxiv.org/abs/2603.25894",
+      "description": "arXiv:2603.25894v1 Announce Type: new Abstract: This paper presents a data-driven framework for modeling plastic deformation in crystalline metals through acoustic emission (AE) analysis. Building on experimental data from compressive loading of nickel micropillars, the study introduces a wavelet-based method using Morlet transforms to detect AE events across distinct frequency bands, enabling ide",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Decoding Defensive Coverage Responsibilities in American Football Using Factorized Attention Based Transformer Models",
+      "link": "https://arxiv.org/abs/2603.25901",
+      "description": "arXiv:2603.25901v1 Announce Type: new Abstract: Defensive coverage schemes in the National Football League (NFL) represent complex tactical patterns requiring coordinated assignments among defenders who must react dynamically to the offense's passing concept. This paper presents a factorized attention-based transformer model applied to NFL multi-agent play tracking data to predict individual cover",
+      "pubDate": "Mon, 30 Mar 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "STADLER reshapes knowledge work at a 230-year-old company",
       "link": "https://openai.com/index/stadler",
@@ -142,9 +242,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
+      "title": "Update on the OpenAI Foundation",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.",
       "pubDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -152,9 +252,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.",
+      "title": "Powering product discovery in ChatGPT",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
       "pubDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
@@ -312,9 +412,9 @@
       "sourceBadgeText": "#000"
     },
     {
-      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
-      "link": "https://openai.com/index/japan-teen-safety-blueprint",
-      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.",
       "pubDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
