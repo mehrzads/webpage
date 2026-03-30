@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-03-30T15:18:20Z",
+  "updatedAt": "2026-03-30T16:18:19Z",
   "items": [
+    {
+      "title": "AI for American-Produced Cement and Concrete",
+      "link": "https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/",
+      "description": "Meta is continuing its long-term roadmap to help the construction industry leverage AI to produce high-quality and more sustainable concrete mixes, as well as those exclusively produced in the United States. Concurrent with the 2026 American Concrete Institute (ACI) Spring Convention, Meta is releasing a new AI model for designing concrete mixes – Bayesian Optimization [...] Read More... The post ",
+      "pubDate": "Mon, 30 Mar 2026 16:00:34 +0000",
+      "sourceId": "meta",
+      "sourceName": "Meta",
+      "sourceBadgeColor": "#0064E0",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Empowering Epidemic Response: The Role of Reinforcement Learning in Infectious Disease Control",
       "link": "https://arxiv.org/abs/2603.25771",
@@ -576,16 +586,6 @@
       "link": "https://engineering.fb.com/2026/02/11/developer-tools/the-death-of-traditional-testing-agentic-development-jit-testing-revival/",
       "description": "WHAT IT IS The rise of agentic software development means code is being written, reviewed, and shipped faster than ever before across the entire industry. It also means that testing frameworks need to evolve for this rapidly changing landscape. Faster development demands faster testing that can catch bugs as they land in a codebase, without [...] Read More... The post The Death of Traditional Test",
       "pubDate": "Wed, 11 Feb 2026 17:00:05 +0000",
-      "sourceId": "meta",
-      "sourceName": "Meta",
-      "sourceBadgeColor": "#0064E0",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters",
-      "link": "https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/",
-      "description": "We’re sharing details of the role backend aggregation (BAG) plays in building Meta’s gigawatt-scale AI clusters like Prometheus. BAG allows us to seamlessly connect thousands of GPUs across multiple data centers and regions. Our BAG implementation is connecting two different network fabrics – Disaggregated Schedule Fabric (DSF) and Non-Scheduled Fabric (NSF). Once it’s complete our AI [...] Read M",
-      "pubDate": "Mon, 09 Feb 2026 17:00:33 +0000",
       "sourceId": "meta",
       "sourceName": "Meta",
       "sourceBadgeColor": "#0064E0",
