@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31T19:18:20Z",
+  "updatedAt": "2026-03-31T20:18:24Z",
   "items": [
     {
       "title": "Stream High-Fidelity Spatial Computing Content to Any Device with NVIDIA CloudXR 6.0",
@@ -40,6 +40,16 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
+    },
+    {
+      "title": "Accelerating the next phase of AI",
+      "link": "https://openai.com/index/accelerating-the-next-phase-ai",
+      "description": "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI.",
+      "pubDate": "Tue, 31 Mar 2026 13:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
+      "sourceBadgeText": "#fff"
     },
     {
       "title": "Mitigating Forgetting in Continual Learning with Selective Gradient Projection",
@@ -386,16 +396,6 @@
       "link": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
       "description": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.",
       "pubDate": "Thu, 19 Mar 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "OpenAI to acquire Astral",
-      "link": "https://openai.com/index/openai-to-acquire-astral",
-      "description": "Accelerates Codex growth to power the next generation of Python developer tools",
-      "pubDate": "Thu, 19 Mar 2026 00:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
