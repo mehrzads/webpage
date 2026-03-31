@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-03-31T14:18:22Z",
+  "updatedAt": "2026-03-31T15:18:27Z",
   "items": [
+    {
+      "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+      "description": "",
+      "pubDate": "Tue, 31 Mar 2026 15:10:41 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "Mitigating Forgetting in Continual Learning with Selective Gradient Projection",
       "link": "https://arxiv.org/abs/2603.26671",
@@ -346,16 +356,6 @@
       "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
       "description": "",
       "pubDate": "Fri, 20 Mar 2026 19:38:16 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-libraries",
-      "description": "",
-      "pubDate": "Fri, 20 Mar 2026 14:14:46 GMT",
       "sourceId": "huggingface",
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
