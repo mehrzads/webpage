@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31T13:18:25Z",
+  "updatedAt": "2026-03-31T14:18:22Z",
   "items": [
     {
       "title": "Mitigating Forgetting in Continual Learning with Selective Gradient Projection",
@@ -100,6 +100,16 @@
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
+      "link": "https://huggingface.co/blog/trl-v1",
+      "description": "",
+      "pubDate": "Tue, 31 Mar 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
     },
     {
       "title": "Building a Zero-Trust Architecture for Confidential AI Factories",
@@ -484,16 +494,6 @@
     {
       "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
       "link": "https://huggingface.co/blog/ulysses-sp",
-      "description": "",
-      "pubDate": "Mon, 09 Mar 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "LeRobot v0.5.0: Scaling Every Dimension",
-      "link": "https://huggingface.co/blog/lerobot-release-v050",
       "description": "",
       "pubDate": "Mon, 09 Mar 2026 00:00:00 GMT",
       "sourceId": "huggingface",
