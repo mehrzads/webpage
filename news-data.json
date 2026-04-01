@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-04-01T16:18:21Z",
+  "updatedAt": "2026-04-01T17:18:18Z",
   "items": [
+    {
+      "title": "Holo3: Breaking the Computer Use Frontier",
+      "link": "https://huggingface.co/blog/Hcompany/holo3",
+      "description": "",
+      "pubDate": "Wed, 01 Apr 2026 16:36:15 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "CUDA Tile Programming Now Available for BASIC!",
       "link": "https://developer.nvidia.com/blog/cuda-tile-programming-now-available-for-basic/",
-      "description": "CUDA 13.1 introduced CUDA Tile, a next generation next generation tile-based GPU programming paradigm designed to make fine-grained parallelism more accessible...",
-      "pubDate": "2026-04-01T15:55:35Z",
+      "description": "CUDA 13.1 introduced CUDA Tile, a next generation tile-based GPU programming paradigm designed to make fine-grained parallelism more accessible and flexible....",
+      "pubDate": "2026-04-01T16:20:59Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -474,16 +484,6 @@
     {
       "title": "Introducing Storage Buckets on the Hugging Face Hub",
       "link": "https://huggingface.co/blog/storage-buckets",
-      "description": "",
-      "pubDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
-      "link": "https://huggingface.co/blog/async-rl-training-landscape",
       "description": "",
       "pubDate": "Tue, 10 Mar 2026 00:00:00 GMT",
       "sourceId": "huggingface",
