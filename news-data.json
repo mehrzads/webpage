@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-04-01T14:18:23Z",
+  "updatedAt": "2026-04-01T15:18:20Z",
   "items": [
+    {
+      "title": "NVIDIA Extreme Co-Design Delivers New MLPerf Inference Records",
+      "link": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/",
+      "description": "Co-designed hardware, software, and models are key to delivering the highest AI factory throughput and lowest token cost. Measuring this goes far beyond peak...",
+      "pubDate": "2026-04-01T15:00:51Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Falcon Perception",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
@@ -182,10 +192,10 @@
       "sourceBadgeText": "#000"
     },
     {
-      "title": "Building a Zero-Trust Architecture for Confidential AI Factories",
-      "link": "https://developer.nvidia.com/blog/building-a-zero-trust-architecture-for-confidential-ai-factories/",
-      "description": "AI is moving from experimentation to production. However, most data enterprises need exists outside the public cloud. This includes sensitive information like...",
-      "pubDate": "2026-03-30T17:58:14Z",
+      "title": "Accelerate Token Production in AI Factories Using Unified Services and Real-Time AI",
+      "link": "https://developer.nvidia.com/blog/accelerate-token-production-in-ai-factories-using-unified-services-and-real-time-ai/",
+      "description": "In today’s AI factory environment, performance is not theoretical. It is economic, competitive, and existential. A 1% drop in usable GPU time can mean...",
+      "pubDate": "2026-03-30T21:17:59Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -389,16 +399,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Deploying Disaggregated LLM Inference Workloads on Kubernetes",
-      "link": "https://developer.nvidia.com/blog/deploying-disaggregated-llm-inference-workloads-on-kubernetes/",
-      "description": "As large language model (LLM) inference workloads grow in complexity, a single monolithic serving process starts to hit its limits. Prefill and decode stages...",
-      "pubDate": "2026-03-22T21:33:34Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
