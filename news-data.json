@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-04-01T06:18:19Z",
+  "updatedAt": "2026-04-01T07:18:21Z",
   "items": [
+    {
+      "title": "Falcon Perception",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
+      "description": "",
+      "pubDate": "Wed, 01 Apr 2026 07:13:20 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
+    },
     {
       "title": "OneComp: One-Line Revolution for Generative AI Model Compression",
       "link": "https://arxiv.org/abs/2603.28845",
@@ -500,16 +510,6 @@
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
       "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
-      "link": "https://huggingface.co/blog/ulysses-sp",
-      "description": "",
-      "pubDate": "Mon, 09 Mar 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
     },
     {
       "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
