@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-04-01T03:18:19Z",
+  "updatedAt": "2026-04-01T04:18:20Z",
   "items": [
+    {
+      "title": "OneComp: One-Line Revolution for Generative AI Model Compression",
+      "link": "https://arxiv.org/abs/2603.28845",
+      "description": "arXiv:2603.28845v1 Announce Type: new Abstract: Deploying foundation models is increasingly constrained by memory footprint, latency, and hardware costs. Post-training compression can mitigate these bottlenecks by reducing the precision of model parameters without significantly degrading performance; however, its practical implementation remains challenging as practitioners navigate a fragmented l",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Structural Pass Analysis in Football: Learning Pass Archetypes and Tactical Impact from Spatio-Temporal Tracking Data",
+      "link": "https://arxiv.org/abs/2603.28916",
+      "description": "arXiv:2603.28916v1 Announce Type: new Abstract: The increasing availability of spatio-temporal tracking data has created new opportunities for analysing tactical behaviour in football. However, many existing approaches evaluate passes primarily through outcome-based metrics such as scoring probability or possession value, providing limited insight into how passes influence the defensive organisati",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Beta-Scheduling: Momentum from Critical Damping as a Diagnostic and Correction Tool for Neural Network Training",
+      "link": "https://arxiv.org/abs/2603.28921",
+      "description": "arXiv:2603.28921v1 Announce Type: new Abstract: Standard neural network training uses constant momentum (typically 0.9), a convention dating to 1964 with limited theoretical justification for its optimality. We derive a time-varying momentum schedule from the critically damped harmonic oscillator: mu(t) = 1 - 2*sqrt(alpha(t)), where alpha(t) is the current learning rate. This beta-schedule require",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "A Neural Tension Operator for Curve Subdivision across Constant Curvature Geometries",
+      "link": "https://arxiv.org/abs/2603.28937",
+      "description": "arXiv:2603.28937v1 Announce Type: new Abstract: Interpolatory subdivision schemes generate smooth curves from piecewise-linear control polygons by repeatedly inserting new vertices. Classical schemes rely on a single global tension parameter and typically require separate formulations in Euclidean, spherical, and hyperbolic geometries. We introduce a shared learned tension predictor that replaces ",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Foundations of Polar Linear Algebra",
+      "link": "https://arxiv.org/abs/2603.28939",
+      "description": "arXiv:2603.28939v1 Announce Type: new Abstract: This work revisits operator learning from a spectral perspective by introducing Polar Linear Algebra, a structured framework based on polar geometry that combines a linear radial component with a periodic angular component. Starting from this formulation, we define the associated operators and analyze their spectral properties. As a proof of feasibil",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "\\texttt{ReproMIA}: A Comprehensive Analysis of Model Reprogramming for Proactive Membership Inference Attacks",
+      "link": "https://arxiv.org/abs/2603.28942",
+      "description": "arXiv:2603.28942v1 Announce Type: new Abstract: The pervasive deployment of deep learning models across critical domains has concurrently intensified privacy concerns due to their inherent propensity for data memorization. While Membership Inference Attacks (MIAs) serve as the gold standard for auditing these privacy vulnerabilities, conventional MIA paradigms are increasingly constrained by the p",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Differentiable Initialization-Accelerated CPU-GPU Hybrid Combinatorial Scheduling",
+      "link": "https://arxiv.org/abs/2603.28943",
+      "description": "arXiv:2603.28943v1 Announce Type: new Abstract: This paper presents a hybrid CPU-GPU framework for solving combinatorial scheduling problems formulated as Integer Linear Programming (ILP). While scheduling underpins many optimization tasks in computing systems, solving these problems optimally at scale remains a long-standing challenge due to their NP-hard nature. We introduce a novel approach tha",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Multi-Agent LLMs for Adaptive Acquisition in Bayesian Optimization",
+      "link": "https://arxiv.org/abs/2603.28959",
+      "description": "arXiv:2603.28959v1 Announce Type: new Abstract: The exploration-exploitation trade-off is central to sequential decision-making and black-box optimization, yet how Large Language Models (LLMs) reason about and manage this trade-off remains poorly understood. Unlike Bayesian Optimization, where exploration and exploitation are explicitly encoded through acquisition functions, LLM-based optimization",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "The Spectral Edge Thesis: A Mathematical Framework for Intra-Signal Phase Transitions in Neural Network Training",
+      "link": "https://arxiv.org/abs/2603.28964",
+      "description": "arXiv:2603.28964v1 Announce Type: new Abstract: We develop the spectral edge thesis: phase transitions in neural network training -- grokking, capability gains, loss plateaus -- are controlled by the spectral gap of the rolling-window Gram matrix of parameter updates. In the extreme aspect ratio regime (parameters $P \\sim 10^8$, window $W \\sim 10$), the classical BBP detection threshold is vacuous",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "An Explicit Surrogate for Gaussian Mixture Flow Matching with Wasserstein Gap Bounds",
+      "link": "https://arxiv.org/abs/2603.28992",
+      "description": "arXiv:2603.28992v1 Announce Type: new Abstract: We study training-free flow matching between two Gaussian mixture models (GMMs) using explicit velocity fields that transport one mixture into the other over time. Our baseline approach constructs component-wise Gaussian paths with affine velocity fields satisfying the continuity equation, which yields to a closed-form surrogate for the pairwise kine",
+      "pubDate": "Wed, 01 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Stream High-Fidelity Spatial Computing Content to Any Device with NVIDIA CloudXR 6.0",
       "link": "https://developer.nvidia.com/blog/stream-high-fidelity-spatial-computing-content-to-any-device-with-nvidia-cloudxr-6-0/",
@@ -49,106 +149,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Mitigating Forgetting in Continual Learning with Selective Gradient Projection",
-      "link": "https://arxiv.org/abs/2603.26671",
-      "description": "arXiv:2603.26671v1 Announce Type: new Abstract: As neural networks are increasingly deployed in dynamic environments, they face the challenge of catastrophic forgetting, the tendency to overwrite previously learned knowledge when adapting to new tasks, resulting in severe performance degradation on earlier tasks. We propose Selective Forgetting-Aware Optimization (SFAO), a dynamic method that regu",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Boundary-aware Prototype-driven Adversarial Alignment for Cross-Corpus EEG Emotion Recognition",
-      "link": "https://arxiv.org/abs/2603.26713",
-      "description": "arXiv:2603.26713v1 Announce Type: new Abstract: Electroencephalography (EEG)-based emotion recognition suffers from severe performance degradation when models are transferred across heterogeneous datasets due to physiological variability, experimental paradigm differences, and device inconsistencies. Existing domain adversarial methods primarily enforce global marginal alignment and often overlook",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Learning to Select Visual In-Context Demonstrations",
-      "link": "https://arxiv.org/abs/2603.26775",
-      "description": "arXiv:2603.26775v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) adapt to visual tasks via in-context learning (ICL), which relies heavily on demonstration quality. The dominant demonstration selection strategy is unsupervised k-Nearest Neighbor (kNN) search. While simple, this similarity-first approach is sub-optimal for complex factual regression tasks; it selects redunda",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "TED: Training-Free Experience Distillation for Multimodal Reasoning",
-      "link": "https://arxiv.org/abs/2603.26778",
-      "description": "arXiv:2603.26778v1 Announce Type: new Abstract: Knowledge distillation is typically realized by transferring a teacher model's knowledge into a student's parameters through supervised or reinforcement-based optimization. While effective, such approaches require repeated parameter updates and large-scale training data, limiting their applicability in resource-constrained environments. In this work,",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "A Step Toward Federated Pretraining of Multimodal Large Language Models",
-      "link": "https://arxiv.org/abs/2603.26786",
-      "description": "arXiv:2603.26786v1 Announce Type: new Abstract: The rapid evolution of Multimodal Large Language Models (MLLMs) is bottlenecked by the saturation of high-quality public data, while vast amounts of diverse multimodal data remain inaccessible in privacy-sensitive silos. Federated Learning (FL) offers a promising solution to unlock these distributed resources, but existing research focuses predominan",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Robust Batch-Level Query Routing for Large Language Models under Cost and Capacity Constraints",
-      "link": "https://arxiv.org/abs/2603.26796",
-      "description": "arXiv:2603.26796v1 Announce Type: new Abstract: We study the problem of routing queries to large language models (LLMs) under cost, GPU resources, and concurrency constraints. Prior per-query routing methods often fail to control batch-level cost, especially under non-uniform or adversarial batching. To address this, we propose a batch-level, resource-aware routing framework that jointly optimizes",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "MemGuard-Alpha: Detecting and Filtering Memorization-Contaminated Signals in LLM-Based Financial Forecasting via Membership Inference and Cross-Model Disagreement",
-      "link": "https://arxiv.org/abs/2603.26797",
-      "description": "arXiv:2603.26797v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used to generate financial alpha signals, yet growing evidence shows that LLMs memorize historical financial data from their training corpora, producing spurious predictive accuracy that collapses out-of-sample. This memorization-induced look-ahead bias threatens the validity of LLM-based quantitative str",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Explaining, Verifying, and Aligning Semantic Hierarchies in Vision-Language Model Embeddings",
-      "link": "https://arxiv.org/abs/2603.26798",
-      "description": "arXiv:2603.26798v1 Announce Type: new Abstract: Vision-language model (VLM) encoders such as CLIP enable strong retrieval and zero-shot classification in a shared image-text embedding space, yet the semantic organization of this space is rarely inspected. We present a post-hoc framework to explain, verify, and align the semantic hierarchies induced by a VLM over a given set of child classes. First",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Gaussian Joint Embeddings For Self-Supervised Representation Learning",
-      "link": "https://arxiv.org/abs/2603.26799",
-      "description": "arXiv:2603.26799v1 Announce Type: new Abstract: Self-supervised representation learning often relies on deterministic predictive architectures to align context and target views in latent space. While effective in many settings, such methods are limited in genuinely multi-modal inverse problems, where squared-loss prediction collapses towards conditional averages, and they frequently depend on arch",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "DSO: Dual-Scale Neural Operators for Stable Long-term Fluid Dynamics Forecasting",
-      "link": "https://arxiv.org/abs/2603.26800",
-      "description": "arXiv:2603.26800v1 Announce Type: new Abstract: Long-term fluid dynamics forecasting is a critically important problem in science and engineering. While neural operators have emerged as a promising paradigm for modeling systems governed by partial differential equations (PDEs), they often struggle with long-term stability and precision. We identify two fundamental failure modes in existing archite",
-      "pubDate": "Tue, 31 Mar 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
