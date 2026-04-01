@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-01T08:18:25Z",
+  "updatedAt": "2026-04-01T09:18:26Z",
   "items": [
     {
       "title": "Falcon Perception",
@@ -109,6 +109,16 @@
       "sourceId": "arxiv",
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Gradient Labs gives every bank customer an AI account manager",
+      "link": "https://openai.com/index/gradient-labs",
+      "description": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
+      "pubDate": "Wed, 01 Apr 2026 02:00:00 GMT",
+      "sourceId": "openai",
+      "sourceName": "OpenAI",
+      "sourceBadgeColor": "#10a37f",
       "sourceBadgeText": "#fff"
     },
     {
@@ -400,16 +410,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "How we monitor internal coding agents for misalignment",
-      "link": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
-      "description": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.",
-      "pubDate": "Thu, 19 Mar 2026 10:00:00 GMT",
-      "sourceId": "openai",
-      "sourceName": "OpenAI",
-      "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "Friend Bubbles: Enhancing Social Discovery on Facebook Reels",
