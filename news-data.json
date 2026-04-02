@@ -1,21 +1,11 @@
 {
-  "updatedAt": "2026-04-02T18:18:20Z",
+  "updatedAt": "2026-04-02T19:18:19Z",
   "items": [
     {
-      "title": "CUDA Tile Programming Now Available for BASIC!",
-      "link": "https://developer.nvidia.com/blog/cuda-tile-programming-now-available-for-basic/",
-      "description": "Note: CUDA Tile Programming in BASIC is an April Fools’ joke, but it's also real and actually works, demonstrating the flexibility of CUDA. CUDA 13.1...",
-      "pubDate": "2026-04-02T18:17:49Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Achieving Single-Digit Microsecond Latency Inference for Capital Markets",
-      "link": "https://developer.nvidia.com/blog/achieving-single-digit-microsecond-latency-inference-for-capital-markets/",
-      "description": "In algorithmic trading, reducing response times to market events is crucial. To keep pace with high-speed electronic markets, latency-sensitive firms often use...",
-      "pubDate": "2026-04-02T18:15:33Z",
+      "title": "Designing Protein Binders Using the Generative Model Proteina-Complexa",
+      "link": "https://developer.nvidia.com/blog/designing-protein-binders-using-the-generative-model-proteina-complexa/",
+      "description": "Developing new protein-based therapies and catalysts involves the challenging task of designing protein binders, or proteins that bind to a target protein or...",
+      "pubDate": "2026-04-02T18:35:20Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -25,7 +15,37 @@
       "title": "How Centralized Radar Processing on NVIDIA DRIVE Enables Safer, Smarter Level 4 Autonomy",
       "link": "https://developer.nvidia.com/blog/how-centralized-radar-processing-on-nvidia-drive-enables-safer-smarter-level-4-autonomy/",
       "description": "In the current state of automotive radar, machine learning engineers can't work with camera-equivalent raw RGB images. Instead, they work with the output of...",
-      "pubDate": "2026-04-02T18:12:08Z",
+      "pubDate": "2026-04-02T18:35:19Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Maximize AI Infrastructure Throughput by Consolidating Underutilized GPU Workloads",
+      "link": "https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/",
+      "description": "In production Kubernetes environments, the difference between model requirements and GPU size creates inefficiencies. Lightweight automatic speech recognition...",
+      "pubDate": "2026-04-02T18:35:18Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Build and Stream Browser-Based XR Experiences with NVIDIA CloudXR.js",
+      "link": "https://developer.nvidia.com/blog/build-and-stream-browser-based-xr-experiences-with-nvidia-cloudxr-js/",
+      "description": "Delivering high-fidelity VR and AR experiences to enterprise users has typically required native application development, custom device management, and complex...",
+      "pubDate": "2026-04-02T18:35:17Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Stream High-Fidelity Spatial Computing Content to Any Device with NVIDIA CloudXR 6.0",
+      "link": "https://developer.nvidia.com/blog/stream-high-fidelity-spatial-computing-content-to-any-device-with-nvidia-cloudxr-6-0/",
+      "description": "Spatial computing is moving from visualization to active collaboration, adding increasingly more GPU demands on XR hardware to render photorealistic,...",
+      "pubDate": "2026-04-02T18:35:16Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -35,17 +55,7 @@
       "title": "Accelerate Token Production in AI Factories Using Unified Services and Real-Time AI",
       "link": "https://developer.nvidia.com/blog/accelerate-token-production-in-ai-factories-using-unified-services-and-real-time-ai/",
       "description": "In today’s AI factory environment, performance is not theoretical. It is economic, competitive, and existential. A 1% drop in usable GPU time can mean...",
-      "pubDate": "2026-04-02T18:11:40Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Bringing AI Closer to the Edge and On-Device with Gemma 4",
-      "link": "https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4/",
-      "description": "The Gemmaverse expands with the launch of the latest Gemma 4 multimodal and multilingual models, designed to scale across the full spectrum of deployments, from...",
-      "pubDate": "2026-04-02T18:11:15Z",
+      "pubDate": "2026-04-02T18:35:15Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -55,7 +65,37 @@
       "title": "NVIDIA Extreme Co-Design Delivers New MLPerf Inference Records",
       "link": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/",
       "description": "Co-designed hardware, software, and models are key to delivering the highest AI factory throughput and lowest token cost. Measuring this goes far beyond peak...",
-      "pubDate": "2026-04-02T16:45:03Z",
+      "pubDate": "2026-04-02T18:35:14Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "CUDA Tile Programming Now Available for BASIC!",
+      "link": "https://developer.nvidia.com/blog/cuda-tile-programming-now-available-for-basic/",
+      "description": "Note: CUDA Tile Programming in BASIC is an April Fools’ joke, but it's also real and actually works, demonstrating the flexibility of CUDA. CUDA 13.1...",
+      "pubDate": "2026-04-02T18:35:12Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Achieving Single-Digit Microsecond Latency Inference for Capital Markets",
+      "link": "https://developer.nvidia.com/blog/achieving-single-digit-microsecond-latency-inference-for-capital-markets/",
+      "description": "In algorithmic trading, reducing response times to market events is crucial. To keep pace with high-speed electronic markets, latency-sensitive firms often use...",
+      "pubDate": "2026-04-02T18:35:11Z",
+      "sourceId": "nvidia",
+      "sourceName": "NVIDIA",
+      "sourceBadgeColor": "#76B900",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Bringing AI Closer to the Edge and On-Device with Gemma 4",
+      "link": "https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4/",
+      "description": "The Gemmaverse expands with the launch of the latest Gemma 4 multimodal and multilingual models, designed to scale across the full spectrum of deployments, from...",
+      "pubDate": "2026-04-02T18:35:10Z",
       "sourceId": "nvidia",
       "sourceName": "NVIDIA",
       "sourceBadgeColor": "#76B900",
@@ -232,26 +272,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Stream High-Fidelity Spatial Computing Content to Any Device with NVIDIA CloudXR 6.0",
-      "link": "https://developer.nvidia.com/blog/stream-high-fidelity-spatial-computing-content-to-any-device-with-nvidia-cloudxr-6-0/",
-      "description": "Spatial computing is moving from visualization to active collaboration, adding increasingly more GPU demands on XR hardware to render photorealistic,...",
-      "pubDate": "2026-03-31T18:15:08Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Build and Stream Browser-Based XR Experiences with NVIDIA CloudXR.js",
-      "link": "https://developer.nvidia.com/blog/build-and-stream-browser-based-xr-experiences-with-nvidia-cloudxr-js/",
-      "description": "Delivering high-fidelity VR and AR experiences to enterprise users has typically required native application development, custom device management, and complex...",
-      "pubDate": "2026-03-31T16:59:26Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
-    },
-    {
       "title": "Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads",
       "link": "https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/",
       "description": "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale & complexity to further a deeper understanding of people’s interests and intent. This increase [...] Read More... ",
@@ -290,16 +310,6 @@
       "sourceName": "HuggingFace",
       "sourceBadgeColor": "#FF9D00",
       "sourceBadgeText": "#000"
-    },
-    {
-      "title": "Designing Protein Binders Using the Generative Model Proteina-Complexa",
-      "link": "https://developer.nvidia.com/blog/designing-protein-binders-using-the-generative-model-proteina-complexa/",
-      "description": "Developing new protein-based therapies and catalysts involves the challenging task of designing protein binders, or proteins that bind to a target protein or...",
-      "pubDate": "2026-03-30T17:16:17Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
-      "sourceBadgeText": "#fff"
     },
     {
       "title": "AI for American-Produced Cement and Concrete",
@@ -359,16 +369,6 @@
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Maximize AI Infrastructure Throughput by Consolidating Underutilized GPU Workloads",
-      "link": "https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/",
-      "description": "In production Kubernetes environments, the difference between model requirements and GPU size creates inefficiencies. Lightweight automatic speech recognition...",
-      "pubDate": "2026-03-25T16:36:00Z",
-      "sourceId": "nvidia",
-      "sourceName": "NVIDIA",
-      "sourceBadgeColor": "#76B900",
       "sourceBadgeText": "#fff"
     },
     {
