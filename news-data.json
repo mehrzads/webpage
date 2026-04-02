@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-04-02T15:18:20Z",
+  "updatedAt": "2026-04-02T16:18:19Z",
   "items": [
+    {
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "link": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "description": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+      "pubDate": "Thu, 02 Apr 2026 16:00:49 +0000",
+      "sourceId": "deepmind",
+      "sourceName": "DeepMind",
+      "sourceBadgeColor": "#4285F4",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Two-Stage Optimizer-Aware Online Data Selection for Large Language Models",
       "link": "https://arxiv.org/abs/2604.00001",
@@ -100,6 +110,16 @@
       "sourceName": "Arxiv",
       "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
+      "link": "https://huggingface.co/blog/gemma4",
+      "description": "",
+      "pubDate": "Thu, 02 Apr 2026 00:00:00 GMT",
+      "sourceId": "huggingface",
+      "sourceName": "HuggingFace",
+      "sourceBadgeColor": "#FF9D00",
+      "sourceBadgeText": "#000"
     },
     {
       "title": "NVIDIA Extreme Co-Design Delivers New MLPerf Inference Records",
@@ -482,16 +502,6 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Introducing Storage Buckets on the Hugging Face Hub",
-      "link": "https://huggingface.co/blog/storage-buckets",
-      "description": "",
-      "pubDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "sourceId": "huggingface",
-      "sourceName": "HuggingFace",
-      "sourceBadgeColor": "#FF9D00",
-      "sourceBadgeText": "#000"
-    },
-    {
       "title": "How Advanced Browsing Protection Works in Messenger",
       "link": "https://engineering.fb.com/2026/03/09/security/how-advanced-browsing-protection-works-in-messenger/",
       "description": "We’re sharing the technical details behind how Advanced Browsing Protection (ABP) in Messenger protects the privacy of the links clicked on within chats while still warning people about malicious links. We hope that this post has helped to illuminate some of the engineering challenges and infrastructure components involved for providing this feature for our users. [...] Read More... The post How A",
@@ -576,16 +586,6 @@
       "link": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
       "description": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
       "pubDate": "Wed, 18 Feb 2026 16:01:38 +0000",
-      "sourceId": "deepmind",
-      "sourceName": "DeepMind",
-      "sourceBadgeColor": "#4285F4",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Accelerating discovery in India through AI-powered science and education",
-      "link": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
-      "description": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
-      "pubDate": "Tue, 17 Feb 2026 13:42:20 +0000",
       "sourceId": "deepmind",
       "sourceName": "DeepMind",
       "sourceBadgeColor": "#4285F4",
