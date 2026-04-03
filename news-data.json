@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03T02:18:19Z",
+  "updatedAt": "2026-04-03T03:18:19Z",
   "items": [
     {
       "title": "Bringing AI Closer to the Edge and On-Device with Gemma 4",
@@ -422,9 +422,9 @@
       "sourceBadgeText": "#fff"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.",
+      "title": "Powering product discovery in ChatGPT",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
       "pubDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "sourceId": "openai",
       "sourceName": "OpenAI",
