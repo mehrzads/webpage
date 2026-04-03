@@ -1,6 +1,106 @@
 {
-  "updatedAt": "2026-04-03T03:18:19Z",
+  "updatedAt": "2026-04-03T04:18:19Z",
   "items": [
+    {
+      "title": "DySCo: Dynamic Semantic Compression for Effective Long-term Time Series Forecasting",
+      "link": "https://arxiv.org/abs/2604.01261",
+      "description": "arXiv:2604.01261v1 Announce Type: new Abstract: Time series forecasting (TSF) is critical across domains such as finance, meteorology, and energy. While extending the lookback window theoretically provides richer historical context, in practice, it often introduces irrelevant noise and computational redundancy, preventing models from effectively capturing complex long-term dependencies. To address",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method",
+      "link": "https://arxiv.org/abs/2604.01279",
+      "description": "arXiv:2604.01279v1 Announce Type: new Abstract: We introduce Sven (Singular Value dEsceNt), a new optimization algorithm for neural networks that exploits the natural decomposition of loss functions into a sum over individual data points, rather than reducing the full loss to a single scalar before computing a parameter update. Sven treats each data point's residual as a separate condition to be s",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Forecasting Supply Chain Disruptions with Foresight Learning",
+      "link": "https://arxiv.org/abs/2604.01298",
+      "description": "arXiv:2604.01298v1 Announce Type: new Abstract: Anticipating supply chain disruptions before they materialize is a core challenge for firms and policymakers alike. A key difficulty is learning to reason reliably about infrequent, high-impact events from noisy and unstructured inputs - a setting where general-purpose models struggle without task-specific adaptation. We introduce an end-to-end frame",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "UQ-SHRED: uncertainty quantification of shallow recurrent decoder networks for sparse sensing via engression",
+      "link": "https://arxiv.org/abs/2604.01305",
+      "description": "arXiv:2604.01305v1 Announce Type: new Abstract: Reconstructing high-dimensional spatiotemporal fields from sparse sensor measurements is critical in a wide range of scientific applications. The SHallow REcurrent Decoder (SHRED) architecture is a recent state-of-the-art architecture that reconstructs high-quality spatial domain from hyper-sparse sensor measurement streams. An important limitation o",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "An Online Machine Learning Multi-resolution Optimization Framework for Energy System Design Limit of Performance Analysis",
+      "link": "https://arxiv.org/abs/2604.01308",
+      "description": "arXiv:2604.01308v1 Announce Type: new Abstract: Designing reliable integrated energy systems for industrial processes requires optimization and verification models across multiple fidelities, from architecture-level sizing to high-fidelity dynamic operation. However, model mismatch across fidelities obscures the sources of performance loss and complicates the quantification of architecture-to-oper",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "JetPrism: diagnosing convergence for generative simulation and inverse problems in nuclear physics",
+      "link": "https://arxiv.org/abs/2604.01313",
+      "description": "arXiv:2604.01313v1 Announce Type: new Abstract: High-fidelity Monte Carlo simulations and complex inverse problems, such as mapping smeared experimental observations to ground-truth states, are computationally intensive yet essential for robust data analysis. Conditional Flow Matching (CFM) offers a mathematically robust approach to accelerating these tasks, but we demonstrate its standard trainin",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Detecting Complex Money Laundering Patterns with Incremental and Distributed Graph Modeling",
+      "link": "https://arxiv.org/abs/2604.01315",
+      "description": "arXiv:2604.01315v1 Announce Type: new Abstract: Money launderers take advantage of limitations in existing detection approaches by hiding their financial footprints in a deceitful manner. They manage this by replicating transaction patterns that the monitoring systems cannot easily distinguish. As a result, criminally gained assets are pushed into legitimate financial channels without drawing atte",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial",
+      "link": "https://arxiv.org/abs/2604.01328",
+      "description": "arXiv:2604.01328v1 Announce Type: new Abstract: Traditional scientific discovery relies on an iterative hypothesise-experiment-refine cycle that has driven progress for centuries, but its intuitive, ad-hoc implementation often wastes resources, yields inefficient designs, and misses critical insights. This tutorial presents Bayesian Optimisation (BO), a principled probability-driven framework that",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "Model Merging via Data-Free Covariance Estimation",
+      "link": "https://arxiv.org/abs/2604.01329",
+      "description": "arXiv:2604.01329v1 Announce Type: new Abstract: Model merging provides a way of cheaply combining individual models to produce a model that inherits each individual's capabilities. While some merging methods can approach the performance of multitask training, they are often heuristically motivated and lack theoretical justification. A principled alternative is to pose model merging as a layer-wise",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
+    {
+      "title": "SECURE: Stable Early Collision Understanding via Robust Embeddings in Autonomous Driving",
+      "link": "https://arxiv.org/abs/2604.01337",
+      "description": "arXiv:2604.01337v1 Announce Type: new Abstract: While deep learning has significantly advanced accident anticipation, the robustness of these safety-critical systems against real-world perturbations remains a major challenge. We reveal that state-of-the-art models like CRASH, despite their high performance, exhibit significant instability in predictions and latent representations when faced with m",
+      "pubDate": "Fri, 03 Apr 2026 00:00:00 -0400",
+      "sourceId": "arxiv",
+      "sourceName": "Arxiv",
+      "sourceBadgeColor": "#B31B1B",
+      "sourceBadgeText": "#fff"
+    },
     {
       "title": "Bringing AI Closer to the Edge and On-Device with Gemma 4",
       "link": "https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4/",
@@ -139,106 +239,6 @@
       "sourceId": "openai",
       "sourceName": "OpenAI",
       "sourceBadgeColor": "#10a37f",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Two-Stage Optimizer-Aware Online Data Selection for Large Language Models",
-      "link": "https://arxiv.org/abs/2604.00001",
-      "description": "arXiv:2604.00001v1 Announce Type: new Abstract: Gradient-based data selection offers a principled framework for estimating sample utility in large language model (LLM) fine-tuning, but existing methods are mostly designed for offline settings. They are therefore less suited to online fine-tuning, where data arrives sequentially, sample utility is step-dependent, and the effective update geometry i",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Task-Centric Personalized Federated Fine-Tuning of Language Models",
-      "link": "https://arxiv.org/abs/2604.00050",
-      "description": "arXiv:2604.00050v1 Announce Type: new Abstract: Federated Learning (FL) has emerged as a promising technique for training language models on distributed and private datasets of diverse tasks. However, aggregating models trained on heterogeneous tasks often degrades the overall performance of individual clients. To address this issue, Personalized FL (pFL) aims to create models tailored for each cl",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Evolution Strategies for Deep RL pretraining",
-      "link": "https://arxiv.org/abs/2604.00066",
-      "description": "arXiv:2604.00066v1 Announce Type: new Abstract: Although Deep Reinforcement Learning has proven highly effective for complex decision-making problems, it demands significant computational resources and careful parameter adjustment in order to develop successful strategies. Evolution strategies offer a more straightforward, derivative-free approach that is less computationally costly and simpler to",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Temporal Memory for Resource-Constrained Agents: Continual Learning via Stochastic Compress-Add-Smooth",
-      "link": "https://arxiv.org/abs/2604.00067",
-      "description": "arXiv:2604.00067v1 Announce Type: new Abstract: An agent that operates sequentially must incorporate new experience without forgetting old experience, under a fixed memory budget. We propose a framework in which memory is not a parameter vector but a stochastic process: a Bridge Diffusion on a replay interval $[0,1]$, whose terminal marginal encodes the present and whose intermediate marginals enc",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Perspective: Towards sustainable exploration of chemical spaces with machine learning",
-      "link": "https://arxiv.org/abs/2604.00069",
-      "description": "arXiv:2604.00069v1 Announce Type: new Abstract: Artificial intelligence is transforming molecular and materials science, but its growing computational and data demands raise critical sustainability challenges. In this Perspective, we examine resource considerations across the AI-driven discovery pipeline--from quantum-mechanical (QM) data generation and model training to automated, self-driving re",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Empirical Validation of the Classification-Verification Dichotomy for AI Safety Gates",
-      "link": "https://arxiv.org/abs/2604.00072",
-      "description": "arXiv:2604.00072v1 Announce Type: new Abstract: Can classifier-based safety gates maintain reliable oversight as AI systems improve over hundreds of iterations? We provide comprehensive empirical evidence that they cannot. On a self-improving neural controller (d=240), eighteen classifier configurations -- spanning MLPs, SVMs, random forests, k-NN, Bayesian classifiers, and deep networks -- all fa",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "PASM: Population Adaptive Symbolic Mixture-of-Experts Model for Cross-location Hurricane Evacuation Decision Prediction",
-      "link": "https://arxiv.org/abs/2604.00074",
-      "description": "arXiv:2604.00074v1 Announce Type: new Abstract: Accurate prediction of evacuation behavior is critical for disaster preparedness, yet models trained in one region often fail elsewhere. Using a multi-state hurricane evacuation survey, we show this failure goes beyond feature distribution shift: households with similar characteristics follow systematically different decision patterns across states. ",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Learning to Play Blackjack: A Curriculum Learning Perspective",
-      "link": "https://arxiv.org/abs/2604.00076",
-      "description": "arXiv:2604.00076v1 Announce Type: new Abstract: Reinforcement Learning (RL) agents often struggle with efficiency and performance in complex environments. We propose a novel framework that uses a Large Language Model (LLM) to dynamically generate a curriculum over available actions, enabling the agent to incorporate each action individually. We apply this framework to the game of Blackjack, where ",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Speeding Up Mixed-Integer Programming Solvers with Sparse Learning for Branching",
-      "link": "https://arxiv.org/abs/2604.00094",
-      "description": "arXiv:2604.00094v1 Announce Type: new Abstract: Machine learning is increasingly used to improve decisions within branch-and-bound algorithms for mixed-integer programming. Many existing approaches rely on deep learning, which often requires very large training datasets and substantial computational resources for both training and deployment, typically with GPU parallelization. In this work, we ta",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
-      "sourceBadgeText": "#fff"
-    },
-    {
-      "title": "Predicting Wave Reflection and Transmission in Heterogeneous Media via Fourier Operator-Based Transformer Modeling",
-      "link": "https://arxiv.org/abs/2604.00132",
-      "description": "arXiv:2604.00132v1 Announce Type: new Abstract: We develop a machine learning (ML) surrogate model to approximate solutions to Maxwell's equations in one dimension, focusing on scenarios involving a material interface that reflects and transmits electro-magnetic waves. Derived from high-fidelity Finite Volume (FV) simulations, our training data includes variations of the initial conditions, as wel",
-      "pubDate": "Thu, 02 Apr 2026 00:00:00 -0400",
-      "sourceId": "arxiv",
-      "sourceName": "Arxiv",
-      "sourceBadgeColor": "#B31B1B",
       "sourceBadgeText": "#fff"
     },
     {
