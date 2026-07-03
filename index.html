@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehrzad Samadi - GenAI Expert at NVIDIA | Former CEO & Co-Founder of Parabricks</title>
-  <meta name="description" content="Mehrzad Samadi is a GenAI expert at NVIDIA and former CEO & Co-Founder of Parabricks. Exploring cutting-edge generative AI technologies and their potential to shape the future. Watch my Persian tech videos and podcast appearances.">
+  <title>Mehrzad Samadi — GenAI at NVIDIA | Co-Founder of Parabricks</title>
+  <meta name="description" content="Mehrzad Samadi works on Generative AI at NVIDIA and is the former CEO & Co-Founder of Parabricks. Watch his Persian-language AI videos and podcast appearances.">
   <meta name="keywords" content="Mehrzad Samadi, GenAI, NVIDIA, Parabricks, Artificial Intelligence, Machine Learning, Deep Learning, AI Expert, Technology">
   <meta name="author" content="Mehrzad Samadi">
   <link rel="canonical" href="https://mehrzad.ai/" />
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='36' font-weight='700' text-anchor='middle' fill='%2376B900'%3EM%3C/text%3E%3C/svg%3E">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mehrzad.ai/" />
-  <meta property="og:title" content="Mehrzad Samadi - GenAI Expert at NVIDIA" />
-  <meta property="og:description" content="GenAI expert at NVIDIA and former CEO & Co-Founder of Parabricks. Exploring cutting-edge generative AI technologies. Watch my Persian tech videos and podcast appearances." />
+  <meta property="og:title" content="Mehrzad Samadi — GenAI at NVIDIA" />
+  <meta property="og:description" content="Generative AI at NVIDIA. Former CEO & Co-Founder of Parabricks. Persian-language AI videos and podcast appearances." />
   <meta property="og:image" content="https://mehrzad.ai/mehrzad.jpeg" />
-  <meta property="og:image:alt" content="Mehrzad Samadi - GenAI Expert" />
+  <meta property="og:image:alt" content="Mehrzad Samadi" />
   <meta property="og:site_name" content="Mehrzad Samadi" />
   <meta property="og:locale" content="en_US" />
 
@@ -25,11 +26,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@mehrzadsamadi" />
   <meta name="twitter:creator" content="@mehrzadsamadi" />
-  <meta name="twitter:title" content="Mehrzad Samadi - GenAI Expert at NVIDIA" />
-  <meta name="twitter:description" content="GenAI expert at NVIDIA and former CEO & Co-Founder of Parabricks. Exploring cutting-edge generative AI technologies." />
+  <meta name="twitter:title" content="Mehrzad Samadi — GenAI at NVIDIA" />
+  <meta name="twitter:description" content="Generative AI at NVIDIA. Former CEO & Co-Founder of Parabricks." />
   <meta name="twitter:image" content="https://mehrzad.ai/mehrzad.jpeg" />
 
-  <!-- Additional SEO -->
   <link rel="alternate" hreflang="en" href="https://mehrzad.ai/" />
   <link rel="alternate" hreflang="fa" href="https://mehrzad.ai/" />
 
@@ -62,324 +62,631 @@
   }
   </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://i.ytimg.com">
 
   <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-            display: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-          },
-          colors: {
-            nvidia: '#76B900',
-            apple: {
-              gray: '#86868B',
-              'light-bg': '#F5F5F7',
-              'light-card': '#FFFFFF',
-              'light-border': '#D2D2D7',
-              'dark-bg': '#000000',
-              'dark-card': '#1D1D1F',
-              'dark-elevated': '#2C2C2E',
-              'dark-border': '#424245',
-            }
-          },
-        },
-      },
+    document.documentElement.classList.add('js');
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
     }
   </script>
 
   <style>
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: #D2D2D7; border-radius: 10px; }
-    .dark ::-webkit-scrollbar-thumb { background: #424245; }
-
-    html { scroll-padding-top: 100px; }
-
-    /* Scroll Reveal Utility */
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #f5f5f7;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: rgba(0, 0, 0, 0.09);
+      --header-bg: rgba(255, 255, 255, 0.8);
+      --accent: #76B900;
+      --accent-dark: #5a8f00;
+      --shadow-card: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.05);
+      --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.05), 0 16px 40px rgba(0,0,0,0.10);
+      --shadow-photo: 0 24px 60px rgba(0,0,0,0.18);
+      --btn-bg: #1d1d1f;
+      --btn-text: #ffffff;
     }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
+    html.dark {
+      --bg: #0a0a0a;
+      --bg-alt: #131315;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --border: rgba(255, 255, 255, 0.12);
+      --header-bg: rgba(10, 10, 10, 0.75);
+      --shadow-card: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.35);
+      --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.4), 0 16px 40px rgba(0,0,0,0.5);
+      --shadow-photo: 0 24px 60px rgba(0,0,0,0.6);
+      --btn-bg: #f5f5f7;
+      --btn-text: #0a0a0a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    ::selection { background: var(--accent); color: #fff; }
+
+    ::-webkit-scrollbar { width: 9px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #c7c7cc; border-radius: 10px; }
+    html.dark ::-webkit-scrollbar-thumb { background: #3a3a3c; }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--accent); color: #fff; padding: 10px 18px; border-radius: 0 0 10px 0; font-weight: 600;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: var(--header-bg);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.3s ease;
+    }
+    .site-header .container {
+      height: 64px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; }
+    .logo .dot { color: var(--accent); }
+    .header-right { display: flex; align-items: center; gap: 8px; }
+    .site-nav ul { display: flex; gap: 32px; list-style: none; }
+    .site-nav a {
+      font-size: 0.95rem; font-weight: 500; color: var(--muted);
+      transition: color 0.2s ease;
+    }
+    .site-nav a:hover { color: var(--text); }
+    .theme-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 38px; height: 38px; border-radius: 50%; color: var(--muted);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .theme-toggle:hover { background: var(--bg-alt); color: var(--text); }
+    .theme-toggle svg { width: 20px; height: 20px; }
+    html.dark .icon-moon { display: none; }
+    .icon-sun { display: none; }
+    html.dark .icon-sun { display: block; }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: 172px 0 120px; position: relative; overflow: hidden; }
+    .hero-glow {
+      position: absolute; top: 40px; right: -180px; width: 640px; height: 640px;
+      background: radial-gradient(circle, rgba(118, 185, 0, 0.14) 0%, transparent 62%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: flex; align-items: center; gap: 72px; position: relative;
+    }
+    .hero-copy { flex: 1 1 0; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase;
+      color: var(--accent-dark); margin-bottom: 22px;
+    }
+    html.dark .hero-eyebrow { color: var(--accent); }
+    .hero-eyebrow::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    }
+    .hero h1 {
+      font-size: clamp(2.35rem, 6.4vw, 4.9rem);
+      font-weight: 800; letter-spacing: -0.035em; line-height: 1.06;
+      margin-bottom: 26px;
+    }
+    .gradient-text {
+      background: linear-gradient(100deg, #76B900 10%, #00a97f 90%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+    }
+    .hero-sub {
+      font-size: 1.16rem; color: var(--muted); max-width: 34em; margin-bottom: 34px;
+    }
+    .hero-sub strong { color: var(--text); font-weight: 600; }
+
+    .socials { display: flex; gap: 22px; margin-bottom: 40px; }
+    .socials a {
+      color: var(--muted); transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-flex;
+    }
+    .socials a:hover { color: var(--text); transform: translateY(-2px); }
+    .socials svg { width: 22px; height: 22px; }
+
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 30px; border-radius: 980px;
+      font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+    }
+    .btn-primary { background: var(--btn-bg); color: var(--btn-text); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.18); }
+    .btn-secondary { border: 1px solid var(--border); color: var(--text); background: transparent; }
+    .btn-secondary:hover { transform: translateY(-2px); background: var(--bg-alt); }
+
+    .hero-photo { flex: 0 0 auto; position: relative; }
+    .hero-photo img {
+      width: 384px; height: 384px; object-fit: cover;
+      border-radius: 30px; transform: scaleX(-1);
+      box-shadow: var(--shadow-photo);
+      border: 1px solid var(--border);
+    }
+    .hero-photo::after {
+      content: ''; position: absolute; inset: 22px -14px -14px 22px; z-index: -1;
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgba(118,185,0,0.32), rgba(0,169,127,0.18));
+      filter: blur(2px);
+    }
+
+    /* ---------- Sections ---------- */
+    section { padding: 108px 0; }
+    .section-alt { background: var(--bg-alt); transition: background-color 0.3s ease; }
+
+    .section-head { max-width: 640px; margin-bottom: 56px; }
+    .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+    .eyebrow {
+      display: block; font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--accent-dark); margin-bottom: 12px;
+    }
+    html.dark .eyebrow { color: var(--accent); }
+    .section-head h2 {
+      font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+      font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 14px;
+    }
+    .section-head p { color: var(--muted); font-size: 1.08rem; }
+
+    .section-head-row {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 24px; margin-bottom: 56px;
+    }
+    .section-head-row .section-head { margin-bottom: 0; }
+    .link-arrow {
+      display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+      font-weight: 600; font-size: 0.98rem; color: var(--text);
+      transition: opacity 0.2s ease;
+    }
+    .link-arrow:hover { opacity: 0.6; }
+    .link-arrow .arrow { transition: transform 0.2s ease; }
+    .link-arrow:hover .arrow { transform: translateX(4px); }
+
+    /* ---------- About ---------- */
+    .about-lead {
+      max-width: 760px; margin: 0 auto 64px; text-align: center;
+    }
+    .about-lead p {
+      font-size: 1.2rem; line-height: 1.75; color: var(--muted);
+    }
+    .about-lead p + p { margin-top: 22px; }
+    .about-lead strong { color: var(--text); font-weight: 600; }
+    .nvidia-green { color: var(--accent-dark); font-weight: 700; }
+    html.dark .nvidia-green { color: var(--accent); }
+
+    .milestones {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .milestone {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 30px 28px; box-shadow: var(--shadow-card);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .milestone:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+    .milestone .m-label {
+      display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent-dark);
+      background: rgba(118, 185, 0, 0.12); border-radius: 999px;
+      padding: 5px 12px; margin-bottom: 16px;
+    }
+    html.dark .milestone .m-label { color: var(--accent); background: rgba(118, 185, 0, 0.14); }
+    .milestone h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 9px; }
+    .milestone p { font-size: 0.96rem; color: var(--muted); }
+
+    /* ---------- Video grids ---------- */
+    .video-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+    }
+    .video-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      overflow: hidden; box-shadow: var(--shadow-card);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex; flex-direction: column;
+    }
+    .video-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card-hover); }
+
+    .video-frame {
+      position: relative; aspect-ratio: 16 / 9; width: 100%;
+      background: #000; overflow: hidden; display: block; padding: 0;
+    }
+    .video-frame img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .video-card:hover .video-frame img { transform: scale(1.045); }
+    .video-frame iframe {
+      position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+    }
+    .play-badge {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 62px; height: 62px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+    .video-card:hover .play-badge { transform: translate(-50%, -50%) scale(1.09); background: #fff; }
+    .play-badge svg { width: 22px; height: 22px; margin-left: 3px; fill: #0a0a0a; }
+
+    .video-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .video-body h3 {
+      font-size: 1.02rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .video-body .video-meta { font-size: 0.86rem; color: var(--muted); margin-top: auto; }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border); padding: 52px 0;
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+    }
+    .footer-inner .copyright { color: var(--muted); font-size: 0.88rem; }
+    .footer-links { display: flex; gap: 26px; }
+    .footer-links a {
+      font-size: 0.88rem; color: var(--muted); transition: color 0.2s ease;
+    }
+    .footer-links a:hover { color: var(--text); }
+
+    /* ---------- Reveal animation (html.js guard keeps content visible without JS) ---------- */
+    html.js .reveal {
+      opacity: 0; transform: translateY(22px);
+      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    html.js .reveal.active { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: 0.08s; }
+    .d2 { transition-delay: 0.16s; }
+    .d3 { transition-delay: 0.24s; }
+    .d4 { transition-delay: 0.32s; }
+    .d5 { transition-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      html.js .reveal { opacity: 1; transform: none; transition: none; }
+      * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 980px) {
+      .hero { padding: 140px 0 90px; }
+      .hero-inner { flex-direction: column-reverse; text-align: center; gap: 52px; }
+      .hero-eyebrow { justify-content: center; }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .socials, .hero-cta { justify-content: center; }
+      .hero-photo img { width: 300px; height: 300px; }
+      .video-grid, .milestones { grid-template-columns: repeat(2, 1fr); }
+      .section-head-row { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 640px) {
+      .site-nav { display: none; }
+      section { padding: 80px 0; }
+      .video-grid, .milestones { grid-template-columns: 1fr; }
+      .hero-photo img { width: 250px; height: 250px; }
+      .footer-inner { flex-direction: column; justify-content: center; text-align: center; }
     }
   </style>
-
-  <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
 </head>
 
-<body class="bg-white text-black antialiased selection:bg-black selection:text-white dark:bg-black dark:text-white transition-colors duration-300">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-black/80 backdrop-blur-xl border-b border-black/10 dark:border-white/10 transition-all">
-    <div class="mx-auto max-w-[1120px] px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-xl font-semibold tracking-tight group">
-        Mehrzad<span class="text-black dark:text-white group-hover:opacity-60 transition-opacity">.</span>
-      </a>
-
-      <div class="flex items-center gap-6">
-        <nav class="hidden md:block">
-          <ul class="flex space-x-8 text-[17px] text-black/70 dark:text-white/70">
-            <li><a href="#about" class="hover:text-black dark:hover:text-white transition-colors">About</a></li>
-            <li><a href="#youtube" class="hover:text-black dark:hover:text-white transition-colors">YouTube</a></li>
-            <li><a href="#podcasts" class="hover:text-black dark:hover:text-white transition-colors">Podcasts</a></li>
-            <li><a href="/news" class="hover:text-black dark:hover:text-white transition-colors">News</a></li>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">Mehrzad Samadi<span class="dot">.</span></a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="/news">News</a></li>
           </ul>
         </nav>
-
-        <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-black/70 dark:text-white/70 focus:outline-none">
-          <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
           </svg>
-          <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
           </svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="relative overflow-hidden">
+  <main id="main">
 
-    <section class="pt-48 pb-40 px-6">
-      <div class="mx-auto max-w-[1120px]">
-        <div class="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
-
-          <div class="flex-1 text-center lg:text-left reveal active">
-
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-8 text-black dark:text-white leading-[1.05]">
-              Building the future of <br />
-              Generative AI
-            </h1>
-
-            <p class="text-lg text-apple-gray mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              GenAI @ <strong class="text-black dark:text-white">NVIDIA</strong>. Formerly CEO & Co-Founder of Parabricks. <br class="hidden md:block">Bridging the gap between high-performance computing and biological intelligence.
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy reveal active">
+            <span class="hero-eyebrow">GenAI &middot; NVIDIA</span>
+            <h1>Building the future of <span class="gradient-text">Generative&nbsp;AI</span></h1>
+            <p class="hero-sub">
+              I work on Generative AI at <strong>NVIDIA</strong>. Previously CEO &amp; Co-Founder of <strong>Parabricks</strong>, acquired by NVIDIA in 2020 — bridging high-performance computing and biological intelligence.
             </p>
 
-            <div class="flex justify-center lg:justify-start gap-6 mb-12">
-                <a href="https://t.me/dlmehr" target="_blank" rel="noopener noreferrer" aria-label="Connect on Telegram" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors duration-200">
-                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.43l-1.99 9.36c-.15.69-.56.86-1.14.54l-3.16-2.33-1.52 1.47c-.17.17-.32.31-.65.31l.23-3.23 5.88-5.32c.26-.23-.06-.35-.4-.13l-7.27 4.58-3.13-.98c-.68-.21-.69-.68.14-1.01l12.22-4.71c.56-.21 1.05.13.79 1.45z"/></svg>
-             </a>
-             <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors duration-200">
-               <svg class="h-5 w-5 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-             </a>
-             <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors duration-200">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-             </a>
-             <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors duration-200">
-               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-             </a>
+            <div class="socials">
+              <a href="https://t.me/dlmehr" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.43l-1.99 9.36c-.15.69-.56.86-1.14.54l-3.16-2.33-1.52 1.47c-.17.17-.32.31-.65.31l.23-3.23 5.88-5.32c.26-.23-.06-.35-.4-.13l-7.27 4.58-3.13-.98c-.68-.21-.69-.68.14-1.01l12.22-4.71c.56-.21 1.05.13.79 1.45z"/></svg>
+              </a>
+              <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#youtube" class="px-8 py-4 rounded-full bg-black text-white text-[17px] font-medium hover:opacity-90 hover:scale-[1.02] transition-all duration-200">
-                Watch Content
-              </a>
-              <a href="#about" class="px-8 py-4 rounded-full bg-white text-black text-[17px] font-medium border border-black dark:bg-black dark:text-white dark:border-white hover:opacity-90 hover:scale-[1.02] transition-all duration-200">
-                More About Me
-              </a>
+            <div class="hero-cta">
+              <a href="#videos" class="btn btn-primary">Watch the latest videos</a>
+              <a href="#about" class="btn btn-secondary">More about me</a>
             </div>
           </div>
 
-          <div class="flex-1 flex justify-center lg:justify-end reveal delay-200">
-            <div class="relative">
-              <img
-                src="mehrzad.jpeg"
-                alt="Mehrzad Samadi"
-                style="transform: scaleX(-1);"
-                class="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-3xl"
-              >
-            </div>
+          <div class="hero-photo reveal active d2">
+            <img src="mehrzad.jpeg" alt="Portrait of Mehrzad Samadi" width="384" height="384" fetchpriority="high">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="py-32 bg-apple-light-bg dark:bg-apple-dark-card">
-      <div class="mx-auto max-w-[800px] px-6 text-center reveal">
-        <h2 class="text-4xl font-semibold mb-10 text-black dark:text-white">The Journey</h2>
-        <div class="space-y-6">
-          <p class="text-[19px] leading-relaxed text-apple-gray">
-            I co-founded <span class="font-semibold text-black dark:text-white">Parabricks</span> to revolutionize genomic analysis using high-performance GPU software. Our mission was ambitious: deliver higher throughput at significantly lower costs than existing solutions.
+    <!-- ============ About ============ -->
+    <section id="about" class="section-alt">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">The Journey</span>
+          <h2>From genomics startup to the frontier of AI</h2>
+        </div>
+
+        <div class="about-lead reveal">
+          <p>
+            I co-founded <strong>Parabricks</strong> to revolutionize genomic analysis with high-performance GPU software — delivering dramatically higher throughput at a fraction of the cost of existing solutions.
           </p>
-          <div class="my-8 h-px w-24 bg-apple-light-border dark:bg-apple-dark-border mx-auto"></div>
-          <p class="text-[19px] leading-relaxed text-apple-gray">
-            In 2020, Parabricks was acquired by <span class="font-bold text-[#76B900]">NVIDIA</span>. I oversaw the integration and growth of the team within NVIDIA's healthcare ecosystem. Today, I focus on the bleeding edge of <strong class="text-black dark:text-white">Generative AI</strong>, exploring how Large Language Models and accelerated computing shape the future.
+          <p>
+            In 2020, Parabricks was acquired by <span class="nvidia-green">NVIDIA</span>, where I led the team's integration and growth within NVIDIA's healthcare ecosystem. Today I work at the bleeding edge of <strong>Generative AI</strong>, exploring how large language models and accelerated computing are reshaping what's possible.
           </p>
+        </div>
+
+        <div class="milestones">
+          <div class="milestone reveal">
+            <span class="m-label">Founder</span>
+            <h3>Parabricks</h3>
+            <p>Co-founded and led the company behind GPU-accelerated genomic analysis, as CEO from research to acquisition.</p>
+          </div>
+          <div class="milestone reveal d1">
+            <span class="m-label">Acquired 2020</span>
+            <h3>NVIDIA</h3>
+            <p>Parabricks joined NVIDIA's healthcare ecosystem; today it powers genomics workloads around the world.</p>
+          </div>
+          <div class="milestone reveal d2">
+            <span class="m-label">Today</span>
+            <h3>Generative AI</h3>
+            <p>Working on GenAI at NVIDIA and sharing what I learn through Persian-language videos and talks.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="youtube" class="py-32">
-      <div class="mx-auto max-w-[1120px] px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 reveal">
-          <div>
-            <h2 class="text-4xl font-semibold text-black dark:text-white mb-3">
-              Latest on YouTube
-            </h2>
-            <p class="text-[17px] text-apple-gray">Deep dives into AI and technology (Persian language content).</p>
+    <!-- ============ Videos ============ -->
+    <section id="videos">
+      <div class="container">
+        <div class="section-head-row reveal">
+          <div class="section-head">
+            <span class="eyebrow">YouTube</span>
+            <h2>Latest videos</h2>
+            <p>Deep dives into AI, LLMs, and developer tools — in Persian.</p>
           </div>
-          <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" class="group flex items-center gap-2 text-[17px] text-black dark:text-white hover:opacity-60 transition-opacity">
-            View full channel <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          <a class="link-arrow" href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer">
+            View full channel <span class="arrow" aria-hidden="true">&rarr;</span>
           </a>
         </div>
 
         <!--
-          TO UPDATE VIDEOS: Replace the video IDs below with your latest uploads
-          Get video ID from URL: youtube.com/watch?v=VIDEO_ID_HERE
-          Keep the 6 most recent videos
+          TO UPDATE VIDEOS: copy a card, set data-id to the new YouTube video ID
+          (from youtube.com/watch?v=VIDEO_ID), update both image URLs, the title, and the date.
         -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Video 1 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/wgnI039H2jg" title="Demo 2: SAM Foundation Models and 3D Segmentation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">Demo 2: SAM Foundation Models and 3D Segmentation</h3>
-                </div>
+        <div class="video-grid">
+          <article class="video-card reveal">
+            <button class="video-frame" data-id="3JyKypJsFCc" aria-label="Play video: Open Knowledge Format by Amir Hormati">
+              <img src="https://i.ytimg.com/vi/3JyKypJsFCc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/3JyKypJsFCc/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>38. Open Knowledge Format by Amir Hormati</h3>
+              <p class="video-meta">July 2026 &middot; Persian</p>
             </div>
+          </article>
 
-            <!-- Video 2 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal delay-100">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/FZc_cvgFN10" title="33. NotebookLM Updated" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">33. NotebookLM Updated</h3>
-                </div>
+          <article class="video-card reveal d1">
+            <button class="video-frame" data-id="oLfyX_vTaVc" aria-label="Play video: Single-User Software Revolution by Parsa Razavi">
+              <img src="https://i.ytimg.com/vi/oLfyX_vTaVc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/oLfyX_vTaVc/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>Demo 3: Single-User Software Revolution by Parsa Razavi</h3>
+              <p class="video-meta">June 2026 &middot; Persian</p>
             </div>
+          </article>
 
-            <!-- Video 3 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal delay-200">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/rntcn3uF-m8" title="32. Gemini, Banana, and Antigravity" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">32. Gemini, Banana, and Antigravity</h3>
-                </div>
+          <article class="video-card reveal d2">
+            <button class="video-frame" data-id="nlI9I163J-0" aria-label="Play video: Local LLM">
+              <img src="https://i.ytimg.com/vi/nlI9I163J-0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/nlI9I163J-0/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>37. Local LLM</h3>
+              <p class="video-meta">June 2026 &middot; Persian</p>
             </div>
+          </article>
 
-            <!-- Video 4 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal delay-300">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/DV5Tv6RAWWM" title="31. Diffusion Mystery" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">31. Diffusion Mystery</h3>
-                </div>
+          <article class="video-card reveal d3">
+            <button class="video-frame" data-id="Ne-zbyl4Suc" aria-label="Play video: Fable/Mythos, Loop Engineering">
+              <img src="https://i.ytimg.com/vi/Ne-zbyl4Suc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Ne-zbyl4Suc/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>36. Fable/Mythos, Loop Engineering</h3>
+              <p class="video-meta">June 2026 &middot; Persian</p>
             </div>
+          </article>
 
-            <!-- Video 5 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal delay-400">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/QEUWNzgDujw" title="29. AI Browsers and IOI Gold Medal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">29. AI Browsers and IOI Gold Medal</h3>
-                </div>
+          <article class="video-card reveal d4">
+            <button class="video-frame" data-id="V9YrTtyRe4U" aria-label="Play video: OpenCode">
+              <img src="https://i.ytimg.com/vi/V9YrTtyRe4U/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/V9YrTtyRe4U/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>35. OpenCode</h3>
+              <p class="video-meta">June 2026 &middot; Persian</p>
             </div>
+          </article>
 
-            <!-- Video 6 -->
-            <div class="group relative bg-white dark:bg-apple-dark-card rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] transition-all duration-200 border border-apple-light-border dark:border-apple-dark-border reveal delay-500">
-                <div class="aspect-video w-full bg-apple-light-bg dark:bg-black relative">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/SrprLmYEeEE" title="28. Why Language Models Hallucinate?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-medium text-black dark:text-white line-clamp-2">28. Why Language Models Hallucinate?</h3>
-                </div>
+          <article class="video-card reveal d5">
+            <button class="video-frame" data-id="9WwgLyHv1xM" aria-label="Play video: Long Horizon Agentic Framework">
+              <img src="https://i.ytimg.com/vi/9WwgLyHv1xM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/9WwgLyHv1xM/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>34. Long Horizon Agentic Framework</h3>
+              <p class="video-meta">May 2026 &middot; Persian</p>
             </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="podcasts" class="py-32 bg-apple-light-bg dark:bg-apple-dark-card">
-      <div class="mx-auto max-w-[1120px] px-6">
-        <div class="text-center mb-16 reveal">
-            <h2 class="text-4xl font-semibold text-black dark:text-white mb-3">Podcast Appearances</h2>
-            <p class="text-[17px] text-apple-gray">Conversations on the future of tech and genomics</p>
+    <!-- ============ Podcasts ============ -->
+    <section id="podcasts" class="section-alt">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Podcasts</span>
+          <h2>Podcast appearances</h2>
+          <p>Conversations on startups, genomics, and the future of AI.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="group rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] border border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-apple-dark-card transition-all duration-200 reveal delay-0">
-            <div class="aspect-[4/3] relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/UliNhl5JlVk" loading="lazy" title="Podcast Appearance - AI and Innovation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-grid">
+          <article class="video-card reveal">
+            <button class="video-frame" data-id="pWCIFz2t8a8" aria-label="Play podcast: Tabaghe 16, episode 150">
+              <img src="https://i.ytimg.com/vi/pWCIFz2t8a8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/pWCIFz2t8a8/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3>EP 150 — Mehrzad Samadi, NVIDIA</h3>
+              <p class="video-meta">Tabaghe 16 (&#x637;&#x628;&#x642;&#x647; &#x661;&#x666;)</p>
             </div>
-          </div>
-          <div class="group rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] border border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-apple-dark-card transition-all duration-200 reveal delay-100">
-            <div class="aspect-[4/3] relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/8pCL_pq7zQM" loading="lazy" title="Podcast Appearance - Technology Leadership" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </article>
+
+          <article class="video-card reveal d1">
+            <button class="video-frame" data-id="8pCL_pq7zQM" aria-label="Play podcast: the entrepreneur who sold his company to NVIDIA">
+              <img src="https://i.ytimg.com/vi/8pCL_pq7zQM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/8pCL_pq7zQM/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3 dir="rtl" lang="fa">&#x06A9;&#x0627;&#x0631;&#x0622;&#x0641;&#x0631;&#x06CC;&#x0646;&#x06CC; &#x06A9;&#x0647; &#x0634;&#x0631;&#x06A9;&#x062A; &#x062E;&#x0648;&#x062F; &#x0631;&#x0627; &#x0628;&#x0647; &#x0627;&#x0646;&#x0648;&#x06CC;&#x062F;&#x06CC;&#x0627; &#x0641;&#x0631;&#x0648;&#x062E;&#x062A;</h3>
+              <p class="video-meta">Iman Khoraminezhad</p>
             </div>
-          </div>
-          <div class="group rounded-xl overflow-hidden shadow-sm hover:scale-[1.01] border border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-apple-dark-card transition-all duration-200 reveal delay-200">
-            <div class="aspect-[4/3] relative">
-              <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/pWCIFz2t8a8" loading="lazy" title="Podcast Appearance - GenAI Discussion" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </article>
+
+          <article class="video-card reveal d2">
+            <button class="video-frame" data-id="UliNhl5JlVk" aria-label="Play podcast: startup masterclass on pitching to investors">
+              <img src="https://i.ytimg.com/vi/UliNhl5JlVk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/UliNhl5JlVk/hqdefault.jpg'" alt="" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <div class="video-body">
+              <h3 dir="rtl" lang="fa">&#x0645;&#x0633;&#x062A;&#x0631;&#x06A9;&#x0644;&#x0627;&#x0633; &#x0627;&#x0633;&#x062A;&#x0627;&#x0631;&#x062A;&#x200C;&#x0622;&#x067E;&#x061B; &#x067E;&#x0631;&#x0632;&#x0646;&#x062A; &#x0628;&#x0647; &#x0633;&#x0631;&#x0645;&#x0627;&#x06CC;&#x0647;&#x200C;&#x06AF;&#x0630;&#x0627;&#x0631;</h3>
+              <p class="video-meta">Iman Khoraminezhad</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="py-16 border-t border-apple-light-border dark:border-apple-dark-border bg-white dark:bg-black">
-    <div class="mx-auto max-w-[1120px] px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="text-apple-gray text-xs">
-        &copy; <span id="current-year"></span> Mehrzad Samadi.
-      </div>
-      <div class="flex space-x-8 text-xs">
-         <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">Twitter</a>
-         <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">LinkedIn</a>
-         <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube" class="text-apple-gray hover:text-black dark:hover:text-white transition-colors">YouTube</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">&copy; <span id="current-year"></span> Mehrzad Samadi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://t.me/dlmehr" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="/news">News</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Initialize current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.theme = 'dark';
-      } else {
-        localStorage.theme = 'light';
-      }
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      localStorage.theme = dark ? 'dark' : 'light';
     });
 
-    // Scroll Reveal Logic
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
-          observer.unobserve(entry.target); // Only animate once
+          obs.unobserve(entry.target);
         }
       });
-    }, observerOptions);
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
+    // Click-to-play video facades (loads the YouTube iframe only on demand)
+    document.querySelectorAll('.video-frame[data-id]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.id + '?autoplay=1&rel=0';
+        iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        btn.replaceChildren(iframe);
+        btn.style.cursor = 'default';
+      }, { once: true });
     });
   </script>
 </body>
