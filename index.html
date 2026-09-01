@@ -180,6 +180,13 @@
     .hero-canvas {
       position: absolute; inset: 0; width: 100%; height: 100%;
       pointer-events: none;
+      /* fade the network out behind the headline and copy so text stays crisp */
+      -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.08) 0%, rgba(0,0,0,.08) 42%, rgba(0,0,0,.55) 60%, #000 78%),
+                          linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+      -webkit-mask-composite: source-in;
+      mask-image: linear-gradient(90deg, rgba(0,0,0,.08) 0%, rgba(0,0,0,.08) 42%, rgba(0,0,0,.55) 60%, #000 78%),
+                  linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+      mask-composite: intersect;
     }
     .hero-glow {
       position: absolute; top: 40px; right: -180px; width: 640px; height: 640px;
@@ -463,6 +470,10 @@
     /* ---------- Responsive ---------- */
     @media (max-width: 980px) {
       .hero { padding: 140px 0 90px; }
+      .hero-canvas {
+        -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 10%, #000 28%, rgba(0,0,0,.08) 38%, rgba(0,0,0,.08) 100%);
+        mask-image: linear-gradient(180deg, transparent 0%, #000 10%, #000 28%, rgba(0,0,0,.08) 38%, rgba(0,0,0,.08) 100%);
+      }
       .stats { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 72px; }
       .timeline::before { left: 8px; }
       .tl-item, .tl-item.right { grid-template-columns: 1fr; padding-left: 40px; }
@@ -872,9 +883,9 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Hero animation: a rotating 3D DNA double helix that periodically morphs into a
-    // neural network and back (genomics -> generative AI). Particles are spring-driven
-    // toward their formation targets, with inertia and inverse-square pointer repulsion.
+    // Hero animation: a living neural network. Nodes sit in six layers, drift gently,
+    // and glowing signals travel along the edges. Spring physics keeps nodes in formation
+    // while the pointer pushes them away with an inverse-square force.
     (() => {
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       const canvas = document.getElementById('hero-canvas');
@@ -882,45 +893,27 @@
       const ctx = canvas.getContext('2d');
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const pointer = { x: -1e4, y: -1e4 };
-      const P = 56;                 // points per strand
-      const N = P * 2;
-      const LAYERS = [12, 20, 24, 24, 20, 12]; // sums to N
+      const LAYERS = [10, 16, 20, 20, 16, 10];
+      const N = LAYERS.reduce((a, b) => a + b, 0);
       const REPEL = 150, SPRING = 0.045, DAMP = 0.84;
-      const CYCLE = 16, HOLD = 5.5, MORPH = 2.5; // seconds
       let w = 0, h = 0, raf = null, t0 = performance.now();
       const pts = [], edges = [], pulses = [];
 
-      for (let i = 0; i < N; i++) pts.push({ x: 0, y: 0, vx: 0, vy: 0, z: 0, tx: 0, ty: 0, tz: 0, layer: 0, idx: 0 });
-
-      // assign particles to network layers and precompute edges to the next layer
       {
         let k = 0;
         LAYERS.forEach((count, li) => {
-          for (let j = 0; j < count; j++, k++) { pts[k].layer = li; pts[k].idx = j; }
+          for (let j = 0; j < count; j++, k++) pts.push({ x: 0, y: 0, vx: 0, vy: 0, z: 0, tx: 0, ty: 0, tz: 0, layer: li, idx: j, seed: Math.random() * 6.28 });
         });
         let start = 0;
         for (let li = 0; li < LAYERS.length - 1; li++) {
           const nextStart = start + LAYERS[li];
           for (let j = 0; j < LAYERS[li]; j++) {
-            const from = start + j;
             const links = 2 + Math.floor(Math.random() * 2);
-            for (let e = 0; e < links; e++) {
-              const to = nextStart + Math.floor(Math.random() * LAYERS[li + 1]);
-              edges.push([from, to]);
-            }
+            for (let e = 0; e < links; e++) edges.push([start + j, nextStart + Math.floor(Math.random() * LAYERS[li + 1])]);
           }
           start = nextStart;
         }
-        for (let i = 0; i < 26; i++) pulses.push({ e: Math.floor(Math.random() * edges.length), p: Math.random(), s: 0.25 + Math.random() * 0.45 });
-      }
-
-      const ease = x => x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
-      function morphFactor(sec) {
-        const c = sec % CYCLE;
-        if (c < HOLD) return 0;
-        if (c < HOLD + MORPH) return ease((c - HOLD) / MORPH);
-        if (c < HOLD * 2 + MORPH) return 1;
-        return 1 - ease((c - HOLD * 2 - MORPH) / MORPH);
+        for (let i = 0; i < 28; i++) pulses.push({ e: Math.floor(Math.random() * edges.length), p: Math.random(), s: 0.25 + Math.random() * 0.45 });
       }
 
       function resize() {
@@ -929,32 +922,22 @@
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
 
-      function setTargets(sec, m) {
-        const cy = h * 0.5, R = Math.min(h * 0.2, 150), turns = w > 900 ? 3 : 2;
-        const rot = sec * 0.7;
-        const ySpan = h * 0.72, yTop = h * 0.14;
-        for (let i = 0; i < N; i++) {
-          const p = pts[i];
-          // helix target
-          const strand = i < P ? 0 : 1, k = i % P, u = k / (P - 1);
-          const th = u * Math.PI * 2 * turns + rot + strand * Math.PI;
-          const hx = w * 0.04 + u * w * 0.92, hy = cy + Math.sin(th) * R, hz = Math.cos(th) * R;
-          // network target
-          const lx = w * (0.08 + 0.84 * p.layer / (LAYERS.length - 1));
-          const count = LAYERS[p.layer];
-          const ny = yTop + ySpan * ((p.idx + 0.5) / count) + Math.sin(sec * 0.8 + i) * 4;
-          const nz = Math.sin(sec * 0.5 + i * 0.7) * 30;
-          p.tx = hx + (lx - hx) * m; p.ty = hy + (ny - hy) * m; p.tz = hz + (nz - hz) * m;
+      function setTargets(sec) {
+        const yTop = h * 0.1, ySpan = h * 0.8;
+        for (const p of pts) {
+          p.tx = w * (0.06 + 0.88 * p.layer / (LAYERS.length - 1)) + Math.sin(sec * 0.6 + p.seed) * 10;
+          p.ty = yTop + ySpan * ((p.idx + 0.5) / LAYERS[p.layer]) + Math.cos(sec * 0.7 + p.seed) * 8;
+          p.tz = Math.sin(sec * 0.5 + p.seed) * 40;
         }
       }
 
       function step(now) {
-        const sec = (now - t0) / 1000, m = morphFactor(sec);
-        setTargets(sec, m);
+        const sec = (now - t0) / 1000;
+        setTargets(sec);
         ctx.clearRect(0, 0, w, h);
         const dark = document.documentElement.classList.contains('dark');
-        const rgbA = dark ? '160, 220, 60' : '90, 143, 0';   // accent green
-        const rgbB = dark ? '60, 220, 170' : '0, 150, 115';  // teal
+        const rgbA = dark ? '160, 220, 60' : '90, 143, 0';
+        const rgbB = dark ? '60, 220, 170' : '0, 150, 115';
         const base = dark ? 1 : 0.8;
 
         for (const p of pts) {
@@ -966,46 +949,23 @@
         }
 
         ctx.lineWidth = 1;
-        // helix rungs (base pairs) fade out as we morph
-        const rungA = (1 - m) * 0.32 * base;
-        if (rungA > 0.02) {
-          for (let k = 0; k < P; k += 2) {
-            const a = pts[k], b = pts[k + P];
-            const depth = ((a.z + b.z) / 2 + 150) / 300;
-            ctx.strokeStyle = `rgba(${rgbB}, ${rungA * (0.35 + 0.65 * depth)})`;
-            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-          }
-          // strand backbones
-          for (let strand = 0; strand < 2; strand++) {
-            ctx.strokeStyle = `rgba(${rgbA}, ${(1 - m) * 0.28 * base})`;
-            ctx.beginPath();
-            for (let k = 0; k < P; k++) { const q = pts[strand * P + k]; k ? ctx.lineTo(q.x, q.y) : ctx.moveTo(q.x, q.y); }
-            ctx.stroke();
-          }
+        ctx.strokeStyle = `rgba(${rgbA}, ${0.18 * base})`;
+        ctx.beginPath();
+        for (const [i, j] of edges) { ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); }
+        ctx.stroke();
+
+        for (const pl of pulses) {
+          pl.p += pl.s / 60; if (pl.p > 1) { pl.p = 0; pl.e = Math.floor(Math.random() * edges.length); }
+          const [i, j] = edges[pl.e], a = pts[i], b = pts[j];
+          const x = a.x + (b.x - a.x) * pl.p, y = a.y + (b.y - a.y) * pl.p;
+          const g = ctx.createRadialGradient(x, y, 0, x, y, 7);
+          g.addColorStop(0, `rgba(${rgbB}, 0.9)`); g.addColorStop(1, `rgba(${rgbB}, 0)`);
+          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 7, 0, Math.PI * 2); ctx.fill();
         }
-        // network edges fade in
-        const edgeA = m * 0.16 * base;
-        if (edgeA > 0.02) {
-          ctx.strokeStyle = `rgba(${rgbA}, ${edgeA})`;
-          ctx.beginPath();
-          for (const [i, j] of edges) { ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); }
-          ctx.stroke();
-          // signal pulses travelling along edges
-          for (const pl of pulses) {
-            pl.p += pl.s / 60; if (pl.p > 1) { pl.p = 0; pl.e = Math.floor(Math.random() * edges.length); }
-            const [i, j] = edges[pl.e], a = pts[i], b = pts[j];
-            const x = a.x + (b.x - a.x) * pl.p, y = a.y + (b.y - a.y) * pl.p;
-            const g = ctx.createRadialGradient(x, y, 0, x, y, 7);
-            g.addColorStop(0, `rgba(${rgbB}, ${m * 0.9})`); g.addColorStop(1, `rgba(${rgbB}, 0)`);
-            ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 7, 0, Math.PI * 2); ctx.fill();
-          }
-        }
-        // nodes, sized and shaded by depth
-        for (let i = 0; i < N; i++) {
-          const p = pts[i], depth = (p.z + 150) / 300;
-          const r = 1.4 + depth * 2.2 + m * 0.6;
-          const rgb = (i < P) ? rgbA : rgbB;
-          ctx.fillStyle = `rgba(${rgb}, ${(0.35 + 0.6 * depth) * base})`;
+
+        for (const p of pts) {
+          const depth = (p.z + 40) / 80, r = 1.6 + depth * 2;
+          ctx.fillStyle = `rgba(${rgbA}, ${(0.4 + 0.55 * depth) * base})`;
           ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.fill();
         }
         raf = requestAnimationFrame(step);
@@ -1023,7 +983,7 @@
       });
 
       resize();
-      setTargets(0, 0);
+      setTargets(0);
       for (const p of pts) { p.x = p.tx; p.y = p.ty; p.z = p.tz; }
       raf = requestAnimationFrame(step);
     })();
