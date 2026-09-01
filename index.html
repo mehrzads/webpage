@@ -356,6 +356,10 @@
       display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
     }
     .footer-inner .copyright { color: var(--muted); font-size: 0.88rem; }
+    .visitors { white-space: nowrap; display: inline-block; unicode-bidi: isolate; }
+    .visitors .pip { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: 1px; animation: pip 2.2s ease-in-out infinite; }
+    @keyframes pip { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+    #visitor-count { font-variant-numeric: tabular-nums; color: var(--text); font-weight: 600; }
     .footer-links { display: flex; gap: 26px; }
     .footer-links a {
       font-size: 0.88rem; color: var(--muted); transition: color 0.2s ease;
@@ -816,7 +820,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="copyright">&copy; <span id="current-year"></span> Mehrzad Samadi. Made with GPUs and <span lang="fa">قهوه</span>.</p>
+      <p class="copyright">&copy; <span id="current-year"></span> Mehrzad Samadi. Made with GPUs and <bdi lang="fa">قهوه</bdi>.<span id="visitors" class="visitors" hidden> &middot; <span class="pip" aria-hidden="true"></span><span id="visitor-count">0</span> visitors</span></p>
       <div class="footer-links">
         <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -1028,6 +1032,25 @@
       gc.src = 'https://gc.zgo.at/count.js';
       document.body.appendChild(gc);
     }
+
+    // Live visitor count from GoatCounter's public counter endpoint
+    fetch('https://mehrzad.goatcounter.com/counter/TOTAL.json')
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(d => {
+        const n = parseInt(String(d.count_unique || d.count).replace(/\D/g, ''), 10);
+        if (!Number.isFinite(n)) return;
+        const el = document.getElementById('visitor-count');
+        const wrap = document.getElementById('visitors');
+        wrap.hidden = false;
+        const start = performance.now(), dur = 1200;
+        const tick = now => {
+          const p = Math.min(1, (now - start) / dur), eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(n * eased).toLocaleString('en-US');
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>
