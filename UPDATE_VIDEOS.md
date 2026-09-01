@@ -6,7 +6,12 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
 
 1. **Get the Video ID** from your new YouTube video URL
    - URL format: `https://www.youtube.com/watch?v=VIDEO_ID_HERE`
-   - Example: `https://www.youtube.com/watch?v=3JyKypJsFCc` → Video ID is `3JyKypJsFCc`
+   - Example: `https://www.youtube.com/watch?v=y2eq3_lmqlw` → Video ID is `y2eq3_lmqlw`
+   - Or list the newest uploads straight from the channel feed:
+     ```bash
+     curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=UCprtwWNkaWcAxcBV44lPHzQ" \
+       | grep -oE '<yt:videoId>[^<]+|<title>[^<]+' | paste - - | head -20
+     ```
 
 2. **Edit `index.html`**
    - Find the videos section (search for `TO UPDATE VIDEOS`)
@@ -14,7 +19,8 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
    - In the new card, replace the video ID in **three** places:
      - `data-id="VIDEO_ID"` on the `<button class="video-frame">`
      - both thumbnail URLs: `https://i.ytimg.com/vi/VIDEO_ID/maxresdefault.jpg` and `.../VIDEO_ID/hqdefault.jpg`
-   - Update the `<h3>` title, the `aria-label` on the button, and the date in `<p class="video-meta">`.
+   - Update the `<h3>` title, the `aria-label` on the button, and the `Ep. NN` badge and date in `<p class="video-meta">`.
+   - If the episode count changed, also bump the "43 episodes" text in the hero badge, the stats row (`data-to="43"`), and the "Browse all 43 episodes" link.
 
 3. **Commit and Push**
    ```bash
@@ -29,15 +35,15 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
 
 ```html
 <article class="video-card reveal">
-  <button class="video-frame" data-id="3JyKypJsFCc" aria-label="Play video: Open Knowledge Format by Amir Hormati">
-    <img src="https://i.ytimg.com/vi/3JyKypJsFCc/maxresdefault.jpg"
-         onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/3JyKypJsFCc/hqdefault.jpg'"
+  <button class="video-frame" data-id="y2eq3_lmqlw" aria-label="Play video: 43. HuggingFace Incident">
+    <img src="https://i.ytimg.com/vi/y2eq3_lmqlw/maxresdefault.jpg"
+         onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/y2eq3_lmqlw/hqdefault.jpg'"
          alt="" loading="lazy">
     <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
   </button>
   <div class="video-body">
-    <h3>38. Open Knowledge Format by Amir Hormati</h3>
-    <p class="video-meta">July 2026 &middot; Persian</p>
+    <h3>HuggingFace Incident</h3>
+    <p class="video-meta"><span class="ep">Ep. 43</span>August 2026 &middot; Persian</p>
   </div>
 </article>
 ```

@@ -1,0 +1,44 @@
+# Useful Static Websites
+
+Each subdirectory contains a standalone static `index.html`.
+
+- `age-calculator/` — Age Calculator: Calculate exact age, next birthday, and days lived from a birth date.
+- `bmi-calculator/` — BMI Calculator: Calculate BMI in metric or imperial units with category guidance.
+- `business-card-maker/` — Business Card Maker: Design a printable digital business card.
+- `calorie-calculator/` — Calorie Calculator: Estimate BMR and daily calories using common activity multipliers.
+- `color-palette/` — Color Palette Builder: Build tints and shades from a base color.
+- `compound-interest/` — Compound Interest Calculator: Project savings growth using deposits, interest rate, and compounding frequency.
+- `cron-explainer/` — Cron Expression Helper: Build and explain simple cron schedules from friendly controls.
+- `css-gradient-builder/` — CSS Gradient Builder: Design and copy CSS linear gradients.
+- `decision-matrix/` — Decision Matrix: Score options across weighted criteria to make decisions more objectively.
+- `diff-viewer/` — Diff Viewer: Compare two text blocks line by line.
+- `event-countdown/` — Event Countdown: Create a live countdown to an event date and copy a shareable title.
+- `expense-splitter/` — Expense Splitter: Split a bill, tip, and total per person.
+- `favicon-maker/` — Favicon Maker: Generate a downloadable letter favicon PNG.
+- `flashcards/` — Flashcards: Study question/answer cards locally with shuffle and reveal controls.
+- `gpa-calculator/` — GPA Calculator: Calculate weighted GPA from courses, credits, and grades.
+- `habit-tracker/` — Habit Tracker: Track weekly habits in localStorage.
+- `html-color-names/` — HTML Color Names: Browse and copy CSS named colors with hex previews.
+- `http-status-codes/` — HTTP Status Codes: Search common HTTP status codes and copy short explanations.
+- `invoice-maker/` — Invoice Maker: Create a printable invoice from line items.
+- `json-formatter/` — JSON Formatter: Validate, pretty-print, and minify JSON locally.
+- `kanban-board/` — Mini Kanban Board: A lightweight local kanban board for todo, doing, and done tasks.
+- `loan-calculator/` — Loan Calculator: Estimate monthly payment, total interest, and payoff totals for a fixed-rate loan.
+- `markdown-preview/` — Markdown Preview: Preview simple Markdown notes in the browser.
+- `meal-planner/` — Meal Planner: Plan a simple weekly menu and generate a grocery list.
+- `meta-tag-builder/` — Meta Tag Builder: Build SEO and social sharing meta tags.
+- `mime-type-lookup/` — MIME Type Lookup: Find common MIME types by file extension or content category.
+- `packing-list/` — Packing List: Create reusable packing checklists by trip type and save progress locally.
+- `password-generator/` — Password Generator: Generate strong passwords and copy them instantly.
+- `pomodoro-timer/` — Pomodoro Timer: Run configurable focus and break timers.
+- `qr-code-maker/` — QR Code Maker: Generate QR codes for URLs, text, Wi‑Fi credentials, email, and phone links.
+- `random-picker/` — Random Picker: Pick random names, winners, teams, or shuffled lists from pasted text.
+- `reading-list/` — Reading List Tracker: Keep a browser-local reading list with status, notes, and ratings.
+- `regex-tester/` — Regex Tester: Test JavaScript regular expressions against text.
+- `robots-txt-builder/` — Robots.txt Builder: Generate crawler rules and sitemap references.
+- `sitemap-builder/` — Sitemap Builder: Turn URLs into XML sitemap markup.
+- `svg-wave-generator/` — SVG Wave Generator: Create copy-ready SVG wave dividers.
+- `text-counter/` — Text Counter: Count words, characters, sentences, and reading time.
+- `time-zone-planner/` — Time Zone Planner: Compare meeting times across global time zones.
+- `unit-converter/` — Unit Converter: Convert common length, weight, speed, storage, and temperature units.
+- `utm-builder/` — UTM Link Builder: Build campaign URLs with source, medium, campaign, term, and content parameters.

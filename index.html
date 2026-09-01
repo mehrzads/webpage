@@ -291,25 +291,6 @@
     .nvidia-green { color: var(--accent-dark); font-weight: 700; }
     html.dark .nvidia-green { color: var(--accent); }
 
-    .milestones {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
-    }
-    .milestone {
-      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
-      padding: 30px 28px; box-shadow: var(--shadow-card);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .milestone:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
-    .milestone .m-label {
-      display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--accent-dark);
-      background: rgba(118, 185, 0, 0.12); border-radius: 999px;
-      padding: 5px 12px; margin-bottom: 16px;
-    }
-    html.dark .milestone .m-label { color: var(--accent); background: rgba(118, 185, 0, 0.14); }
-    .milestone h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 9px; }
-    .milestone p { font-size: 0.96rem; color: var(--muted); }
-
     /* ---------- Video grids ---------- */
     .video-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
@@ -384,21 +365,144 @@
       * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
     }
 
+    /* ---------- Scroll progress ---------- */
+    #progress { position: fixed; top: 0; left: 0; height: 2px; width: 0; z-index: 60;
+      background: linear-gradient(90deg, var(--accent), #00a97f); transition: width .1s linear; }
+
+    /* ---------- Nav active + mobile menu ---------- */
+    .site-nav a { position: relative; padding-bottom: 4px; }
+    .site-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; border-radius: 2px;
+      background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+    .site-nav a.active, .site-nav a:hover { color: var(--text); }
+    .site-nav a.active::after { transform: scaleX(1); }
+    .menu-toggle { display: none; width: 38px; height: 38px; border-radius: 50%; align-items: center; justify-content: center; color: var(--muted); }
+    .menu-toggle svg { width: 22px; height: 22px; }
+    .mobile-menu { display: none; border-top: 1px solid var(--border); background: var(--header-bg); }
+    .mobile-menu.open { display: block; }
+    .mobile-menu ul { list-style: none; padding: 14px 24px 18px; display: flex; flex-direction: column; gap: 14px; }
+    .mobile-menu a { font-size: 1.05rem; font-weight: 500; }
+
+    /* ---------- Hero extras ---------- */
+    .hero-eyebrow .fa { font-weight: 700; letter-spacing: 0; text-transform: none; font-size: 0.95rem; }
+    .hero-eyebrow .sep { opacity: .4; }
+    .rotator { display: inline-grid; vertical-align: bottom; }
+    .rotator > span { grid-area: 1 / 1; white-space: nowrap; visibility: hidden; }
+    .rotator > span.in { visibility: visible; animation: word-in .5s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes word-in { from { opacity: 0; transform: translateY(.45em); } to { opacity: 1; transform: none; } }
+    .hero-photo .badge {
+      position: absolute; display: inline-flex; align-items: center; gap: 8px;
+      padding: 9px 14px; border-radius: 14px; font-size: 0.86rem; font-weight: 600; white-space: nowrap;
+      background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-card-hover);
+      animation: floaty 6s ease-in-out infinite;
+    }
+    .hero-photo .badge svg { width: 16px; height: 16px; fill: var(--accent); }
+    .hero-photo .badge .pip { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .hero-photo .badge-tr { top: -18px; right: -26px; }
+    .hero-photo .badge-bl { bottom: -18px; left: -26px; animation-delay: -3s; }
+    @keyframes floaty { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 96px; position: relative; }
+    .stat .num { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+    .stat .num small { font-size: 1.3rem; font-weight: 700; color: var(--accent-dark); }
+    html.dark .stat .num small { color: var(--accent); }
+    .stat .lbl { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+
+    /* ---------- Topics marquee ---------- */
+    .marquee { padding: 18px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+    .marquee-track { display: flex; gap: 10px; width: max-content; animation: marquee 45s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    .chip { white-space: nowrap; padding: 8px 15px; border-radius: 999px; border: 1px solid var(--border); font-size: 0.88rem; color: var(--muted); }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    /* ---------- Timeline ---------- */
+    .timeline { position: relative; max-width: 900px; margin: 0 auto; list-style: none; }
+    .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; transform: translateX(-1px);
+      background: linear-gradient(180deg, transparent, var(--accent) 12%, var(--accent) 88%, transparent); }
+    .tl-item { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; padding: 0 0 64px; }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-item .tl-dot { position: absolute; left: 50%; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent);
+      transform: translateX(-50%); box-shadow: 0 0 0 6px rgba(118,185,0,.16); }
+    .tl-item.live .tl-dot::after { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--accent); animation: ping 2s ease-out infinite; }
+    @keyframes ping { 0% { transform: scale(.6); opacity: 1 } 100% { transform: scale(1.8); opacity: 0 } }
+    .tl-item .tl-body { grid-column: 1; text-align: right; }
+    .tl-item.right .tl-body { grid-column: 2; text-align: left; }
+    .tl-body .m-label { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--accent-dark); background: rgba(118,185,0,.12); border-radius: 999px; padding: 5px 12px; margin-bottom: 14px; }
+    html.dark .tl-body .m-label { color: var(--accent); background: rgba(118,185,0,.14); }
+    .tl-body h3 { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 10px; }
+    .tl-body p { color: var(--muted); font-size: 1.02rem; }
+
+    /* ---------- Video card extras ---------- */
+    .video-card { position: relative; }
+    .video-card::before { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 2; opacity: 0; transition: opacity .3s;
+      background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(118,185,0,.16), transparent 60%); }
+    .video-card:hover::before { opacity: 1; }
+    .ep { display: inline-block; font-size: 0.76rem; font-weight: 700; letter-spacing: .04em; color: var(--accent-dark);
+      background: rgba(118,185,0,.12); border-radius: 999px; padding: 3px 9px; margin-right: 8px; }
+    html.dark .ep { color: var(--accent); background: rgba(118,185,0,.16); }
+    .subscribe { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 980px; background: #ff0000; color: #fff;
+      font-weight: 600; font-size: 0.95rem; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; }
+    .subscribe:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(255,0,0,.25); }
+    .subscribe svg { width: 16px; height: 16px; fill: currentColor; }
+    .center-link { text-align: center; margin-top: 44px; }
+
+    /* ---------- Tools ---------- */
+    .tools { position: relative; overflow: hidden; }
+    .tools-glow { position: absolute; right: -220px; bottom: -220px; width: 640px; height: 640px; pointer-events: none;
+      background: radial-gradient(circle, rgba(118,185,0,.12) 0%, transparent 62%); }
+    .tool-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; position: relative; }
+    .tool { display: flex; flex-direction: column; gap: 4px; padding: 22px; border-radius: 18px; background: var(--card);
+      border: 1px solid var(--border); box-shadow: var(--shadow-card); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .tool:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); border-color: var(--accent); }
+    .tool .glyph { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); line-height: 1; margin-bottom: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    html.dark .tool .glyph { color: var(--accent); }
+    .tool b { font-weight: 600; font-size: 1rem; }
+    .tool span { font-size: 0.88rem; color: var(--muted); }
+
+    /* ---------- CTA ---------- */
+    .cta { padding: 0 0 108px; }
+    .cta-card { position: relative; overflow: hidden; border-radius: 32px; padding: 80px 40px; text-align: center;
+      background: var(--btn-bg); color: var(--btn-text); }
+    .cta-card::before, .cta-card::after { content: ''; position: absolute; width: 360px; height: 360px; border-radius: 50%; filter: blur(70px); opacity: .35; }
+    .cta-card::before { top: -160px; right: -120px; background: var(--accent); }
+    .cta-card::after { bottom: -180px; left: -120px; background: #00a97f; }
+    .cta-card h2 { position: relative; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; letter-spacing: -0.035em; margin-bottom: 14px; }
+    .cta-card p { position: relative; opacity: .7; font-size: 1.1rem; max-width: 34em; margin: 0 auto 32px; }
+    .cta-card .hero-cta { position: relative; justify-content: center; }
+    .btn-accent { background: var(--accent); color: #0a0a0a; }
+    .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(118,185,0,.35); }
+    .btn-ghost { border: 1px solid currentColor; opacity: .85; }
+    .btn-ghost:hover { transform: translateY(-2px); opacity: 1; }
+
     /* ---------- Responsive ---------- */
     @media (max-width: 980px) {
       .hero { padding: 140px 0 90px; }
+      .stats { grid-template-columns: repeat(2, 1fr); margin-top: 72px; }
+      .tool-grid { grid-template-columns: repeat(2, 1fr); }
+      .timeline::before { left: 8px; }
+      .tl-item, .tl-item.right { grid-template-columns: 1fr; padding-left: 40px; }
+      .tl-item .tl-dot { left: 8px; }
+      .tl-item .tl-body, .tl-item.right .tl-body { grid-column: 1; text-align: left; }
+      .hero-photo .badge-tr { right: -8px; }
+      .hero-photo .badge-bl { left: -8px; }
       .hero-inner { flex-direction: column-reverse; text-align: center; gap: 52px; }
       .hero-eyebrow { justify-content: center; }
       .hero-sub { margin-left: auto; margin-right: auto; }
       .socials, .hero-cta { justify-content: center; }
       .hero-photo img { width: 300px; height: 300px; }
-      .video-grid, .milestones { grid-template-columns: repeat(2, 1fr); }
+      .video-grid { grid-template-columns: repeat(2, 1fr); }
       .section-head-row { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 640px) {
       .site-nav { display: none; }
+      .menu-toggle { display: inline-flex; }
+      .hero h1 { font-size: 2.3rem; }
+      .stat .num { font-size: 2rem; }
+      .cta-card { padding: 56px 24px; border-radius: 24px; }
       section { padding: 80px 0; }
-      .video-grid, .milestones { grid-template-columns: 1fr; }
+      .video-grid { grid-template-columns: 1fr; }
       .hero-photo img { width: 250px; height: 250px; }
       .footer-inner { flex-direction: column; justify-content: center; text-align: center; }
     }
@@ -407,6 +511,7 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div id="progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container">
@@ -417,6 +522,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#videos">Videos</a></li>
             <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#tools">Tools</a></li>
           </ul>
         </nav>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -427,7 +533,18 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
           </svg>
         </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+        <li><a href="#tools">Tools</a></li>
+      </ul>
     </div>
   </header>
 
@@ -440,8 +557,16 @@
       <div class="container">
         <div class="hero-inner">
           <div class="hero-copy reveal active">
-            <span class="hero-eyebrow">GenAI &middot; NVIDIA</span>
-            <h1>Building the future of <span class="gradient-text">Generative&nbsp;AI</span></h1>
+            <span class="hero-eyebrow"><span class="fa" lang="fa" dir="rtl">سلام</span><span class="sep">&middot;</span>GenAI &middot; NVIDIA</span>
+            <h1>Building the future of
+              <span class="rotator gradient-text" id="rotator" aria-live="polite">
+                <span class="in">Generative&nbsp;AI</span>
+                <span>GPU computing</span>
+                <span>coding agents</span>
+                <span>local LLMs</span>
+                <span>genomics at scale</span>
+              </span>
+            </h1>
             <p class="hero-sub">
               I work on Generative AI at <strong>NVIDIA</strong>. Previously CEO &amp; Co-Founder of <strong>Parabricks</strong>, acquired by NVIDIA in 2020 — bridging high-performance computing and biological intelligence.
             </p>
@@ -462,17 +587,34 @@
             </div>
 
             <div class="hero-cta">
-              <a href="#videos" class="btn btn-primary">Watch the latest videos</a>
+              <a href="#videos" class="btn btn-primary">Watch the latest episode</a>
               <a href="#about" class="btn btn-secondary">More about me</a>
             </div>
           </div>
 
           <div class="hero-photo reveal active d2">
             <img src="mehrzad.jpeg" alt="Portrait of Mehrzad Samadi" width="384" height="384" fetchpriority="high">
+            <span class="badge badge-tr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>43 episodes &amp; counting</span>
+            <span class="badge badge-bl"><span class="pip"></span>Ex-CEO, Parabricks</span>
           </div>
+        </div>
+
+        <div class="stats reveal d3">
+          <div class="stat"><div class="num"><span class="count" data-to="2020">0</span></div><div class="lbl">Parabricks acquired by NVIDIA</div></div>
+          <div class="stat"><div class="num"><span class="count" data-to="43">0</span><small>+</small></div><div class="lbl">Persian-language AI episodes</div></div>
+          <div class="stat"><div class="num"><span class="count" data-to="40">0</span></div><div class="lbl">Free browser tools, no backend</div></div>
+          <div class="stat"><div class="num"><span class="count" data-to="100">0</span><small>%</small></div><div class="lbl">GPU-accelerated, always</div></div>
         </div>
       </div>
     </section>
+
+    <!-- ============ Topics ============ -->
+    <div class="marquee" aria-label="Topics I cover">
+      <div class="marquee-track">
+        <span class="chip">Fine-tuning &amp; LoRA</span><span class="chip">Local LLMs</span><span class="chip">Agentic frameworks</span><span class="chip">Coding agents</span><span class="chip">AI video generation</span><span class="chip">Deep learning fundamentals</span><span class="chip">GPU acceleration</span><span class="chip">Genomics</span><span class="chip">Startups &amp; fundraising</span><span class="chip">Artificial consciousness</span><span class="chip">Open knowledge formats</span><span class="chip">DGX Spark</span>
+        <span class="chip" aria-hidden="true">Fine-tuning &amp; LoRA</span><span class="chip" aria-hidden="true">Local LLMs</span><span class="chip" aria-hidden="true">Agentic frameworks</span><span class="chip" aria-hidden="true">Coding agents</span><span class="chip" aria-hidden="true">AI video generation</span><span class="chip" aria-hidden="true">Deep learning fundamentals</span><span class="chip" aria-hidden="true">GPU acceleration</span><span class="chip" aria-hidden="true">Genomics</span><span class="chip" aria-hidden="true">Startups &amp; fundraising</span><span class="chip" aria-hidden="true">Artificial consciousness</span><span class="chip" aria-hidden="true">Open knowledge formats</span><span class="chip" aria-hidden="true">DGX Spark</span>
+      </div>
+    </div>
 
     <!-- ============ About ============ -->
     <section id="about" class="section-alt">
@@ -491,23 +633,32 @@
           </p>
         </div>
 
-        <div class="milestones">
-          <div class="milestone reveal">
-            <span class="m-label">Founder</span>
-            <h3>Parabricks</h3>
-            <p>Co-founded and led the company behind GPU-accelerated genomic analysis, as CEO from research to acquisition.</p>
-          </div>
-          <div class="milestone reveal d1">
-            <span class="m-label">Acquired 2020</span>
-            <h3>NVIDIA</h3>
-            <p>Parabricks joined NVIDIA's healthcare ecosystem; today it powers genomics workloads around the world.</p>
-          </div>
-          <div class="milestone reveal d2">
-            <span class="m-label">Today</span>
-            <h3>Generative AI</h3>
-            <p>Working on GenAI at NVIDIA and sharing what I learn through Persian-language videos and talks.</p>
-          </div>
-        </div>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="m-label">Chapter 1 &middot; Founder</span>
+              <h3>Co-founded Parabricks</h3>
+              <p>Set out to revolutionize genomic analysis with GPU-accelerated software, leading the company as CEO from research to acquisition.</p>
+            </div>
+          </li>
+          <li class="tl-item right reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="m-label">Chapter 2 &middot; 2020</span>
+              <h3>Acquired by <span class="nvidia-green">NVIDIA</span></h3>
+              <p>Parabricks joined NVIDIA's healthcare ecosystem. I led the team's integration and growth; today it powers genomics workloads around the world.</p>
+            </div>
+          </li>
+          <li class="tl-item live reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="m-label">Chapter 3 &middot; Today</span>
+              <h3>Generative AI at NVIDIA</h3>
+              <p>Working at the bleeding edge of large language models and accelerated computing, and sharing what I learn every week in Persian.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -518,10 +669,11 @@
           <div class="section-head">
             <span class="eyebrow">YouTube</span>
             <h2>Latest videos</h2>
-            <p>Deep dives into AI, LLMs, and developer tools — in Persian.</p>
+            <p>Deep dives into AI, LLMs, and developer tools — in Persian. Click any card to play right here.</p>
           </div>
-          <a class="link-arrow" href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer">
-            View full channel <span class="arrow" aria-hidden="true">&rarr;</span>
+          <a class="subscribe" href="https://www.youtube.com/@mehrzad.samadi?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Subscribe
           </a>
         </div>
 
@@ -531,71 +683,72 @@
         -->
         <div class="video-grid">
           <article class="video-card reveal">
-            <button class="video-frame" data-id="3JyKypJsFCc" aria-label="Play video: Open Knowledge Format by Amir Hormati">
-              <img src="https://i.ytimg.com/vi/3JyKypJsFCc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/3JyKypJsFCc/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="y2eq3_lmqlw" aria-label="Play video: 43. HuggingFace Incident">
+              <img src="https://i.ytimg.com/vi/y2eq3_lmqlw/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/y2eq3_lmqlw/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>38. Open Knowledge Format by Amir Hormati</h3>
-              <p class="video-meta">July 2026 &middot; Persian</p>
+              <h3>HuggingFace Incident</h3>
+              <p class="video-meta"><span class="ep">Ep. 43</span>August 2026 &middot; Persian</p>
             </div>
           </article>
 
           <article class="video-card reveal d1">
-            <button class="video-frame" data-id="oLfyX_vTaVc" aria-label="Play video: Single-User Software Revolution by Parsa Razavi">
-              <img src="https://i.ytimg.com/vi/oLfyX_vTaVc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/oLfyX_vTaVc/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="6-SdqFdPVzE" aria-label="Play video: 42. Rejection Therapy">
+              <img src="https://i.ytimg.com/vi/6-SdqFdPVzE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/6-SdqFdPVzE/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>Demo 3: Single-User Software Revolution by Parsa Razavi</h3>
-              <p class="video-meta">June 2026 &middot; Persian</p>
+              <h3>Rejection Therapy</h3>
+              <p class="video-meta"><span class="ep">Ep. 42</span>August 2026 &middot; Persian</p>
             </div>
           </article>
 
           <article class="video-card reveal d2">
-            <button class="video-frame" data-id="nlI9I163J-0" aria-label="Play video: Local LLM">
-              <img src="https://i.ytimg.com/vi/nlI9I163J-0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/nlI9I163J-0/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="xlRgHyjUC8o" aria-label="Play video: 41. meCore: The Taste Layer for AI, with Golnaz Abdollahian">
+              <img src="https://i.ytimg.com/vi/xlRgHyjUC8o/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/xlRgHyjUC8o/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>37. Local LLM</h3>
-              <p class="video-meta">June 2026 &middot; Persian</p>
+              <h3>meCore: The Taste Layer for AI, with Golnaz Abdollahian</h3>
+              <p class="video-meta"><span class="ep">Ep. 41</span>July 2026 &middot; Persian</p>
             </div>
           </article>
 
           <article class="video-card reveal d3">
-            <button class="video-frame" data-id="Ne-zbyl4Suc" aria-label="Play video: Fable/Mythos, Loop Engineering">
-              <img src="https://i.ytimg.com/vi/Ne-zbyl4Suc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Ne-zbyl4Suc/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="JoRmERbgalc" aria-label="Play video: 40. Artificial Consciousness">
+              <img src="https://i.ytimg.com/vi/JoRmERbgalc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/JoRmERbgalc/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>36. Fable/Mythos, Loop Engineering</h3>
-              <p class="video-meta">June 2026 &middot; Persian</p>
+              <h3>Artificial Consciousness</h3>
+              <p class="video-meta"><span class="ep">Ep. 40</span>July 2026 &middot; Persian</p>
             </div>
           </article>
 
           <article class="video-card reveal d4">
-            <button class="video-frame" data-id="V9YrTtyRe4U" aria-label="Play video: OpenCode">
-              <img src="https://i.ytimg.com/vi/V9YrTtyRe4U/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/V9YrTtyRe4U/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="WgFHgnnUaN0" aria-label="Play video: 39. Local LLM 2: DGX Spark, Hermes, ComfyUI">
+              <img src="https://i.ytimg.com/vi/WgFHgnnUaN0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/WgFHgnnUaN0/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>35. OpenCode</h3>
-              <p class="video-meta">June 2026 &middot; Persian</p>
+              <h3>Local LLM 2: DGX Spark, Hermes, ComfyUI</h3>
+              <p class="video-meta"><span class="ep">Ep. 39</span>July 2026 &middot; Persian</p>
             </div>
           </article>
 
           <article class="video-card reveal d5">
-            <button class="video-frame" data-id="9WwgLyHv1xM" aria-label="Play video: Long Horizon Agentic Framework">
-              <img src="https://i.ytimg.com/vi/9WwgLyHv1xM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/9WwgLyHv1xM/hqdefault.jpg'" alt="" loading="lazy">
+            <button class="video-frame" data-id="3JyKypJsFCc" aria-label="Play video: 38. Open Knowledge Format, with Amir Hormati">
+              <img src="https://i.ytimg.com/vi/3JyKypJsFCc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/3JyKypJsFCc/hqdefault.jpg'" alt="" loading="lazy">
               <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             </button>
             <div class="video-body">
-              <h3>34. Long Horizon Agentic Framework</h3>
-              <p class="video-meta">May 2026 &middot; Persian</p>
+              <h3>Open Knowledge Format, with Amir Hormati</h3>
+              <p class="video-meta"><span class="ep">Ep. 38</span>July 2026 &middot; Persian</p>
             </div>
           </article>
         </div>
+        <p class="center-link"><a class="link-arrow" href="https://www.youtube.com/@mehrzad.samadi/videos" target="_blank" rel="noopener noreferrer">Browse all 43 episodes <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
       </div>
     </section>
 
@@ -605,7 +758,7 @@
         <div class="section-head center reveal">
           <span class="eyebrow">Podcasts</span>
           <h2>Podcast appearances</h2>
-          <p>Conversations on startups, genomics, and the future of AI.</p>
+          <p>Conversations on startups, genomics, and selling a company to NVIDIA.</p>
         </div>
 
         <div class="video-grid">
@@ -644,16 +797,57 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ Tools ============ -->
+    <section id="tools" class="tools">
+      <div class="tools-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head-row reveal">
+          <div class="section-head">
+            <span class="eyebrow">Side projects</span>
+            <h2>40 tiny tools, zero backends</h2>
+            <p>Single-file web apps that run entirely in your browser. No accounts, no tracking, nothing leaves your device.</p>
+          </div>
+          <a class="link-arrow" href="subdomains/">See all 40 <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="tool-grid">
+          <a class="tool reveal" href="subdomains/json-formatter/"><span class="glyph" aria-hidden="true">{ }</span><b>JSON Formatter</b><span>Validate, pretty-print, minify.</span></a>
+          <a class="tool reveal d1" href="subdomains/regex-tester/"><span class="glyph" aria-hidden="true">.*</span><b>Regex Tester</b><span>Live JavaScript regex matching.</span></a>
+          <a class="tool reveal d2" href="subdomains/diff-viewer/"><span class="glyph" aria-hidden="true">±</span><b>Diff Viewer</b><span>Compare two texts line by line.</span></a>
+          <a class="tool reveal d3" href="subdomains/cron-explainer/"><span class="glyph" aria-hidden="true">* *</span><b>Cron Helper</b><span>Build and explain cron schedules.</span></a>
+          <a class="tool reveal" href="subdomains/time-zone-planner/"><span class="glyph" aria-hidden="true">UTC</span><b>Time Zone Planner</b><span>Find a meeting time that works.</span></a>
+          <a class="tool reveal d1" href="subdomains/qr-code-maker/"><span class="glyph" aria-hidden="true">▦</span><b>QR Code Maker</b><span>URLs, Wi-Fi, contacts, text.</span></a>
+          <a class="tool reveal d2" href="subdomains/pomodoro-timer/"><span class="glyph" aria-hidden="true">25:00</span><b>Pomodoro Timer</b><span>Configurable focus sessions.</span></a>
+          <a class="tool reveal d3" href="subdomains/decision-matrix/"><span class="glyph" aria-hidden="true">Σw</span><b>Decision Matrix</b><span>Weighted scoring for hard calls.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" aria-label="Get in touch">
+      <div class="container">
+        <div class="cta-card reveal">
+          <h2>Let's talk about what's next in AI.</h2>
+          <p>Speaking, podcasts, collaborations, or just a good conversation about GPUs and genomes.</p>
+          <div class="hero-cta">
+            <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Connect on LinkedIn</a>
+            <a href="https://t.me/dlmehr" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join on Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="copyright">&copy; <span id="current-year"></span> Mehrzad Samadi. All rights reserved.</p>
+      <p class="copyright">&copy; <span id="current-year"></span> Mehrzad Samadi. Made with GPUs and <span lang="fa">چای</span>.</p>
       <div class="footer-links">
         <a href="https://twitter.com/mehrzadsamadi" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://www.linkedin.com/in/mehrzads" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://www.youtube.com/@mehrzad.samadi" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="https://t.me/dlmehr" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/samadi.mehrzad" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#">Back to top &uarr;</a>
       </div>
     </div>
   </footer>
@@ -665,6 +859,68 @@
     document.getElementById('theme-toggle').addEventListener('click', () => {
       const dark = document.documentElement.classList.toggle('dark');
       localStorage.theme = dark ? 'dark' : 'light';
+    });
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menu-toggle'), menu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }));
+
+    // Scroll progress bar
+    const progress = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      progress.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + '%';
+    };
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    // Active nav link
+    const navLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
+    const sectionObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean).forEach(el => sectionObs.observe(el));
+
+    // Rotating headline word
+    const rot = document.getElementById('rotator');
+    if (rot && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const words = [...rot.children]; let i = 0;
+      setInterval(() => {
+        words[i].classList.remove('in');
+        i = (i + 1) % words.length;
+        words[i].classList.add('in');
+      }, 2600);
+    }
+
+    // Count-up stats
+    const countObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        countObs.unobserve(e.target);
+        const to = +e.target.dataset.to, start = performance.now(), dur = 1400;
+        const tick = now => {
+          const p = Math.min(1, (now - start) / dur), eased = 1 - Math.pow(1 - p, 3);
+          e.target.textContent = Math.round(to * eased);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count').forEach(c => countObs.observe(c));
+
+    // Spotlight hover position on cards
+    document.querySelectorAll('.video-card').forEach(el => {
+      el.addEventListener('pointermove', e => {
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
     });
 
     // Scroll reveal
