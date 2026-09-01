@@ -895,8 +895,9 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Hero particle field — simple physics: inertia, friction, wall bounces,
-    // and an inverse-square pointer repulsion force
+    // Hero animation: a rotating 3D DNA double helix that periodically morphs into a
+    // neural network and back (genomics -> generative AI). Particles are spring-driven
+    // toward their formation targets, with inertia and inverse-square pointer repulsion.
     (() => {
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       const canvas = document.getElementById('hero-canvas');
@@ -904,61 +905,131 @@
       const ctx = canvas.getContext('2d');
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const pointer = { x: -1e4, y: -1e4 };
-      const LINK_DIST = 130, REPEL_DIST = 150, FRICTION = 0.995, MAX_V = 0.6;
-      let w = 0, h = 0, particles = [], raf = null;
+      const P = 56;                 // points per strand
+      const N = P * 2;
+      const LAYERS = [12, 20, 24, 24, 20, 12]; // sums to N
+      const REPEL = 150, SPRING = 0.045, DAMP = 0.84;
+      const CYCLE = 16, HOLD = 5.5, MORPH = 2.5; // seconds
+      let w = 0, h = 0, raf = null, t0 = performance.now();
+      const pts = [], edges = [], pulses = [];
+
+      for (let i = 0; i < N; i++) pts.push({ x: 0, y: 0, vx: 0, vy: 0, z: 0, tx: 0, ty: 0, tz: 0, layer: 0, idx: 0 });
+
+      // assign particles to network layers and precompute edges to the next layer
+      {
+        let k = 0;
+        LAYERS.forEach((count, li) => {
+          for (let j = 0; j < count; j++, k++) { pts[k].layer = li; pts[k].idx = j; }
+        });
+        let start = 0;
+        for (let li = 0; li < LAYERS.length - 1; li++) {
+          const nextStart = start + LAYERS[li];
+          for (let j = 0; j < LAYERS[li]; j++) {
+            const from = start + j;
+            const links = 2 + Math.floor(Math.random() * 2);
+            for (let e = 0; e < links; e++) {
+              const to = nextStart + Math.floor(Math.random() * LAYERS[li + 1]);
+              edges.push([from, to]);
+            }
+          }
+          start = nextStart;
+        }
+        for (let i = 0; i < 26; i++) pulses.push({ e: Math.floor(Math.random() * edges.length), p: Math.random(), s: 0.25 + Math.random() * 0.45 });
+      }
+
+      const ease = x => x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+      function morphFactor(sec) {
+        const c = sec % CYCLE;
+        if (c < HOLD) return 0;
+        if (c < HOLD + MORPH) return ease((c - HOLD) / MORPH);
+        if (c < HOLD * 2 + MORPH) return 1;
+        return 1 - ease((c - HOLD * 2 - MORPH) / MORPH);
+      }
 
       function resize() {
         w = hero.clientWidth; h = hero.clientHeight;
         canvas.width = w * dpr; canvas.height = h * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        const target = Math.min(80, Math.round((w * h) / 16000));
-        while (particles.length < target) {
-          particles.push({
-            x: Math.random() * w, y: Math.random() * h,
-            vx: (Math.random() - 0.5) * MAX_V, vy: (Math.random() - 0.5) * MAX_V,
-            r: 1.2 + Math.random() * 1.8,
-          });
-        }
-        particles.length = target;
       }
 
-      function step() {
+      function setTargets(sec, m) {
+        const cy = h * 0.5, R = Math.min(h * 0.2, 150), turns = w > 900 ? 3 : 2;
+        const rot = sec * 0.7;
+        const ySpan = h * 0.72, yTop = h * 0.14;
+        for (let i = 0; i < N; i++) {
+          const p = pts[i];
+          // helix target
+          const strand = i < P ? 0 : 1, k = i % P, u = k / (P - 1);
+          const th = u * Math.PI * 2 * turns + rot + strand * Math.PI;
+          const hx = w * 0.04 + u * w * 0.92, hy = cy + Math.sin(th) * R, hz = Math.cos(th) * R;
+          // network target
+          const lx = w * (0.08 + 0.84 * p.layer / (LAYERS.length - 1));
+          const count = LAYERS[p.layer];
+          const ny = yTop + ySpan * ((p.idx + 0.5) / count) + Math.sin(sec * 0.8 + i) * 4;
+          const nz = Math.sin(sec * 0.5 + i * 0.7) * 30;
+          p.tx = hx + (lx - hx) * m; p.ty = hy + (ny - hy) * m; p.tz = hz + (nz - hz) * m;
+        }
+      }
+
+      function step(now) {
+        const sec = (now - t0) / 1000, m = morphFactor(sec);
+        setTargets(sec, m);
         ctx.clearRect(0, 0, w, h);
         const dark = document.documentElement.classList.contains('dark');
-        const dotAlpha = dark ? 0.5 : 0.4;
-        const lineRGB = dark ? '160, 220, 60' : '90, 143, 0';
+        const rgbA = dark ? '160, 220, 60' : '90, 143, 0';   // accent green
+        const rgbB = dark ? '60, 220, 170' : '0, 150, 115';  // teal
+        const base = dark ? 1 : 0.8;
 
-        for (const p of particles) {
-          // pointer repulsion: force falls off with square of distance
-          const dx = p.x - pointer.x, dy = p.y - pointer.y;
-          const d2 = dx * dx + dy * dy;
-          if (d2 < REPEL_DIST * REPEL_DIST && d2 > 1) {
-            const f = 12 / d2;
-            p.vx += dx * f; p.vy += dy * f;
-          }
-          p.vx *= FRICTION; p.vy *= FRICTION;
-          // keep a minimum drift so the field never stalls
-          const speed = Math.hypot(p.vx, p.vy);
-          if (speed > MAX_V * 2.5) { p.vx *= 0.9; p.vy *= 0.9; }
-          p.x += p.vx; p.y += p.vy;
-          if (p.x < 0 || p.x > w) { p.vx *= -1; p.x = Math.max(0, Math.min(w, p.x)); }
-          if (p.y < 0 || p.y > h) { p.vy *= -1; p.y = Math.max(0, Math.min(h, p.y)); }
+        for (const p of pts) {
+          p.vx += (p.tx - p.x) * SPRING; p.vy += (p.ty - p.y) * SPRING;
+          const dx = p.x - pointer.x, dy = p.y - pointer.y, d2 = dx * dx + dy * dy;
+          if (d2 < REPEL * REPEL && d2 > 1) { const f = 900 / d2; p.vx += dx * f * 0.06; p.vy += dy * f * 0.06; }
+          p.vx *= DAMP; p.vy *= DAMP;
+          p.x += p.vx; p.y += p.vy; p.z += (p.tz - p.z) * 0.1;
         }
 
-        for (let i = 0; i < particles.length; i++) {
-          const a = particles[i];
-          for (let j = i + 1; j < particles.length; j++) {
-            const b = particles[j];
-            const dx = a.x - b.x, dy = a.y - b.y;
-            const d2 = dx * dx + dy * dy;
-            if (d2 < LINK_DIST * LINK_DIST) {
-              const alpha = (1 - Math.sqrt(d2) / LINK_DIST) * (dark ? 0.22 : 0.16);
-              ctx.strokeStyle = `rgba(${lineRGB}, ${alpha})`;
-              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-            }
+        ctx.lineWidth = 1;
+        // helix rungs (base pairs) fade out as we morph
+        const rungA = (1 - m) * 0.32 * base;
+        if (rungA > 0.02) {
+          for (let k = 0; k < P; k += 2) {
+            const a = pts[k], b = pts[k + P];
+            const depth = ((a.z + b.z) / 2 + 150) / 300;
+            ctx.strokeStyle = `rgba(${rgbB}, ${rungA * (0.35 + 0.65 * depth)})`;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
-          ctx.fillStyle = `rgba(${lineRGB}, ${dotAlpha})`;
-          ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
+          // strand backbones
+          for (let strand = 0; strand < 2; strand++) {
+            ctx.strokeStyle = `rgba(${rgbA}, ${(1 - m) * 0.28 * base})`;
+            ctx.beginPath();
+            for (let k = 0; k < P; k++) { const q = pts[strand * P + k]; k ? ctx.lineTo(q.x, q.y) : ctx.moveTo(q.x, q.y); }
+            ctx.stroke();
+          }
+        }
+        // network edges fade in
+        const edgeA = m * 0.16 * base;
+        if (edgeA > 0.02) {
+          ctx.strokeStyle = `rgba(${rgbA}, ${edgeA})`;
+          ctx.beginPath();
+          for (const [i, j] of edges) { ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); }
+          ctx.stroke();
+          // signal pulses travelling along edges
+          for (const pl of pulses) {
+            pl.p += pl.s / 60; if (pl.p > 1) { pl.p = 0; pl.e = Math.floor(Math.random() * edges.length); }
+            const [i, j] = edges[pl.e], a = pts[i], b = pts[j];
+            const x = a.x + (b.x - a.x) * pl.p, y = a.y + (b.y - a.y) * pl.p;
+            const g = ctx.createRadialGradient(x, y, 0, x, y, 7);
+            g.addColorStop(0, `rgba(${rgbB}, ${m * 0.9})`); g.addColorStop(1, `rgba(${rgbB}, 0)`);
+            ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 7, 0, Math.PI * 2); ctx.fill();
+          }
+        }
+        // nodes, sized and shaded by depth
+        for (let i = 0; i < N; i++) {
+          const p = pts[i], depth = (p.z + 150) / 300;
+          const r = 1.4 + depth * 2.2 + m * 0.6;
+          const rgb = (i < P) ? rgbA : rgbB;
+          ctx.fillStyle = `rgba(${rgb}, ${(0.35 + 0.6 * depth) * base})`;
+          ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.fill();
         }
         raf = requestAnimationFrame(step);
       }
@@ -975,6 +1046,8 @@
       });
 
       resize();
+      setTargets(0, 0);
+      for (const p of pts) { p.x = p.tx; p.y = p.ty; p.z = p.tz; }
       raf = requestAnimationFrame(step);
     })();
 
