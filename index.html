@@ -1034,8 +1034,13 @@
       document.body.appendChild(gc);
     }
 
-    // Live visitor count from GoatCounter's public counter endpoint
-    fetch('https://mehrzad.goatcounter.com/counter/TOTAL.json')
+    // Live visitor count from GoatCounter's public counter endpoint.
+    // The plain URL is cached for a long time at their CDN, but any `start` date
+    // earlier than the site's data gives the all-time total and a fresh response,
+    // so rotate that date every 5 minutes as a cache-buster.
+    const bucket = Math.floor(Date.now() / 300000) % 3650;
+    const startDate = new Date(Date.UTC(1990, 0, 1) + bucket * 86400000).toISOString().slice(0, 10);
+    fetch('https://mehrzad.goatcounter.com/counter/TOTAL.json?start=' + startDate)
       .then(r => r.ok ? r.json() : Promise.reject())
       .then(d => {
         const n = parseInt(String(d.count_unique || d.count).replace(/\D/g, ''), 10);
