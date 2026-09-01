@@ -69,7 +69,8 @@
 
   <script>
     document.documentElement.classList.add('js');
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    // Dark is the default; only an explicit light choice turns it off
+    if (localStorage.theme !== 'light') {
       document.documentElement.classList.add('dark');
     }
   </script>
