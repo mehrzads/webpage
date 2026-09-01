@@ -401,7 +401,7 @@
     .hero-photo .badge-bl { bottom: -18px; left: -26px; animation-delay: -3s; }
     @keyframes floaty { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
 
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 96px; position: relative; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 96px; position: relative; }
     .stat .num { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
     .stat .num small { font-size: 1.3rem; font-weight: 700; color: var(--accent-dark); }
     html.dark .stat .num small { color: var(--accent); }
@@ -448,19 +448,6 @@
     .subscribe svg { width: 16px; height: 16px; fill: currentColor; }
     .center-link { text-align: center; margin-top: 44px; }
 
-    /* ---------- Tools ---------- */
-    .tools { position: relative; overflow: hidden; }
-    .tools-glow { position: absolute; right: -220px; bottom: -220px; width: 640px; height: 640px; pointer-events: none;
-      background: radial-gradient(circle, rgba(118,185,0,.12) 0%, transparent 62%); }
-    .tool-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; position: relative; }
-    .tool { display: flex; flex-direction: column; gap: 4px; padding: 22px; border-radius: 18px; background: var(--card);
-      border: 1px solid var(--border); box-shadow: var(--shadow-card); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .tool:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); border-color: var(--accent); }
-    .tool .glyph { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); line-height: 1; margin-bottom: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-    html.dark .tool .glyph { color: var(--accent); }
-    .tool b { font-weight: 600; font-size: 1rem; }
-    .tool span { font-size: 0.88rem; color: var(--muted); }
-
     /* ---------- CTA ---------- */
     .cta { padding: 0 0 108px; }
     .cta-card { position: relative; overflow: hidden; border-radius: 32px; padding: 80px 40px; text-align: center;
@@ -479,8 +466,7 @@
     /* ---------- Responsive ---------- */
     @media (max-width: 980px) {
       .hero { padding: 140px 0 90px; }
-      .stats { grid-template-columns: repeat(2, 1fr); margin-top: 72px; }
-      .tool-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 72px; }
       .timeline::before { left: 8px; }
       .tl-item, .tl-item.right { grid-template-columns: 1fr; padding-left: 40px; }
       .tl-item .tl-dot { left: 8px; }
@@ -522,7 +508,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#videos">Videos</a></li>
             <li><a href="#podcasts">Podcasts</a></li>
-            <li><a href="#tools">Tools</a></li>
           </ul>
         </nav>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -543,7 +528,6 @@
         <li><a href="#about">About</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#podcasts">Podcasts</a></li>
-        <li><a href="#tools">Tools</a></li>
       </ul>
     </div>
   </header>
@@ -602,7 +586,6 @@
         <div class="stats reveal d3">
           <div class="stat"><div class="num"><span class="count" data-to="2020">0</span></div><div class="lbl">Parabricks acquired by NVIDIA</div></div>
           <div class="stat"><div class="num"><span class="count" data-to="43">0</span><small>+</small></div><div class="lbl">Persian-language AI episodes</div></div>
-          <div class="stat"><div class="num"><span class="count" data-to="40">0</span></div><div class="lbl">Free browser tools, no backend</div></div>
           <div class="stat"><div class="num"><span class="count" data-to="100">0</span><small>%</small></div><div class="lbl">GPU-accelerated, always</div></div>
         </div>
       </div>
@@ -798,29 +781,6 @@
       </div>
     </section>
 
-    <!-- ============ Tools ============ -->
-    <section id="tools" class="tools">
-      <div class="tools-glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-head-row reveal">
-          <div class="section-head">
-            <span class="eyebrow">Side projects</span>
-            <h2>40 tiny tools, zero backends</h2>
-            <p>Single-file web apps that run entirely in your browser. No accounts, no tracking, nothing leaves your device.</p>
-          </div>
-          <a class="link-arrow" href="subdomains/">See all 40 <span class="arrow" aria-hidden="true">&rarr;</span></a>
-        </div>
-        <div class="tool-grid">
-          <a class="tool reveal" href="subdomains/json-formatter/"><span class="glyph" aria-hidden="true">{ }</span><b>JSON Formatter</b><span>Validate, pretty-print, minify.</span></a>
-          <a class="tool reveal d1" href="subdomains/regex-tester/"><span class="glyph" aria-hidden="true">.*</span><b>Regex Tester</b><span>Live JavaScript regex matching.</span></a>
-          <a class="tool reveal d2" href="subdomains/diff-viewer/"><span class="glyph" aria-hidden="true">±</span><b>Diff Viewer</b><span>Compare two texts line by line.</span></a>
-          <a class="tool reveal d3" href="subdomains/cron-explainer/"><span class="glyph" aria-hidden="true">* *</span><b>Cron Helper</b><span>Build and explain cron schedules.</span></a>
-          <a class="tool reveal" href="subdomains/time-zone-planner/"><span class="glyph" aria-hidden="true">UTC</span><b>Time Zone Planner</b><span>Find a meeting time that works.</span></a>
-          <a class="tool reveal d1" href="subdomains/qr-code-maker/"><span class="glyph" aria-hidden="true">▦</span><b>QR Code Maker</b><span>URLs, Wi-Fi, contacts, text.</span></a>
-          <a class="tool reveal d2" href="subdomains/pomodoro-timer/"><span class="glyph" aria-hidden="true">25:00</span><b>Pomodoro Timer</b><span>Configurable focus sessions.</span></a>
-          <a class="tool reveal d3" href="subdomains/decision-matrix/"><span class="glyph" aria-hidden="true">Σw</span><b>Decision Matrix</b><span>Weighted scoring for hard calls.</span></a>
-        </div>
-      </div>
     </section>
 
     <!-- ============ CTA ============ -->
