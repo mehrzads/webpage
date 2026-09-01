@@ -386,10 +386,6 @@
     /* ---------- Hero extras ---------- */
     .hero-eyebrow .fa { font-weight: 700; letter-spacing: 0; text-transform: none; font-size: 0.95rem; }
     .hero-eyebrow .sep { opacity: .4; }
-    .rotator { display: inline-grid; vertical-align: bottom; }
-    .rotator > span { grid-area: 1 / 1; white-space: nowrap; visibility: hidden; }
-    .rotator > span.in { visibility: visible; animation: word-in .5s cubic-bezier(.2,.8,.2,1) both; }
-    @keyframes word-in { from { opacity: 0; transform: translateY(.45em); } to { opacity: 1; transform: none; } }
     .hero-photo .badge {
       position: absolute; display: inline-flex; align-items: center; gap: 8px;
       padding: 9px 14px; border-radius: 14px; font-size: 0.86rem; font-weight: 600; white-space: nowrap;
@@ -543,15 +539,7 @@
         <div class="hero-inner">
           <div class="hero-copy reveal active">
             <span class="hero-eyebrow"><span class="fa" lang="fa" dir="rtl">سلام</span><span class="sep">&middot;</span>GenAI &middot; NVIDIA</span>
-            <h1>Building the future of
-              <span class="rotator gradient-text" id="rotator" aria-live="polite">
-                <span class="in">Generative&nbsp;AI</span>
-                <span>GPU computing</span>
-                <span>coding agents</span>
-                <span>local LLMs</span>
-                <span>genomics at scale</span>
-              </span>
-            </h1>
+            <h1>Building the future of <span class="gradient-text">Generative&nbsp;AI</span></h1>
             <p class="hero-sub">
               I work on Generative AI at <strong>NVIDIA</strong>. Previously CEO &amp; Co-Founder of <strong>Parabricks</strong>, acquired by NVIDIA in 2020 — bridging high-performance computing and biological intelligence.
             </p>
@@ -847,17 +835,6 @@
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
     navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean).forEach(el => sectionObs.observe(el));
-
-    // Rotating headline word
-    const rot = document.getElementById('rotator');
-    if (rot && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      const words = [...rot.children]; let i = 0;
-      setInterval(() => {
-        words[i].classList.remove('in');
-        i = (i + 1) % words.length;
-        words[i].classList.add('in');
-      }, 2600);
-    }
 
     // Count-up stats
     const countObs = new IntersectionObserver(entries => {
