@@ -1018,5 +1018,16 @@
       }, { once: true });
     });
   </script>
+
+  <!-- GoatCounter analytics (cookieless). Skipped on localhost / file previews. -->
+  <script>
+    if (location.hostname && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      const gc = document.createElement('script');
+      gc.async = true;
+      gc.dataset.goatcounter = 'https://mehrzad.goatcounter.com/count';
+      gc.src = 'https://gc.zgo.at/count.js';
+      document.body.appendChild(gc);
+    }
+  </script>
 </body>
 </html>
