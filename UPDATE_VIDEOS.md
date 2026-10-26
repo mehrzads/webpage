@@ -20,7 +20,7 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
      - `data-id="VIDEO_ID"` on the `<button class="video-frame">`
      - both thumbnail URLs: `https://i.ytimg.com/vi/VIDEO_ID/maxresdefault.jpg` and `.../VIDEO_ID/hqdefault.jpg`
    - Update the `<h3>` title, the `aria-label` on the button, and the `Ep. NN` badge and date in `<p class="video-meta">`.
-   - If the episode count changed, also bump the "43 episodes" text in the hero badge, the stats row (`data-to="43"`), and the "Browse all 43 episodes" link.
+   - If the episode count changed, also bump the "43 episodes on AI, in Persian." line under the "Latest videos" heading.
 
 3. **Commit and Push**
    ```bash
@@ -34,7 +34,7 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
 ## Example card
 
 ```html
-<article class="video-card reveal">
+<article class="video-card">
   <button class="video-frame" data-id="y2eq3_lmqlw" aria-label="Play video: 43. HuggingFace Incident">
     <img src="https://i.ytimg.com/vi/y2eq3_lmqlw/maxresdefault.jpg"
          onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/y2eq3_lmqlw/hqdefault.jpg'"
@@ -43,7 +43,7 @@ The website shows your 6 latest YouTube videos as click-to-play cards (thumbnail
   </button>
   <div class="video-body">
     <h3>HuggingFace Incident</h3>
-    <p class="video-meta"><span class="ep">Ep. 43</span>August 2026 &middot; Persian</p>
+    <p class="video-meta"><span class="ep">Ep. 43</span>August 2026</p>
   </div>
 </article>
 ```
